@@ -1,0 +1,19 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'Thesis.blg'
+[105] biber:340> INFO - === Thu Jan 23, 2025, 12:22:46
+[130] Biber.pm:419> INFO - Reading 'Thesis.bcf'
+[224] Biber.pm:979> INFO - Found 54 citekeys in bib section 0
+[246] Biber.pm:4419> INFO - Processing section 0
+[261] Biber.pm:4610> INFO - Looking for bibtex file 'Bibliography.bib' for section 0
+[265] bibtex.pm:1713> INFO - LaTeX decoding ...
+[349] bibtex.pm:1519> INFO - Found BibTeX data source 'Bibliography.bib'
+[912] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[912] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[912] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'es-ES'
+[953] bbl.pm:660> INFO - Writing 'Thesis.bbl' with encoding 'UTF-8'
+[979] bbl.pm:763> INFO - Output to Thesis.bbl
+[979] Biber.pm:131> WARN - legacy month field 'feb' in entry 'herrera2023comparacion' is not an integer - this will probably not sort properly.
+[979] Biber.pm:131> WARN - I didn't find a database entry for 'zhu2013securityl' (section 0)
+[979] Biber.pm:131> WARN - I didn't find a database entry for 'Harris1988ACC' (section 0)
+[979] Biber.pm:131> WARN - I didn't find a database entry for 'Comaniciu2002MeanSA' (section 0)
+[979] Biber.pm:133> INFO - WARNINGS: 4

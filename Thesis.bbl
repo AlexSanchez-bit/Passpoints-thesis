@@ -1,0 +1,1996 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{massimo_nardone__2023}{incollection}{}
+      \name{author}{2}{}{%
+        {{hash=4e457eb39063e8b99b0974402bfd1b73}{%
+           family={Nardone},
+           familyi={N\bibinitperiod},
+           given={Massimo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e41547c3f8aaa52737263ba942a2e0b7}{%
+           family={Scarioni},
+           familyi={S\bibinitperiod},
+           given={Carlo},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{6e76861f6a75d905c49db5daad416660}
+      \strng{fullhash}{6e76861f6a75d905c49db5daad416660}
+      \strng{bibnamehash}{6e76861f6a75d905c49db5daad416660}
+      \strng{authorbibnamehash}{6e76861f6a75d905c49db5daad416660}
+      \strng{authornamehash}{6e76861f6a75d905c49db5daad416660}
+      \strng{authorfullhash}{6e76861f6a75d905c49db5daad416660}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{5. JSON Web Token (JWT) Authentication}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.1007/979-8-8688-0035-1_9
+      \endverb
+    \endentry
+    \entry{aravind_ayyagiri__2023}{article}{}
+      \name{author}{3}{}{%
+        {{hash=aa3a182e1a3d590dff0a77fe9e6948ea}{%
+           family={Ayyagiri},
+           familyi={A\bibinitperiod},
+           given={Aravind},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1478c55ac1cd0a93da6c0bad8e13b24e}{%
+           family={Jain},
+           familyi={J\bibinitperiod},
+           given={Shalu},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2bf6a1953885e5312340d9d9bfad09b1}{%
+           family={Aggarwal},
+           familyi={A\bibinitperiod},
+           given={Anshika},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{0271df445bb42e70ec3520eee8b40506}
+      \strng{fullhash}{0271df445bb42e70ec3520eee8b40506}
+      \strng{bibnamehash}{0271df445bb42e70ec3520eee8b40506}
+      \strng{authorbibnamehash}{0271df445bb42e70ec3520eee8b40506}
+      \strng{authornamehash}{0271df445bb42e70ec3520eee8b40506}
+      \strng{authorfullhash}{0271df445bb42e70ec3520eee8b40506}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Innovative research thoughts}
+      \field{title}{2. Innovations in Multi-Factor Authentication: Exploring OAuth for Enhanced Security}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.36676/irt.v9.i4.1461
+      \endverb
+    \endentry
+    \entry{liu_jin__2019}{patent}{}
+      \name{author}{8}{}{%
+        {{hash=2c393d8deae23ec907085cfe90160328}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={Liu},
+           giveni={L\bibinitperiod}}}%
+        {{hash=5188b4485652a0a121804887db7c236a}{%
+           family={Yingmin},
+           familyi={Y\bibinitperiod},
+           given={Feng},
+           giveni={F\bibinitperiod}}}%
+        {{hash=941ec17d63c09c79210843c492b95a35}{%
+           family={Liyan},
+           familyi={L\bibinitperiod},
+           given={Huang},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f39bd945db0c575e6b2872179106c70b}{%
+           family={Guoqi},
+           familyi={G\bibinitperiod},
+           given={Ren},
+           giveni={R\bibinitperiod}}}%
+        {{hash=1df907d91e8228bf2a6fef38390eb51a}{%
+           family={Jing},
+           familyi={J\bibinitperiod},
+           given={Zhao},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=40b2084b3e28da16730a0bf247617481}{%
+           family={Shuangbing},
+           familyi={S\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod}}}%
+        {{hash=52a61707fa2165b4762fe47b3ea26686}{%
+           family={Jianbo},
+           familyi={J\bibinitperiod},
+           given={Wang},
+           giveni={W\bibinitperiod}}}%
+        {{hash=a6cc4c11629703cead388c4ac6b3ac1a}{%
+           family={Bingran},
+           familyi={B\bibinitperiod},
+           given={Shao},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{c679efc24eea7ea13a04c40ec296a83f}
+      \strng{fullhash}{399b9483645a7efe5770a5c15c666e8b}
+      \strng{bibnamehash}{c679efc24eea7ea13a04c40ec296a83f}
+      \strng{authorbibnamehash}{c679efc24eea7ea13a04c40ec296a83f}
+      \strng{authornamehash}{c679efc24eea7ea13a04c40ec296a83f}
+      \strng{authorfullhash}{399b9483645a7efe5770a5c15c666e8b}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{5. Machine room access control system and method based on Touch ID}
+      \field{year}{2019}
+    \endentry
+    \entry{nur_dua_fathansyah_atan__2024}{article}{}
+      \name{author}{4}{}{%
+        {{hash=445860f0c8ab5c8c3a46fcae2cf2d149}{%
+           family={Atan},
+           familyi={A\bibinitperiod},
+           given={Nur\bibnamedelimb Dua\bibnamedelima Fathansyah},
+           giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=a63da42db73c42dc2e860aabbb45e082}{%
+           family={Rahmadewi},
+           familyi={R\bibinitperiod},
+           given={Reni},
+           giveni={R\bibinitperiod}}}%
+        {{hash=dd40c8c2847774e17236995920ad7ec5}{%
+           family={Susanto},
+           familyi={S\bibinitperiod},
+           given={Damar\bibnamedelima Adzani},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=8c0b57cfc31890602e92914a5fd0f694}{%
+           family={Jati},
+           familyi={J\bibinitperiod},
+           given={Wisnu\bibnamedelima Kuncoro},
+           giveni={W\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{02ba669409e923ebcf487034d7e500fd}
+      \strng{fullhash}{a88455faf524fcbe1571a96d374f9de3}
+      \strng{bibnamehash}{02ba669409e923ebcf487034d7e500fd}
+      \strng{authorbibnamehash}{02ba669409e923ebcf487034d7e500fd}
+      \strng{authornamehash}{02ba669409e923ebcf487034d7e500fd}
+      \strng{authorfullhash}{a88455faf524fcbe1571a96d374f9de3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Media Elektrik: Jurnal Kelistrikan Gagasan dan Hasil Penelitian}
+      \field{title}{3. Implementation of an identification system with facial image processing (eigenface) using matlab application}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.59562/metrik.v21i2.1706
+      \endverb
+    \endentry
+    \entry{10.1145/1102120.1102168}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=95dc795a2be14c50fb6a924acc135ff8}{%
+           family={Narayanan},
+           familyi={N\bibinitperiod},
+           given={Arvind},
+           giveni={A\bibinitperiod}}}%
+        {{hash=29abef6d5f9ba10547dab2eee5bceb2e}{%
+           family={Shmatikov},
+           familyi={S\bibinitperiod},
+           given={Vitaly},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Alexandria, VA, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{fdb313773cc7bea2d723b5efc4c92af9}
+      \strng{fullhash}{fdb313773cc7bea2d723b5efc4c92af9}
+      \strng{bibnamehash}{fdb313773cc7bea2d723b5efc4c92af9}
+      \strng{authorbibnamehash}{fdb313773cc7bea2d723b5efc4c92af9}
+      \strng{authornamehash}{fdb313773cc7bea2d723b5efc4c92af9}
+      \strng{authorfullhash}{fdb313773cc7bea2d723b5efc4c92af9}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Human-memorable passwords are a mainstay of computer security. To decrease vulnerability of passwords to brute-force dictionary attacks, many organizations enforce complicated password-creation rules and require that passwords include numerals and special characters. We demonstrate that as long as passwords remain human-memorable, they are vulnerable to "smart-dictionary" attacks even when the space of potential passwords is large.Our first insight is that the distribution of letters in easy-to-remember passwords is likely to be similar to the distribution of letters in the users' native language. Using standard Markov modeling techniques from natural language processing, this can be used to dramatically reduce the size of the password space to be searched. Our second contribution is an algorithm for efficient enumeration of the remaining password space. This allows application of time-space tradeoff techniques, limiting memory accesses to a relatively small table of "partial dictionary" sizes and enabling a very fast dictionary attack.We evaluated our method on a database of real-world user password hashes. Our algorithm successfully recovered 67.6\% of the passwords using a 2 x 109 search space. This is a much higher percentage than Oechslin's "rainbow" attack, which is the fastest currently known technique for searching large keyspaces. These results call into question viability of human-memorable character-sequence passwords as an authentication mechanism.}
+      \field{booktitle}{Proceedings of the 12th ACM Conference on Computer and Communications Security}
+      \field{isbn}{1595932267}
+      \field{series}{CCS '05}
+      \field{title}{Fast dictionary attacks on passwords using time-space tradeoff}
+      \field{year}{2005}
+      \field{pages}{364\bibrangedash 372}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1145/1102120.1102168
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/1102120.1102168
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/1102120.1102168
+      \endverb
+      \keyw{Markov models,cryptanalysis,dictionary attack,passwords,time-space,tradeoff}
+    \endentry
+    \entry{Apostol2012BruteforceA}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=6aea9ece8ed8e5de097ae46dc9b375d5}{%
+           family={Apostol},
+           familyi={A\bibinitperiod},
+           given={Klaas},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{6aea9ece8ed8e5de097ae46dc9b375d5}
+      \strng{fullhash}{6aea9ece8ed8e5de097ae46dc9b375d5}
+      \strng{bibnamehash}{6aea9ece8ed8e5de097ae46dc9b375d5}
+      \strng{authorbibnamehash}{6aea9ece8ed8e5de097ae46dc9b375d5}
+      \strng{authornamehash}{6aea9ece8ed8e5de097ae46dc9b375d5}
+      \strng{authorfullhash}{6aea9ece8ed8e5de097ae46dc9b375d5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Brute-force Attack}
+      \field{year}{2012}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:63833721
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:63833721
+      \endverb
+    \endentry
+    \entry{wahab2024investigating}{article}{}
+      \name{author}{3}{}{%
+        {{hash=2dff102c36bbbd31c7d196f83f986c14}{%
+           family={WAHAB},
+           familyi={W\bibinitperiod},
+           given={Fazal},
+           giveni={F\bibinitperiod}}}%
+        {{hash=5e076ae1029a752028a75efebd53c6bc}{%
+           family={KHAN},
+           familyi={K\bibinitperiod},
+           given={Imran},
+           giveni={I\bibinitperiod}}}%
+        {{hash=6c01602a2fbbf63f3b2c2b5e62098612}{%
+           family={SI},
+           familyi={S\bibinitperiod},
+           given={Ken},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{99b2126afceb9ab7a80781b712d76d67}
+      \strng{fullhash}{99b2126afceb9ab7a80781b712d76d67}
+      \strng{bibnamehash}{99b2126afceb9ab7a80781b712d76d67}
+      \strng{authorbibnamehash}{99b2126afceb9ab7a80781b712d76d67}
+      \strng{authornamehash}{99b2126afceb9ab7a80781b712d76d67}
+      \strng{authorfullhash}{99b2126afceb9ab7a80781b712d76d67}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Romanian Journal of Information Technology and Automatic Control}
+      \field{number}{1}
+      \field{title}{Investigating offline password attacks: A comprehensive review of rainbow table techniques and countermeasure limitations}
+      \field{volume}{34}
+      \field{year}{2024}
+      \field{pages}{81\bibrangedash 96}
+      \range{pages}{16}
+    \endentry
+    \entry{paivio2013imagery}{book}{}
+      \name{author}{1}{}{%
+        {{hash=1e2a43fee979db5c2ed74955ebe9427a}{%
+           family={Paivio},
+           familyi={P\bibinitperiod},
+           given={Allan},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Psychology Press}%
+      }
+      \strng{namehash}{1e2a43fee979db5c2ed74955ebe9427a}
+      \strng{fullhash}{1e2a43fee979db5c2ed74955ebe9427a}
+      \strng{bibnamehash}{1e2a43fee979db5c2ed74955ebe9427a}
+      \strng{authorbibnamehash}{1e2a43fee979db5c2ed74955ebe9427a}
+      \strng{authornamehash}{1e2a43fee979db5c2ed74955ebe9427a}
+      \strng{authorfullhash}{1e2a43fee979db5c2ed74955ebe9427a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Imagery and verbal processes}
+      \field{year}{2013}
+    \endentry
+    \entry{shepard1967recognition}{article}{}
+      \name{author}{1}{}{%
+        {{hash=033372af8888fbee8d7ede30968fa5fd}{%
+           family={Shepard},
+           familyi={S\bibinitperiod},
+           given={Roger\bibnamedelima N},
+           giveni={R\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{033372af8888fbee8d7ede30968fa5fd}
+      \strng{fullhash}{033372af8888fbee8d7ede30968fa5fd}
+      \strng{bibnamehash}{033372af8888fbee8d7ede30968fa5fd}
+      \strng{authorbibnamehash}{033372af8888fbee8d7ede30968fa5fd}
+      \strng{authornamehash}{033372af8888fbee8d7ede30968fa5fd}
+      \strng{authorfullhash}{033372af8888fbee8d7ede30968fa5fd}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of verbal Learning and verbal Behavior}
+      \field{number}{1}
+      \field{title}{Recognition memory for words, sentences, and pictures}
+      \field{volume}{6}
+      \field{year}{1967}
+      \field{pages}{156\bibrangedash 163}
+      \range{pages}{8}
+    \endentry
+    \entry{nelson1976pictorial}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c7ecd6198187ecfb2b06fa78a6f5389d}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={Douglas\bibnamedelima L},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=0dd5b6fad6fc3c53eeabd4181e35ca4a}{%
+           family={Reed},
+           familyi={R\bibinitperiod},
+           given={Valerie\bibnamedelima S},
+           giveni={V\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=eaa619a3cd2e40d9e2a52330a6ed32eb}{%
+           family={Walling},
+           familyi={W\bibinitperiod},
+           given={John\bibnamedelima R},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Psychological Association}%
+      }
+      \strng{namehash}{bee4378235ccbd392eb3a67e6f3b4b72}
+      \strng{fullhash}{bee4378235ccbd392eb3a67e6f3b4b72}
+      \strng{bibnamehash}{bee4378235ccbd392eb3a67e6f3b4b72}
+      \strng{authorbibnamehash}{bee4378235ccbd392eb3a67e6f3b4b72}
+      \strng{authornamehash}{bee4378235ccbd392eb3a67e6f3b4b72}
+      \strng{authorfullhash}{bee4378235ccbd392eb3a67e6f3b4b72}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of experimental psychology: Human learning and memory}
+      \field{number}{5}
+      \field{title}{Pictorial superiority effect.}
+      \field{volume}{2}
+      \field{year}{1976}
+      \field{pages}{523}
+      \range{pages}{1}
+    \endentry
+    \entry{wiedenbeck2005passpoints}{article}{}
+      \name{author}{5}{}{%
+        {{hash=434707406e7af768a96b56aef08719f2}{%
+           family={Wiedenbeck},
+           familyi={W\bibinitperiod},
+           given={Susan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1021ce3775fc7c7f36a013c4e27a3987}{%
+           family={Waters},
+           familyi={W\bibinitperiod},
+           given={Jim},
+           giveni={J\bibinitperiod}}}%
+        {{hash=797d00cd488e9fd6a227bbb740bc065b}{%
+           family={Birget},
+           familyi={B\bibinitperiod},
+           given={Jean-Camille},
+           giveni={J\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=803e25e5778efb1c1e2cafa9ea4b780d}{%
+           family={Brodskiy},
+           familyi={B\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+        {{hash=09c1479ba74e772074143ca4223000b8}{%
+           family={Memon},
+           familyi={M\bibinitperiod},
+           given={Nasir},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{a10323a0a71fa75da10718bc9ff6d077}
+      \strng{fullhash}{bcc822c8a5daa531678ffd153193e1ae}
+      \strng{bibnamehash}{a10323a0a71fa75da10718bc9ff6d077}
+      \strng{authorbibnamehash}{a10323a0a71fa75da10718bc9ff6d077}
+      \strng{authornamehash}{a10323a0a71fa75da10718bc9ff6d077}
+      \strng{authorfullhash}{bcc822c8a5daa531678ffd153193e1ae}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International journal of human-computer studies}
+      \field{number}{1-2}
+      \field{title}{PassPoints: Design and longitudinal evaluation of a graphical password system}
+      \field{volume}{63}
+      \field{year}{2005}
+      \field{pages}{102\bibrangedash 127}
+      \range{pages}{26}
+    \endentry
+    \entry{dhamija2000deja}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=54ff7143ae3c688e6b5c4fa37cee3429}{%
+           family={Dhamija},
+           familyi={D\bibinitperiod},
+           given={Rachna},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7008e0fc312a01ec512c7479e63bf472}{%
+           family={Perrig},
+           familyi={P\bibinitperiod},
+           given={Adrian},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{d88996c801f10d9dcbfb9c514be0a73e}
+      \strng{fullhash}{d88996c801f10d9dcbfb9c514be0a73e}
+      \strng{bibnamehash}{d88996c801f10d9dcbfb9c514be0a73e}
+      \strng{authorbibnamehash}{d88996c801f10d9dcbfb9c514be0a73e}
+      \strng{authornamehash}{d88996c801f10d9dcbfb9c514be0a73e}
+      \strng{authorfullhash}{d88996c801f10d9dcbfb9c514be0a73e}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{9th USENIX Security Symposium (USENIX Security 00)}
+      \field{title}{Deja $\{$Vu--A$\}$ User Study: Using Images for Authentication}
+      \field{year}{2000}
+    \endentry
+    \entry{Tuscano2015GraphicalPA}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=0d5d34d0074fe5de8391baaf819a5b3b}{%
+           family={Tuscano},
+           familyi={T\bibinitperiod},
+           given={Grinal},
+           giveni={G\bibinitperiod}}}%
+        {{hash=8f60869f03e5f860b0077a6bdca97c64}{%
+           family={Tulasyan},
+           familyi={T\bibinitperiod},
+           given={Aakriti},
+           giveni={A\bibinitperiod}}}%
+        {{hash=50db31328963f8cc4d8901b3087c5c0b}{%
+           family={Shetty},
+           familyi={S\bibinitperiod},
+           given={Akshata},
+           giveni={A\bibinitperiod}}}%
+        {{hash=24729389ef086a9cb1a23cbf3c34d0b0}{%
+           family={Shetty},
+           familyi={S\bibinitperiod},
+           given={Aishwarya},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{2c63d9928c8956879c4f120a11634e66}
+      \strng{fullhash}{24b061d7e024db11a0e478398e3e9cd0}
+      \strng{bibnamehash}{2c63d9928c8956879c4f120a11634e66}
+      \strng{authorbibnamehash}{2c63d9928c8956879c4f120a11634e66}
+      \strng{authornamehash}{2c63d9928c8956879c4f120a11634e66}
+      \strng{authorfullhash}{24b061d7e024db11a0e478398e3e9cd0}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Graphical password authentication using Pass faces}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:61812491
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:61812491
+      \endverb
+    \endentry
+    \entry{inproceedings}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=29afd98439c32e97733c31e8a9943941}{%
+           family={Suo},
+           familyi={S\bibinitperiod},
+           given={Xiaoyuan},
+           giveni={X\bibinitperiod}}}%
+        {{hash=88fe418ad39fc6ffe33568d31a6cc573}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Ying},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=6bd2f1e83b4efd24cc776592fe573862}{%
+           family={Owen},
+           familyi={O\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{2af955a9839311cf9c4f2294f8035bfb}
+      \strng{fullhash}{2af955a9839311cf9c4f2294f8035bfb}
+      \strng{bibnamehash}{2af955a9839311cf9c4f2294f8035bfb}
+      \strng{authorbibnamehash}{2af955a9839311cf9c4f2294f8035bfb}
+      \strng{authornamehash}{2af955a9839311cf9c4f2294f8035bfb}
+      \strng{authorfullhash}{2af955a9839311cf9c4f2294f8035bfb}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{Graphical Passwords: A Survey.}
+      \field{year}{2005}
+      \field{pages}{463\bibrangedash 472}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/CSAC.2005.27
+      \endverb
+    \endentry
+    \entry{aviv2010smudge}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=32c3a25f4b51beba348a2f31ff6a9d01}{%
+           family={Aviv},
+           familyi={A\bibinitperiod},
+           given={Adam\bibnamedelima J},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=53bcb6b7040043aba0514db750969cf6}{%
+           family={Gibson},
+           familyi={G\bibinitperiod},
+           given={Katherine},
+           giveni={K\bibinitperiod}}}%
+        {{hash=3c5bd88de1f4e733dbbeb784565ffb3b}{%
+           family={Mossop},
+           familyi={M\bibinitperiod},
+           given={Evan},
+           giveni={E\bibinitperiod}}}%
+        {{hash=4f5cc95e80ecb7d031e387ecc2f7d9fa}{%
+           family={Blaze},
+           familyi={B\bibinitperiod},
+           given={Matt},
+           giveni={M\bibinitperiod}}}%
+        {{hash=95e034b88ebc1d61c94f00726de028f0}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Jonathan\bibnamedelima M},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{89df926246471ba62414cbb612c2f132}
+      \strng{fullhash}{133a04c6431636733213db9d1caabe48}
+      \strng{bibnamehash}{89df926246471ba62414cbb612c2f132}
+      \strng{authorbibnamehash}{89df926246471ba62414cbb612c2f132}
+      \strng{authornamehash}{89df926246471ba62414cbb612c2f132}
+      \strng{authorfullhash}{133a04c6431636733213db9d1caabe48}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{4th USENIX workshop on offensive technologies (WOOT 10)}
+      \field{title}{Smudge attacks on smartphone touch screens}
+      \field{year}{2010}
+    \endentry
+    \entry{lin2009free}{article}{}
+      \name{author}{2}{}{%
+        {{hash=3b2a0378be680e8314ecdf3c29d166cf}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Alice\bibnamedelima J},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=b3dbae57f80b39888aaa706476850152}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Fuhua},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{9dbfe9ed4a9c13376242df4e68bd8052}
+      \strng{fullhash}{9dbfe9ed4a9c13376242df4e68bd8052}
+      \strng{bibnamehash}{9dbfe9ed4a9c13376242df4e68bd8052}
+      \strng{authorbibnamehash}{9dbfe9ed4a9c13376242df4e68bd8052}
+      \strng{authornamehash}{9dbfe9ed4a9c13376242df4e68bd8052}
+      \strng{authorfullhash}{9dbfe9ed4a9c13376242df4e68bd8052}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computer-Aided Design and Applications}
+      \field{number}{4}
+      \field{title}{A Free Drawing Graphical Password Scheme}
+      \field{volume}{6}
+      \field{year}{2009}
+      \field{pages}{553\bibrangedash 561}
+      \range{pages}{9}
+    \endentry
+    \entry{heiberger2009polynomial}{article}{}
+      \name{author}{4}{}{%
+        {{hash=2227b8d7bd707ba59dee577a94b72c4b}{%
+           family={Heiberger},
+           familyi={H\bibinitperiod},
+           given={Richard\bibnamedelima M},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=0a96f8830584fc792d4a4460866d7397}{%
+           family={Neuwirth},
+           familyi={N\bibinitperiod},
+           given={Erich},
+           giveni={E\bibinitperiod}}}%
+        {{hash=2227b8d7bd707ba59dee577a94b72c4b}{%
+           family={Heiberger},
+           familyi={H\bibinitperiod},
+           given={Richard\bibnamedelima M},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=0a96f8830584fc792d4a4460866d7397}{%
+           family={Neuwirth},
+           familyi={N\bibinitperiod},
+           given={Erich},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{7736b48c29212ce0aebe2e827f73d110}
+      \strng{fullhash}{9ff27534b341bbe56277720c56d951d3}
+      \strng{bibnamehash}{7736b48c29212ce0aebe2e827f73d110}
+      \strng{authorbibnamehash}{7736b48c29212ce0aebe2e827f73d110}
+      \strng{authornamehash}{7736b48c29212ce0aebe2e827f73d110}
+      \strng{authorfullhash}{9ff27534b341bbe56277720c56d951d3}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{R Through Excel: A Spreadsheet Interface for Statistics, Data Analysis, and Graphics}
+      \field{title}{Polynomial regression}
+      \field{year}{2009}
+      \field{pages}{269\bibrangedash 284}
+      \range{pages}{16}
+    \endentry
+    \entry{imoto2000b}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=0556a5dd75f9458aebb4521df2bcc1f5}{%
+           family={Imoto},
+           familyi={I\bibinitperiod},
+           given={Seiya},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4f54b507dd972f8907fd08fac3167552}{%
+           family={Konishi},
+           familyi={K\bibinitperiod},
+           given={Sadanori},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{2d72f7d73eee80486feca370b1d172b9}
+      \strng{fullhash}{2d72f7d73eee80486feca370b1d172b9}
+      \strng{bibnamehash}{2d72f7d73eee80486feca370b1d172b9}
+      \strng{authorbibnamehash}{2d72f7d73eee80486feca370b1d172b9}
+      \strng{authornamehash}{2d72f7d73eee80486feca370b1d172b9}
+      \strng{authorfullhash}{2d72f7d73eee80486feca370b1d172b9}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of 2nd Int. Symp. on Frontiers of Time Series Model}
+      \field{title}{B-spline nonparametric regression models and information criteria}
+      \field{year}{2000}
+      \field{pages}{240\bibrangedash 241}
+      \range{pages}{2}
+    \endentry
+    \entry{olade2023story}{article}{}
+      \name{author}{3}{}{%
+        {{hash=608eeb8294e36919b3ef277407cb86e0}{%
+           family={Olade},
+           familyi={O\bibinitperiod},
+           given={Ilesanmi},
+           giveni={I\bibinitperiod}}}%
+        {{hash=94ec1f0f3f2f01f49b1f26ff31407f08}{%
+           family={Liang},
+           familyi={L\bibinitperiod},
+           given={Hai-Ning},
+           giveni={H\bibinithyphendelim N\bibinitperiod}}}%
+        {{hash=9dbf2ac55c62722ffc5c06b854d87967}{%
+           family={Fleming},
+           familyi={F\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{8715954df37af03272d92f8291942fff}
+      \strng{fullhash}{8715954df37af03272d92f8291942fff}
+      \strng{bibnamehash}{8715954df37af03272d92f8291942fff}
+      \strng{authorbibnamehash}{8715954df37af03272d92f8291942fff}
+      \strng{authornamehash}{8715954df37af03272d92f8291942fff}
+      \strng{authorfullhash}{8715954df37af03272d92f8291942fff}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Human-Computer Studies}
+      \field{title}{Story-based authentication for mobile devices using semantically-linked images}
+      \field{volume}{171}
+      \field{year}{2023}
+      \field{pages}{102967}
+      \range{pages}{1}
+    \endentry
+    \entry{hoover2015narrative}{book}{}
+      \name{author}{1}{}{%
+        {{hash=5aed358a222c2c0e3b0b5bd03b9d3cf8}{%
+           family={Hoover},
+           familyi={H\bibinitperiod},
+           given={Connor\bibnamedelima C},
+           giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {University of Idaho}%
+      }
+      \strng{namehash}{5aed358a222c2c0e3b0b5bd03b9d3cf8}
+      \strng{fullhash}{5aed358a222c2c0e3b0b5bd03b9d3cf8}
+      \strng{bibnamehash}{5aed358a222c2c0e3b0b5bd03b9d3cf8}
+      \strng{authorbibnamehash}{5aed358a222c2c0e3b0b5bd03b9d3cf8}
+      \strng{authornamehash}{5aed358a222c2c0e3b0b5bd03b9d3cf8}
+      \strng{authorfullhash}{5aed358a222c2c0e3b0b5bd03b9d3cf8}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Narrative Passwords: Potential for Story-Based User Authentication}
+      \field{year}{2015}
+    \endentry
+    \entry{blonder1996graphical}{patent}{}
+      \name{author}{1}{}{%
+        {{hash=840877f95a0a4737f8619813b177190a}{%
+           family={Blonder},
+           familyi={B\bibinitperiod},
+           given={Gregory\bibnamedelima E.},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{840877f95a0a4737f8619813b177190a}
+      \strng{fullhash}{840877f95a0a4737f8619813b177190a}
+      \strng{bibnamehash}{840877f95a0a4737f8619813b177190a}
+      \strng{authorbibnamehash}{840877f95a0a4737f8619813b177190a}
+      \strng{authornamehash}{840877f95a0a4737f8619813b177190a}
+      \strng{authorfullhash}{840877f95a0a4737f8619813b177190a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{5559961}
+      \field{title}{Graphical Passwords}
+      \field{type}{United States Patent}
+      \field{year}{1996}
+    \endentry
+    \entry{chiasson2007graphical}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=f95d31847023f710af29acf71beb03e6}{%
+           family={Chiasson},
+           familyi={C\bibinitperiod},
+           given={Sonia},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2b4f1742af51254687b3507ccb544769}{%
+           family={Van\bibnamedelima Oorschot},
+           familyi={V\bibinitperiod\bibinitdelim O\bibinitperiod},
+           given={Paul\bibnamedelima C},
+           giveni={P\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=a2168f94ebae1fc22d3f1be30e96c155}{%
+           family={Biddle},
+           familyi={B\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{3068faec07a8a9831bc95ead2a471155}
+      \strng{fullhash}{3068faec07a8a9831bc95ead2a471155}
+      \strng{bibnamehash}{3068faec07a8a9831bc95ead2a471155}
+      \strng{authorbibnamehash}{3068faec07a8a9831bc95ead2a471155}
+      \strng{authornamehash}{3068faec07a8a9831bc95ead2a471155}
+      \strng{authorfullhash}{3068faec07a8a9831bc95ead2a471155}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Computer Security--ESORICS 2007: 12th European Symposium On Research In Computer Security, Dresden, Germany, September 24—26, 2007. Proceedings 12}
+      \field{title}{Graphical password authentication using cued click points}
+      \field{year}{2007}
+      \field{pages}{359\bibrangedash 374}
+      \range{pages}{16}
+    \endentry
+    \entry{8320723}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=96a3ae2b2ee8bd841c63232a359e6dd9}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Gi-Chul},
+           giveni={G\bibinithyphendelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{96a3ae2b2ee8bd841c63232a359e6dd9}
+      \strng{fullhash}{96a3ae2b2ee8bd841c63232a359e6dd9}
+      \strng{bibnamehash}{96a3ae2b2ee8bd841c63232a359e6dd9}
+      \strng{authorbibnamehash}{96a3ae2b2ee8bd841c63232a359e6dd9}
+      \strng{authornamehash}{96a3ae2b2ee8bd841c63232a359e6dd9}
+      \strng{authorfullhash}{96a3ae2b2ee8bd841c63232a359e6dd9}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2017 4th International Conference on Computer Applications and Information Processing Technology (CAIPT)}
+      \field{title}{PassPositions: A secure and user-friendly graphical password scheme}
+      \field{year}{2017}
+      \field{pages}{1\bibrangedash 5}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/CAIPT.2017.8320723
+      \endverb
+      \keyw{Password;Authentication;Iris recognition;Usability;graphical passwords;authentication;information security}
+    \endentry
+    \entry{10.1145/2414456.2414513}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=58efef317bd288462f440130f5f6b680}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Hung-Min},
+           giveni={H\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=46ac120731294743ef0bb59b3f6549f8}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Yao-Hsin},
+           giveni={Y\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=949db38d2a2eecf408ce3bf059c1cb11}{%
+           family={Fang},
+           familyi={F\bibinitperiod},
+           given={Chiung-Cheng},
+           giveni={C\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=7451af29c716bf64a4a50332684385c7}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Shih-Ying},
+           giveni={S\bibinithyphendelim Y\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Seoul, Korea}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{3c16cdd02d87d0cbe24317872b61318b}
+      \strng{fullhash}{b15fa550c5e756cf4d407c60f2dfe5f9}
+      \strng{bibnamehash}{3c16cdd02d87d0cbe24317872b61318b}
+      \strng{authorbibnamehash}{3c16cdd02d87d0cbe24317872b61318b}
+      \strng{authornamehash}{3c16cdd02d87d0cbe24317872b61318b}
+      \strng{authorfullhash}{b15fa550c5e756cf4d407c60f2dfe5f9}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Text passwords have been used in authentication systems for many decades. Users must recall the textual strings selected during registration to pass authentication. However, there are some serious problems with text passwords---recollection and security. Hence, various graphical-password authentication systems have been proposed to solve the problems of text passwords. Previous studies indicate that humans are better at recognizing and recalling images than texts. In 2005, Wiedenbeck et al. proposed PassPoints in which a password consists of a sequence of click-points (5 to 8) that a user chooses on an image. In the paper, we proposed an alternative system in which users can memorize fewer points while providing more security than PassPoints. Based on the idea of using an extremely large image as the password space, we propose a novel world map based graphical-password authentication system called PassMap in which a password consists of a sequence of 2 click-points that a user selects on an large world map. We also conducted a user study for evaluation. The result shows that the passwords of PassMap are easy to memorize for humans and PassMap is friendly to use in practice. Furthermore, PassMap provides higher entropy than PassPoints and also increases the cost of attacks.}
+      \field{booktitle}{Proceedings of the 7th ACM Symposium on Information, Computer and Communications Security}
+      \field{isbn}{9781450316484}
+      \field{series}{ASIACCS '12}
+      \field{title}{PassMap: a map based graphical-password authentication system}
+      \field{year}{2012}
+      \field{pages}{99\bibrangedash 100}
+      \range{pages}{2}
+      \verb{doi}
+      \verb 10.1145/2414456.2414513
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/2414456.2414513
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/2414456.2414513
+      \endverb
+      \keyw{authentication,graphical passwords}
+    \endentry
+    \entry{5738831}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=6652a39e552445a155bfa3f3a66d5283}{%
+           family={ArunPrakash},
+           familyi={A\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=89a475e3e209c150d7183f251f0775cc}{%
+           family={Gokul},
+           familyi={G\bibinitperiod},
+           given={T.R.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{ecd321517590aae1a8eae72faed2fe36}
+      \strng{fullhash}{ecd321517590aae1a8eae72faed2fe36}
+      \strng{bibnamehash}{ecd321517590aae1a8eae72faed2fe36}
+      \strng{authorbibnamehash}{ecd321517590aae1a8eae72faed2fe36}
+      \strng{authornamehash}{ecd321517590aae1a8eae72faed2fe36}
+      \strng{authorfullhash}{ecd321517590aae1a8eae72faed2fe36}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2011 National Conference on Innovations in Emerging Technology}
+      \field{title}{Network security-overcome password hacking through graphical password authentication}
+      \field{year}{2011}
+      \field{pages}{43\bibrangedash 48}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/NCOIET.2011.5738831
+      \endverb
+      \keyw{Authentication;Dictionaries;Computer hacking;Mice;Computer crime;Force;graphical password;authentication;hack;network security}
+    \endentry
+    \entry{tao2008pass}{article}{}
+      \name{author}{2}{}{%
+        {{hash=11dc1e23f92ce661c557deef3a497947}{%
+           family={Tao},
+           familyi={T\bibinitperiod},
+           given={Hai},
+           giveni={H\bibinitperiod}}}%
+        {{hash=918081b9a8494c2488cc8dd5fbbf2661}{%
+           family={Adams},
+           familyi={A\bibinitperiod},
+           given={Carlisle},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Citeseer}%
+      }
+      \strng{namehash}{e4ff14e8778fccf9cdf6de9a9c420907}
+      \strng{fullhash}{e4ff14e8778fccf9cdf6de9a9c420907}
+      \strng{bibnamehash}{e4ff14e8778fccf9cdf6de9a9c420907}
+      \strng{authorbibnamehash}{e4ff14e8778fccf9cdf6de9a9c420907}
+      \strng{authornamehash}{e4ff14e8778fccf9cdf6de9a9c420907}
+      \strng{authorfullhash}{e4ff14e8778fccf9cdf6de9a9c420907}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Int. J. Netw. Secur.}
+      \field{number}{2}
+      \field{title}{Pass-go: A proposal to improve the usability of graphical passwords.}
+      \field{volume}{7}
+      \field{year}{2008}
+      \field{pages}{273\bibrangedash 292}
+      \range{pages}{20}
+    \endentry
+    \entry{kausar2022gra}{article}{}
+      \name{author}{5}{}{%
+        {{hash=228045faa2bc6f457946a8a057e54855}{%
+           family={Kausar},
+           familyi={K\bibinitperiod},
+           given={Nabeela},
+           giveni={N\bibinitperiod}}}%
+        {{hash=926866ba3497d624eca59b0434604465}{%
+           family={Din},
+           familyi={D\bibinitperiod},
+           given={Ikram\bibnamedelima Ud},
+           giveni={I\bibinitperiod\bibinitdelim U\bibinitperiod}}}%
+        {{hash=5c4bdad335d17debbab36721e4d37701}{%
+           family={Khan},
+           familyi={K\bibinitperiod},
+           given={Mudassar\bibnamedelima Ali},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=11b33ff188a95ced95910757bbade968}{%
+           family={Almogren},
+           familyi={A\bibinitperiod},
+           given={Ahmad},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6ebc765471a8cec4bbeccb0edfe897d1}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Byung-Seo},
+           giveni={B\bibinithyphendelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{fe15425595f4ed60a3d59eda40c6127d}
+      \strng{fullhash}{84ad206bbdaefccf594c6f45fc06d479}
+      \strng{bibnamehash}{fe15425595f4ed60a3d59eda40c6127d}
+      \strng{authorbibnamehash}{fe15425595f4ed60a3d59eda40c6127d}
+      \strng{authornamehash}{fe15425595f4ed60a3d59eda40c6127d}
+      \strng{authorfullhash}{84ad206bbdaefccf594c6f45fc06d479}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sensors}
+      \field{number}{4}
+      \field{title}{GRA-PIN: A graphical and PIN-based hybrid authentication approach for smart devices}
+      \field{volume}{22}
+      \field{year}{2022}
+      \field{pages}{1349}
+      \range{pages}{1}
+    \endentry
+    \entry{8250568}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=6e71225f88b627eea0c49e945b49b8aa}{%
+           family={Tabrez},
+           familyi={T\bibinitperiod},
+           given={Shums},
+           giveni={S\bibinitperiod}}}%
+        {{hash=3e93f25c9773d390c3a6b18cb618f702}{%
+           family={Sai},
+           familyi={S\bibinitperiod},
+           given={D.\bibnamedelimi Jagadeesh},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{0a25bdb2ab71c02b30019b1f80423360}
+      \strng{fullhash}{0a25bdb2ab71c02b30019b1f80423360}
+      \strng{bibnamehash}{0a25bdb2ab71c02b30019b1f80423360}
+      \strng{authorbibnamehash}{0a25bdb2ab71c02b30019b1f80423360}
+      \strng{authornamehash}{0a25bdb2ab71c02b30019b1f80423360}
+      \strng{authorfullhash}{0a25bdb2ab71c02b30019b1f80423360}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2017 International Conference on Intelligent Computing and Control Systems (ICICCS)}
+      \field{title}{Pass-matrix authentication a solution to shoulder surfing attacks with the assistance of graphical password authentication system}
+      \field{year}{2017}
+      \field{pages}{776\bibrangedash 781}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ICCONS.2017.8250568
+      \endverb
+      \keyw{Authentication;Mobile communication;Pins;Usability;Control systems;Authentication;shoulder surfing attack;graphical password}
+    \endentry
+    \entry{lashkari2009shoulder}{article}{}
+      \name{author}{4}{}{%
+        {{hash=92b792d1e4c9cc568469afc444808600}{%
+           family={Lashkari},
+           familyi={L\bibinitperiod},
+           given={Arash\bibnamedelima Habibi},
+           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=4cfcce308f8fd8bcf077375d10d33bc1}{%
+           family={Farmand},
+           familyi={F\bibinitperiod},
+           given={Samaneh},
+           giveni={S\bibinitperiod}}}%
+        {{hash=49fa9e98ef0f3401de166a28065e1c5e}{%
+           family={Zakaria},
+           familyi={Z\bibinitperiod},
+           given={Dr\bibnamedelima Omar\bibnamedelima Bin},
+           giveni={D\bibinitperiod\bibinitdelim O\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=1f02056b8be28e22658abfed46e5ddf1}{%
+           family={Saleh},
+           familyi={S\bibinitperiod},
+           given={Dr\bibnamedelima Rosli},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{1d7e2d03699198a4e7e59fef3ac4db45}
+      \strng{fullhash}{5341ac8092b51eb3723c466bb8f5720b}
+      \strng{bibnamehash}{1d7e2d03699198a4e7e59fef3ac4db45}
+      \strng{authorbibnamehash}{1d7e2d03699198a4e7e59fef3ac4db45}
+      \strng{authornamehash}{1d7e2d03699198a4e7e59fef3ac4db45}
+      \strng{authorfullhash}{5341ac8092b51eb3723c466bb8f5720b}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:0912.0951}
+      \field{title}{Shoulder surfing attack in graphical password authentication}
+      \field{year}{2009}
+    \endentry
+    \entry{zhu2013security}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=c0f5af4f825dab3d1fdc81d5865a69fd}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Bin\bibnamedelima B},
+           giveni={B\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=76a3c6dd263e68c8b1d3b429beacddf5}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Dongchen},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9766025c48f031aa32aedabb187f708a}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Maowei},
+           giveni={M\bibinitperiod}}}%
+        {{hash=17020fb04a2d16fa1a6de1e6dfaf2f07}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{1daa64c136c4c01ef0a820838d4e407d}
+      \strng{fullhash}{409964d2bd11b067bde23a4e3a48b43a}
+      \strng{bibnamehash}{1daa64c136c4c01ef0a820838d4e407d}
+      \strng{authorbibnamehash}{1daa64c136c4c01ef0a820838d4e407d}
+      \strng{authornamehash}{1daa64c136c4c01ef0a820838d4e407d}
+      \strng{authorfullhash}{409964d2bd11b067bde23a4e3a48b43a}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 22nd international conference on World Wide Web}
+      \field{title}{Security implications of password discretization for click-based graphical passwords}
+      \field{year}{2013}
+      \field{pages}{1581\bibrangedash 1591}
+      \range{pages}{11}
+    \endentry
+    \entry{birget2006graphical}{article}{}
+      \name{author}{3}{}{%
+        {{hash=db2109fb15771c2fecdf3867a12bc99b}{%
+           family={Birget},
+           familyi={B\bibinitperiod},
+           given={J-C},
+           giveni={J\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=7f2d84bfdcef35047cee4ffecacb9df3}{%
+           family={Hong},
+           familyi={H\bibinitperiod},
+           given={Dawei},
+           giveni={D\bibinitperiod}}}%
+        {{hash=09c1479ba74e772074143ca4223000b8}{%
+           family={Memon},
+           familyi={M\bibinitperiod},
+           given={Nasir},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{000ac193f285b90444cd4f5ec53e48e9}
+      \strng{fullhash}{000ac193f285b90444cd4f5ec53e48e9}
+      \strng{bibnamehash}{000ac193f285b90444cd4f5ec53e48e9}
+      \strng{authorbibnamehash}{000ac193f285b90444cd4f5ec53e48e9}
+      \strng{authornamehash}{000ac193f285b90444cd4f5ec53e48e9}
+      \strng{authorfullhash}{000ac193f285b90444cd4f5ec53e48e9}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Information Forensics and Security}
+      \field{number}{3}
+      \field{title}{Graphical passwords based on robust discretization}
+      \field{volume}{1}
+      \field{year}{2006}
+      \field{pages}{395\bibrangedash 399}
+      \range{pages}{5}
+    \endentry
+    \entry{chiasson2008centered}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=f95d31847023f710af29acf71beb03e6}{%
+           family={Chiasson},
+           familyi={C\bibinitperiod},
+           given={Sonia},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f5eb53c751ef68eab078b28b5339bf69}{%
+           family={Srinivasan},
+           familyi={S\bibinitperiod},
+           given={Jayakumar},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a2168f94ebae1fc22d3f1be30e96c155}{%
+           family={Biddle},
+           familyi={B\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7d55735513a0655e978578a121e66919}{%
+           family={Van\bibnamedelima Oorschot},
+           familyi={V\bibinitperiod\bibinitdelim O\bibinitperiod},
+           given={PC},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{875019f00337e1b001f1f93f41698633}
+      \strng{fullhash}{d444206714f8a63db80bd5ffd00e71a5}
+      \strng{bibnamehash}{875019f00337e1b001f1f93f41698633}
+      \strng{authorbibnamehash}{875019f00337e1b001f1f93f41698633}
+      \strng{authornamehash}{875019f00337e1b001f1f93f41698633}
+      \strng{authorfullhash}{d444206714f8a63db80bd5ffd00e71a5}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 1st Conference on Usability, Psychology, and Security (UPSEC’08)}
+      \field{title}{Centered discretization with application to graphical passwords (full paper)}
+      \field{year}{2008}
+      \field{pages}{6}
+      \range{pages}{1}
+    \endentry
+    \entry{bicakci2008optimal}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=7ff3bf00fbd3f53e4b6c92a2272fa4eb}{%
+           family={Bicakci},
+           familyi={B\bibinitperiod},
+           given={Kemal},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{7ff3bf00fbd3f53e4b6c92a2272fa4eb}
+      \strng{fullhash}{7ff3bf00fbd3f53e4b6c92a2272fa4eb}
+      \strng{bibnamehash}{7ff3bf00fbd3f53e4b6c92a2272fa4eb}
+      \strng{authorbibnamehash}{7ff3bf00fbd3f53e4b6c92a2272fa4eb}
+      \strng{authornamehash}{7ff3bf00fbd3f53e4b6c92a2272fa4eb}
+      \strng{authorfullhash}{7ff3bf00fbd3f53e4b6c92a2272fa4eb}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2008 23rd International Symposium on Computer and Information Sciences}
+      \field{title}{Optimal discretization for high-entropy graphical passwords}
+      \field{year}{2008}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+    \endentry
+    \entry{kirovski2007click}{report}{}
+      \name{author}{3}{}{%
+        {{hash=a0b61a9809436dbc4bf183af4a3d78e4}{%
+           family={Kirovski},
+           familyi={K\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6f3fff50babb38420ba2af19459a423b}{%
+           family={Jogic},
+           familyi={J\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=32822ff10c71fbaae864d1ac782d7c5a}{%
+           family={Roberts},
+           familyi={R\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Microsoft Research}%
+      }
+      \list{location}{1}{%
+        {One Microsoft Way, Redmond, WA 98052, USA}%
+      }
+      \strng{namehash}{32f447b35b9b2603fe49d9470b78b99f}
+      \strng{fullhash}{32f447b35b9b2603fe49d9470b78b99f}
+      \strng{bibnamehash}{32f447b35b9b2603fe49d9470b78b99f}
+      \strng{authorbibnamehash}{32f447b35b9b2603fe49d9470b78b99f}
+      \strng{authornamehash}{32f447b35b9b2603fe49d9470b78b99f}
+      \strng{authorfullhash}{32f447b35b9b2603fe49d9470b78b99f}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Click Passwords}
+      \field{type}{techreport}
+      \field{year}{2007}
+    \endentry
+    \entry{mypasswordhere}{article}{}
+      \name{author}{2}{}{%
+        {{hash=65e518edc03fe32d983447f39d216a7f}{%
+           family={Renaud},
+           familyi={R\bibinitperiod},
+           given={Karen},
+           giveni={K\bibinitperiod}}}%
+        {{hash=917908c9105bc1083fc21bc580ae793e}{%
+           family={De\bibnamedelima Angeli},
+           familyi={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Antonella},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{5504b645bba9e2979e5349664777f0b1}
+      \strng{fullhash}{5504b645bba9e2979e5349664777f0b1}
+      \strng{bibnamehash}{5504b645bba9e2979e5349664777f0b1}
+      \strng{authorbibnamehash}{5504b645bba9e2979e5349664777f0b1}
+      \strng{authornamehash}{5504b645bba9e2979e5349664777f0b1}
+      \strng{authorfullhash}{5504b645bba9e2979e5349664777f0b1}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Interacting with Computers}
+      \field{month}{12}
+      \field{title}{De Angeli, A.: My password is here! An investigation into visuo-spatial authentication mechanisms. Interacting with Computers 16, 1017-1041}
+      \field{volume}{16}
+      \field{year}{2004}
+      \field{pages}{1017\bibrangedash 1041}
+      \range{pages}{25}
+    \endentry
+    \entry{rodriguez2019algoritmo}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=5731ab15bc0ff10c968a7f0accc06105}{%
+           family={Rodriguez},
+           familyi={R\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Universidad de la Habana, Facultad de Matemática y Computación, Instituto de Criptografía}%
+      }
+      \strng{namehash}{5731ab15bc0ff10c968a7f0accc06105}
+      \strng{fullhash}{5731ab15bc0ff10c968a7f0accc06105}
+      \strng{bibnamehash}{5731ab15bc0ff10c968a7f0accc06105}
+      \strng{authorbibnamehash}{5731ab15bc0ff10c968a7f0accc06105}
+      \strng{authornamehash}{5731ab15bc0ff10c968a7f0accc06105}
+      \strng{authorfullhash}{5731ab15bc0ff10c968a7f0accc06105}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Algoritmo para la detección de claves débiles en la técnica de autenticación gráfica passpoints}
+      \field{type}{M.Sc. thesis}
+      \field{year}{2019}
+    \endentry
+    \entry{sym13050777}{article}{}
+      \name{author}{6}{}{%
+        {{hash=9c4090d8bf5450ff5e1059731df96d0f}{%
+           family={Herrera-Macías},
+           familyi={H\bibinithyphendelim M\bibinitperiod},
+           given={Joaquín\bibnamedelima Alberto},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=afe80685baa3081b057cf12b753a9229}{%
+           family={Legón-Pérez},
+           familyi={L\bibinithyphendelim P\bibinitperiod},
+           given={Carlos\bibnamedelima Miguel},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=75bdcc8bb023c3bee602b5adf753cdeb}{%
+           family={Suárez-Plasencia},
+           familyi={S\bibinithyphendelim P\bibinitperiod},
+           given={Lisset},
+           giveni={L\bibinitperiod}}}%
+        {{hash=4a40a17135342ecdc518aecb3b7bd090}{%
+           family={Piñeiro-Díaz},
+           familyi={P\bibinithyphendelim D\bibinitperiod},
+           given={Luis\bibnamedelima Ramiro},
+           giveni={L\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=5202548254250f6e14bf59df118d5b7b}{%
+           family={Rojas},
+           familyi={R\bibinitperiod},
+           given={Omar},
+           giveni={O\bibinitperiod}}}%
+        {{hash=bb833a6732206ed4b5d33f6e2e620683}{%
+           family={Sosa-Gómez},
+           familyi={S\bibinithyphendelim G\bibinitperiod},
+           given={Guillermo},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{42c689d0483dce2e9a2c249b92c20ba1}
+      \strng{fullhash}{9ac2828dfae0cbfdc649579bdec7bc13}
+      \strng{bibnamehash}{42c689d0483dce2e9a2c249b92c20ba1}
+      \strng{authorbibnamehash}{42c689d0483dce2e9a2c249b92c20ba1}
+      \strng{authornamehash}{42c689d0483dce2e9a2c249b92c20ba1}
+      \strng{authorfullhash}{9ac2828dfae0cbfdc649579bdec7bc13}
+      \field{extraname}{1}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This work demonstrates the ineffectiveness of the Ripley’s K function tests, the distance to the nearest neighbor, and the empty space function in the Graphical Authentication scenario with Passpoint for the detection of non-random graphical passwords. The results obtained show that none of these tests effectively detect non-random graphical passwords; the reason for their failure is attributed to the small sample of the spatial pattern in question, where only the five points of the graphical password are analyzed. Consequently, a test based on mean distances is proposed, whose experiments show that it detects with good efficiency non-random graphical passwords in Passpoint. The test was designed to be included in the Graphical Authentication systems with Passpoint to warn the user about a possibly weak password during the registration phase, and in this way, the security of the system is increased.}
+      \field{issn}{2073-8994}
+      \field{journaltitle}{Symmetry}
+      \field{number}{5}
+      \field{title}{Test for Detection of Weak Graphic Passwords in Passpoint Based on the Mean Distance between Points}
+      \field{volume}{13}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.3390/sym13050777
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2073-8994/13/5/777
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2073-8994/13/5/777
+      \endverb
+    \endentry
+    \entry{lissetMaster}{article}{}
+      \name{author}{6}{}{%
+        {{hash=75bdcc8bb023c3bee602b5adf753cdeb}{%
+           family={Suárez-Plasencia},
+           familyi={S\bibinithyphendelim P\bibinitperiod},
+           given={Lisset},
+           giveni={L\bibinitperiod}}}%
+        {{hash=f9d32044dd371f43ea99e91ac46f03f2}{%
+           family={Legón},
+           familyi={L\bibinitperiod},
+           given={C.M.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=959de3a0e7c6db8b024e980fdb75da06}{%
+           family={Herrera},
+           familyi={H\bibinitperiod},
+           given={Joaquín},
+           giveni={J\bibinitperiod}}}%
+        {{hash=dd6474fd832dc377135f5b85e519bb74}{%
+           family={Socorro},
+           familyi={S\bibinitperiod},
+           given={Raisa},
+           giveni={R\bibinitperiod}}}%
+        {{hash=5202548254250f6e14bf59df118d5b7b}{%
+           family={Rojas},
+           familyi={R\bibinitperiod},
+           given={Omar},
+           giveni={O\bibinitperiod}}}%
+        {{hash=046555e8c4d4d5db9783a64cf5c3a789}{%
+           family={Sosa\bibnamedelima Gómez},
+           familyi={S\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Guillermo},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{761d6817134d63bdb7eeb5e88e610ce5}
+      \strng{fullhash}{432de375fbb655f8d8ca2f0a99eb8338}
+      \strng{bibnamehash}{761d6817134d63bdb7eeb5e88e610ce5}
+      \strng{authorbibnamehash}{761d6817134d63bdb7eeb5e88e610ce5}
+      \strng{authornamehash}{761d6817134d63bdb7eeb5e88e610ce5}
+      \strng{authorfullhash}{432de375fbb655f8d8ca2f0a99eb8338}
+      \field{extraname}{1}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Security and Communication Networks}
+      \field{month}{09}
+      \field{title}{Weak PassPoint Passwords Detected by the Perimeter of Delaunay Triangles}
+      \field{volume}{2022}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 14}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1155/2022/3624587
+      \endverb
+    \endentry
+    \entry{s22051987}{article}{}
+      \name{author}{5}{}{%
+        {{hash=75bdcc8bb023c3bee602b5adf753cdeb}{%
+           family={Suárez-Plasencia},
+           familyi={S\bibinithyphendelim P\bibinitperiod},
+           given={Lisset},
+           giveni={L\bibinitperiod}}}%
+        {{hash=9c4090d8bf5450ff5e1059731df96d0f}{%
+           family={Herrera-Macías},
+           familyi={H\bibinithyphendelim M\bibinitperiod},
+           given={Joaquín\bibnamedelima Alberto},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=afe80685baa3081b057cf12b753a9229}{%
+           family={Legón-Pérez},
+           familyi={L\bibinithyphendelim P\bibinitperiod},
+           given={Carlos\bibnamedelima Miguel},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=bb833a6732206ed4b5d33f6e2e620683}{%
+           family={Sosa-Gómez},
+           familyi={S\bibinithyphendelim G\bibinitperiod},
+           given={Guillermo},
+           giveni={G\bibinitperiod}}}%
+        {{hash=5202548254250f6e14bf59df118d5b7b}{%
+           family={Rojas},
+           familyi={R\bibinitperiod},
+           given={Omar},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{761d6817134d63bdb7eeb5e88e610ce5}
+      \strng{fullhash}{572310b1aeebded60bdabffa84723610}
+      \strng{bibnamehash}{761d6817134d63bdb7eeb5e88e610ce5}
+      \strng{authorbibnamehash}{761d6817134d63bdb7eeb5e88e610ce5}
+      \strng{authornamehash}{761d6817134d63bdb7eeb5e88e610ce5}
+      \strng{authorfullhash}{572310b1aeebded60bdabffa84723610}
+      \field{extraname}{2}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{An alternative authentication method to traditional alphanumeric passwords is graphical password authentication, also known as graphical authentication, for which one of the most valuable cued-recall techniques is PassPoints. This technique stands out for its security and usability. However, it can be violated if the user follows a predefined pattern when selecting the five points in an image as their passwords, such as the DIAG and LINE patterns. Dictionary attacks can be built using these two patterns to compromise graphical passwords. So far, no reports have been found in the state of the art about any test capable of detecting graphical passwords with DIAG or LINE patterns in PassPoints. Studies carried out in other scenarios have shown the effectiveness of the characteristics of Delaunay triangulations in extracting information about the dependence between the points. In this work, graphical passwords formed by five randomly selected points on an image are compared with passwords whose points contain patterns of the DIAG or LINE type. The comparison is based on building for each password its Delaunay triangulation and calculating the mean value of the maximum angles of the triangles obtained; such a mean value is denoted by amadt. It is experimentally shown that in passwords containing DIAG and LINE patterns, the value of amadt is higher than the one obtained in passwords formed by random dots. From this result, it is proposed to use this amadt value as a statistic to build a test of means. This result constitutes the work’s main contribution: The proposal of a spatial randomness test to detect weak graphic passwords that contain DIAG and LINE type patterns. The importance and novelty of this result become evident when two aspects are taken into account: First, these weak passwords can be exploited by attackers to improve the effectiveness of their attacks; second, there are no prior criteria to detect this type of weak password. The practical application of said test contributes to increasing PassPoints security without substantially affecting its efficiency.}
+      \field{issn}{1424-8220}
+      \field{journaltitle}{Sensors}
+      \field{number}{5}
+      \field{title}{Detection of DIAG and LINE Patterns in PassPoints Graphical Passwords Based on the Maximum Angles of Their Delaunay Triangles}
+      \field{volume}{22}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.3390/s22051987
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/1424-8220/22/5/1987
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1424-8220/22/5/1987
+      \endverb
+    \endentry
+    \entry{herrera2023comparacion}{article}{}
+      \name{author}{4}{}{%
+        {{hash=9691f216e779cfafd215aa0e9fb20752}{%
+           family={Herrera},
+           familyi={H\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=87dd508aa033a3d7cf184785d00f034c}{%
+           family={Suárez},
+           familyi={S\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=f9d32044dd371f43ea99e91ac46f03f2}{%
+           family={Legón},
+           familyi={L\bibinitperiod},
+           given={C.\bibnamedelimi M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=6c40002eaa4ea232c5f2cc9f5b5b9dc7}{%
+           family={Sosa},
+           familyi={S\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{1192bf76452922c58dfa7743fd23dc6e}
+      \strng{fullhash}{58137cce7f3c3762adf1bc85d797483f}
+      \strng{bibnamehash}{1192bf76452922c58dfa7743fd23dc6e}
+      \strng{authorbibnamehash}{1192bf76452922c58dfa7743fd23dc6e}
+      \strng{authornamehash}{1192bf76452922c58dfa7743fd23dc6e}
+      \strng{authorfullhash}{58137cce7f3c3762adf1bc85d797483f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista Cubana de Ciencias Informáticas}
+      \field{month}{2}
+      \field{number}{1}
+      \field{title}{Comparación y combinación de dos test efectivos en la detección de contraseñas gráficas no aleatorias en Passpoints}
+      \field{volume}{17}
+      \field{year}{2023}
+    \endentry
+    \entry{herrera2023nuevo}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=8ece8f67b008ac5416e2ef00f4cdcbf3}{%
+           family={Herrera},
+           familyi={H\bibinitperiod},
+           given={J.\bibnamedelimi A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=87dd508aa033a3d7cf184785d00f034c}{%
+           family={Suárez},
+           familyi={S\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=f9d32044dd371f43ea99e91ac46f03f2}{%
+           family={Legón},
+           familyi={L\bibinitperiod},
+           given={C.\bibnamedelimi M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {La Habana, Cuba}%
+      }
+      \strng{namehash}{77cba412d0f9a34b0c4383cb3f14c560}
+      \strng{fullhash}{77cba412d0f9a34b0c4383cb3f14c560}
+      \strng{bibnamehash}{77cba412d0f9a34b0c4383cb3f14c560}
+      \strng{authorbibnamehash}{77cba412d0f9a34b0c4383cb3f14c560}
+      \strng{authornamehash}{77cba412d0f9a34b0c4383cb3f14c560}
+      \strng{authorfullhash}{77cba412d0f9a34b0c4383cb3f14c560}
+      \field{extraname}{1}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Congreso Internacional Matemático COMPUMAT 2023}
+      \field{isbn}{978-959-16-4930-0}
+      \field{title}{Nuevo test para detectar contraseñas gráficas agrupadas en Passpoints}
+      \field{year}{2023}
+    \endentry
+    \entry{herrera2023nuevoregulares}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=8ece8f67b008ac5416e2ef00f4cdcbf3}{%
+           family={Herrera},
+           familyi={H\bibinitperiod},
+           given={J.\bibnamedelimi A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=87dd508aa033a3d7cf184785d00f034c}{%
+           family={Suárez},
+           familyi={S\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=f9d32044dd371f43ea99e91ac46f03f2}{%
+           family={Legón},
+           familyi={L\bibinitperiod},
+           given={C.\bibnamedelimi M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {La Habana, Cuba}%
+      }
+      \strng{namehash}{77cba412d0f9a34b0c4383cb3f14c560}
+      \strng{fullhash}{77cba412d0f9a34b0c4383cb3f14c560}
+      \strng{bibnamehash}{77cba412d0f9a34b0c4383cb3f14c560}
+      \strng{authorbibnamehash}{77cba412d0f9a34b0c4383cb3f14c560}
+      \strng{authornamehash}{77cba412d0f9a34b0c4383cb3f14c560}
+      \strng{authorfullhash}{77cba412d0f9a34b0c4383cb3f14c560}
+      \field{extraname}{2}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Congreso Internacional Matemático COMPUMAT 2023}
+      \field{isbn}{978-959-16-4930-0}
+      \field{title}{Nuevo test para detectar contraseñas gráficas regulares en Passpoints}
+      \field{year}{2023}
+    \endentry
+    \entry{herrera2024new}{article}{}
+      \name{author}{5}{}{%
+        {{hash=80a1f82a547f1b80bd8603fe4fe0874f}{%
+           family={Herrera-Macías},
+           familyi={H\bibinithyphendelim M\bibinitperiod},
+           given={J.\bibnamedelimi A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=042e773c70b1d361b72ec006192f954c}{%
+           family={Suárez-Plasencia},
+           familyi={S\bibinithyphendelim P\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=c1cd0a195ff2cb2eb1e6632f9a3359e3}{%
+           family={Legón-Pérez},
+           familyi={L\bibinithyphendelim P\bibinitperiod},
+           given={C.\bibnamedelimi M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=1ccc84bd11a2778b9f405cfbc913618f}{%
+           family={Sosa-Gómez},
+           familyi={S\bibinithyphendelim G\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=69941ab1d99ab3ad4a9f8c7d40ce92d9}{%
+           family={Rojas},
+           familyi={R\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{c56a25f35001852da6519635ae07e368}
+      \strng{fullhash}{f49bcc25199c380ba23668bdd796aa63}
+      \strng{bibnamehash}{c56a25f35001852da6519635ae07e368}
+      \strng{authorbibnamehash}{c56a25f35001852da6519635ae07e368}
+      \strng{authornamehash}{c56a25f35001852da6519635ae07e368}
+      \strng{authorfullhash}{f49bcc25199c380ba23668bdd796aa63}
+      \field{extraname}{2}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Information}
+      \field{number}{8}
+      \field{title}{New test to detect clustered graphical passwords in Passpoints based on the perimeter of the convex hull}
+      \field{volume}{15}
+      \field{year}{2024}
+      \field{pages}{447}
+      \range{pages}{1}
+    \endentry
+    \entry{legon2019nuevo}{article}{}
+      \name{author}{5}{}{%
+        {{hash=5a36bccc4cbf7e32aa911bcd5e34e6e7}{%
+           family={Legón},
+           familyi={L\bibinitperiod},
+           given={Carlos\bibnamedelima Miguel},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=dd6474fd832dc377135f5b85e519bb74}{%
+           family={Socorro},
+           familyi={S\bibinitperiod},
+           given={Raisa},
+           giveni={R\bibinitperiod}}}%
+        {{hash=59214800e38ecabfeb6aac074ed71f7f}{%
+           family={Navarro},
+           familyi={N\bibinitperiod},
+           given={Pedro},
+           giveni={P\bibinitperiod}}}%
+        {{hash=bb58660eafd7dbe0f0e70096ed8c287d}{%
+           family={Rodríguez},
+           familyi={R\bibinitperiod},
+           given={Osviel},
+           giveni={O\bibinitperiod}}}%
+        {{hash=5778330a8fabe39f01c41acc7feddfbb}{%
+           family={Borrego},
+           familyi={B\bibinitperiod},
+           given={Ernesto},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Facultad de Eléctrica, Instituto Superior Politécnico José Antonio~…}%
+      }
+      \strng{namehash}{5dcaf741264c68f5c52e8c14a4cb6c77}
+      \strng{fullhash}{03d0271f299e5630bea0020afa8cfaa0}
+      \strng{bibnamehash}{5dcaf741264c68f5c52e8c14a4cb6c77}
+      \strng{authorbibnamehash}{5dcaf741264c68f5c52e8c14a4cb6c77}
+      \strng{authornamehash}{5dcaf741264c68f5c52e8c14a4cb6c77}
+      \strng{authorfullhash}{03d0271f299e5630bea0020afa8cfaa0}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Ingeniería Electrónica, Automática y Comunicaciones}
+      \field{number}{3}
+      \field{title}{Nuevo modelo probabilístico en autenticación gráfica}
+      \field{volume}{40}
+      \field{year}{2019}
+      \field{pages}{92\bibrangedash 104}
+      \range{pages}{13}
+    \endentry
+    \entry{zimmermann2020password}{article}{}
+      \name{author}{2}{}{%
+        {{hash=9cbf775bc025d42bcba76700319ed3d3}{%
+           family={Zimmermann},
+           familyi={Z\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+        {{hash=e3c968e9606f0af61069e6887d1fd7a6}{%
+           family={Gerber},
+           familyi={G\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{1c2da47aad4b116f4fa8eb7f5f88f14a}
+      \strng{fullhash}{1c2da47aad4b116f4fa8eb7f5f88f14a}
+      \strng{bibnamehash}{1c2da47aad4b116f4fa8eb7f5f88f14a}
+      \strng{authorbibnamehash}{1c2da47aad4b116f4fa8eb7f5f88f14a}
+      \strng{authornamehash}{1c2da47aad4b116f4fa8eb7f5f88f14a}
+      \strng{authorfullhash}{1c2da47aad4b116f4fa8eb7f5f88f14a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Human Computer Studies}
+      \field{title}{The password is dead, long live the password - A laboratory study on user perceptions of authentication schemes}
+      \field{volume}{133}
+      \field{year}{2020}
+      \field{pages}{26\bibrangedash 44}
+      \range{pages}{19}
+    \endentry
+    \entry{weakpassw}{thesis}{}
+      \name{author}{3}{}{%
+        {{hash=64af578d5c4fb63a1e0fb1336b62cd00}{%
+           family={Rodriguez\bibnamedelima Valdés},
+           familyi={R\bibinitperiod\bibinitdelim V\bibinitperiod},
+           given={Osviel},
+           giveni={O\bibinitperiod}}}%
+        {{hash=f9d32044dd371f43ea99e91ac46f03f2}{%
+           family={Legón},
+           familyi={L\bibinitperiod},
+           given={C.M.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=dd6474fd832dc377135f5b85e519bb74}{%
+           family={Socorro},
+           familyi={S\bibinitperiod},
+           given={Raisa},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{10db751b40718bf8f26ce2f908089140}
+      \strng{fullhash}{10db751b40718bf8f26ce2f908089140}
+      \strng{bibnamehash}{10db751b40718bf8f26ce2f908089140}
+      \strng{authorbibnamehash}{10db751b40718bf8f26ce2f908089140}
+      \strng{authornamehash}{10db751b40718bf8f26ce2f908089140}
+      \strng{authorfullhash}{10db751b40718bf8f26ce2f908089140}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{title}{Algoritmo para la detección de claves débiles en la técnica de autenticación gráfica Passpoints}
+      \field{type}{phdthesis}
+      \field{year}{2019}
+      \verb{doi}
+      \verb 10.13140/RG.2.2.26847.20647
+      \endverb
+    \endentry
+    \entry{rodriguez2018seguridad}{article}{}
+      \name{author}{3}{}{%
+        {{hash=5731ab15bc0ff10c968a7f0accc06105}{%
+           family={Rodriguez},
+           familyi={R\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod}}}%
+        {{hash=f9d32044dd371f43ea99e91ac46f03f2}{%
+           family={Legón},
+           familyi={L\bibinitperiod},
+           given={C.\bibnamedelimi M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=bd70a8bef4afd8546db04afc5f18f92b}{%
+           family={Socorro},
+           familyi={S\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{a5f6842cf98eaae2abd5a7b7a012aa11}
+      \strng{fullhash}{a5f6842cf98eaae2abd5a7b7a012aa11}
+      \strng{bibnamehash}{a5f6842cf98eaae2abd5a7b7a012aa11}
+      \strng{authorbibnamehash}{a5f6842cf98eaae2abd5a7b7a012aa11}
+      \strng{authornamehash}{a5f6842cf98eaae2abd5a7b7a012aa11}
+      \strng{authorfullhash}{a5f6842cf98eaae2abd5a7b7a012aa11}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista Cubana de Ciencias Informáticas}
+      \field{number}{Especial UCIENCIA}
+      \field{title}{Seguridad y usabilidad de los esquemas y técnicas de autenticación gráfica}
+      \field{volume}{12}
+      \field{year}{2018}
+      \field{pages}{13\bibrangedash 27}
+      \range{pages}{15}
+    \endentry
+    \entry{borrego2018debilidades}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=d94027ffe318ce6fcfb930f01aa239ee}{%
+           family={Borrego},
+           familyi={B\bibinitperiod},
+           given={E.\bibnamedelimi A.},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=a7494dab06ecffea5c56d4eed2228e80}{%
+           family={Navarro},
+           familyi={N\bibinitperiod},
+           given={P.\bibnamedelimi E.},
+           giveni={P\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=f9d32044dd371f43ea99e91ac46f03f2}{%
+           family={Legón},
+           familyi={L\bibinitperiod},
+           given={C.\bibnamedelimi M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=49d56e8eecab75127f388a1ffc0e18f8}{%
+           family={Sociedad\bibnamedelimb Cubana\bibnamedelimb de\bibnamedelimb Matemática\bibnamedelimb y\bibnamedelima Computación},
+           familyi={S\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim y\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Instituto\bibnamedelima (ed)},
+           giveni={I\bibinitperiod\bibinitdelim (\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Universidad de la Habana}%
+      }
+      \strng{namehash}{75d390f613fa94f9ca741f7fe071069c}
+      \strng{fullhash}{75d390f613fa94f9ca741f7fe071069c}
+      \strng{bibnamehash}{75d390f613fa94f9ca741f7fe071069c}
+      \strng{authorbibnamehash}{75d390f613fa94f9ca741f7fe071069c}
+      \strng{authornamehash}{75d390f613fa94f9ca741f7fe071069c}
+      \strng{authorfullhash}{75d390f613fa94f9ca741f7fe071069c}
+      \strng{editorbibnamehash}{49d56e8eecab75127f388a1ffc0e18f8}
+      \strng{editornamehash}{49d56e8eecab75127f388a1ffc0e18f8}
+      \strng{editorfullhash}{49d56e8eecab75127f388a1ffc0e18f8}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IV Seminario Científico Nacional de Criptografía}
+      \field{title}{Debilidades de los métodos de discretización para contraseñas gráficas}
+      \field{year}{2018}
+    \endentry
+    \entry{team2023gemini}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=a55b7d5d1274a0ed751da98de34bedbf}{%
+           family={Team},
+           familyi={T\bibinitperiod},
+           given={Gemini},
+           giveni={G\bibinitperiod}}}%
+        {{hash=b22a93be7fdf0fe6a36b9647d21cafdd}{%
+           family={Anil},
+           familyi={A\bibinitperiod},
+           given={Rohan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=c28d74501d531d6672ccf4c28016c7ac}{%
+           family={Borgeaud},
+           familyi={B\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=937bfca3b13ab1dac24dc70932520c74}{%
+           family={Alayrac},
+           familyi={A\bibinitperiod},
+           given={Jean-Baptiste},
+           giveni={J\bibinithyphendelim B\bibinitperiod}}}%
+        {{hash=39e224f7a71cf6663eb02e20fe36a941}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Jiahui},
+           giveni={J\bibinitperiod}}}%
+        {{hash=66796c4fdac5a7416e6d810de13f59f4}{%
+           family={Soricut},
+           familyi={S\bibinitperiod},
+           given={Radu},
+           giveni={R\bibinitperiod}}}%
+        {{hash=16eaee327996dc97c163741eb9479404}{%
+           family={Schalkwyk},
+           familyi={S\bibinitperiod},
+           given={Johan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=978bf3b58698c55cce487279eb72f59f}{%
+           family={Dai},
+           familyi={D\bibinitperiod},
+           given={Andrew\bibnamedelima M},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=e718957f214d64a3ffdd79d89b064af6}{%
+           family={Hauth},
+           familyi={H\bibinitperiod},
+           given={Anja},
+           giveni={A\bibinitperiod}}}%
+        {{hash=da626c813aa81825001015989a23f850}{%
+           family={Millican},
+           familyi={M\bibinitperiod},
+           given={Katie},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{98e7dab7d66dd231a15b4f965ba90923}
+      \strng{fullhash}{f943a300a135a1b615332e1d93cdd837}
+      \strng{bibnamehash}{98e7dab7d66dd231a15b4f965ba90923}
+      \strng{authorbibnamehash}{98e7dab7d66dd231a15b4f965ba90923}
+      \strng{authornamehash}{98e7dab7d66dd231a15b4f965ba90923}
+      \strng{authorfullhash}{f943a300a135a1b615332e1d93cdd837}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2312.11805}
+      \field{title}{Gemini: a family of highly capable multimodal models}
+      \field{year}{2023}
+    \endentry
+    \entry{van2010purely}{article}{}
+      \name{author}{3}{}{%
+        {{hash=2b4f1742af51254687b3507ccb544769}{%
+           family={Van\bibnamedelima Oorschot},
+           familyi={V\bibinitperiod\bibinitdelim O\bibinitperiod},
+           given={Paul\bibnamedelima C},
+           giveni={P\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=d9ecfd9d045cc693cfaa61fe3444ddba}{%
+           family={Salehi-Abari},
+           familyi={S\bibinithyphendelim A\bibinitperiod},
+           given={Amirali},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e89418817e548281406d4297b5bbd63d}{%
+           family={Thorpe},
+           familyi={T\bibinitperiod},
+           given={Julie},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{56f91c052dd5bc369830324880523651}
+      \strng{fullhash}{56f91c052dd5bc369830324880523651}
+      \strng{bibnamehash}{56f91c052dd5bc369830324880523651}
+      \strng{authorbibnamehash}{56f91c052dd5bc369830324880523651}
+      \strng{authornamehash}{56f91c052dd5bc369830324880523651}
+      \strng{authorfullhash}{56f91c052dd5bc369830324880523651}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Information Forensics and Security}
+      \field{number}{3}
+      \field{title}{Purely automated attacks on passpoints-style graphical passwords}
+      \field{volume}{5}
+      \field{year}{2010}
+      \field{pages}{393\bibrangedash 405}
+      \range{pages}{13}
+    \endentry
+    \entry{itti2000saliency}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a5d0648fad8ee57ed9668c4157bc00b4}{%
+           family={Itti},
+           familyi={I\bibinitperiod},
+           given={Laurent},
+           giveni={L\bibinitperiod}}}%
+        {{hash=bde4db3430ff6f578a4358224bece0ac}{%
+           family={Koch},
+           familyi={K\bibinitperiod},
+           given={Christof},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{737dd2cdf972ba3db761e261f3341e68}
+      \strng{fullhash}{737dd2cdf972ba3db761e261f3341e68}
+      \strng{bibnamehash}{737dd2cdf972ba3db761e261f3341e68}
+      \strng{authorbibnamehash}{737dd2cdf972ba3db761e261f3341e68}
+      \strng{authornamehash}{737dd2cdf972ba3db761e261f3341e68}
+      \strng{authorfullhash}{737dd2cdf972ba3db761e261f3341e68}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Vision research}
+      \field{number}{10-12}
+      \field{title}{A saliency-based search mechanism for overt and covert shifts of visual attention}
+      \field{volume}{40}
+      \field{year}{2000}
+      \field{pages}{1489\bibrangedash 1506}
+      \range{pages}{18}
+    \endentry
+  \enddatalist
+  \missing{Comaniciu2002MeanSA}
+  \missing{Harris1988ACC}
+  \missing{zhu2013securityl}
+\endrefsection
+\endinput
+

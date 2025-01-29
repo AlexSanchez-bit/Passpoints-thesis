@@ -1,0 +1,50 @@
+\chapter*{Introducción}\label{chapter:introduction}
+\addcontentsline{toc}{chapter}{Introducción}
+Desde la popularización del internet en los años 90, es creciente la tendencia a almacenar enormes cantidades de datos en los distintos servicios en línea, desde comercios electrónicos, redes sociales, aplicaciones bancarias, hasta servicios de \textit{streaming}. Servicios como estos han crecido exponencialmente, así como la cantidad de usuarios que los consumen. 
+
+La necesidad de mantener segura y privada la información de los usuarios, muchas veces sensible, originó el uso de sistemas de autenticación seguros, condicionados al hecho de ser eficientes y fáciles de utilizar. La autenticación es el proceso mediante el cual un sistema verifica la identidad del usuario que intenta acceder a un recurso protegido, por ello constituye un pilar fundamental de la seguridad informática. Existen tres tipos principales de autenticación, basada en tokens, basadas en conocimiento y la autenticación biométrica. Cada uno de estos puede verse como la respuesta a una pregunta, de cara a quien intenta acceder al recurso protegido: ¿qué tienes?, ¿qué sabes? o ¿quién eres?
+
+La autenticación basada en tokens responde a la pregunta: ¿qué tienes?, y se basa en que el usuario posea un token de identidad que demuestre su autenticidad, como, por ejemplo, tarjetas de crédito, llaves físicas y digitales. Uno de los ejemplos más utilizados en diferentes tipos de aplicaciones es JWT (\textit{JSON Web Token})  \cite{massimo_nardone__2023}, que son utilizados sobre todo para conectar un cliente con un servidor web. Este consiste en el uso de un token de acceso que contiene los permisos y datos del usuario al sistema, este token iría codificado en la cabecera de la petición. OAuth \cite{aravind_ayyagiri__2023} es un protocolo para la autenticación multifactor, usa tokens de vida corta y permisos granulares, lo que reduce el riesgo de robo de credenciales y phishing. Es ampliamente utilizado para la integración de autenticación con redes sociales en distintos tipos de aplicaciones.
+
+¿Quién eres?, es la pregunta cuya respuesta está vinculada a la autenticación biométrica. En esta se pide al usuario que demuestre su identidad a partir de datos que provengan de sí mismo, como pueden ser las huellas dactilares en el conocido Touch ID \cite{liu_jin__2019}, reconocimientos faciales\cite{nur_dua_fathansyah_atan__2024} y reconocimiento de voz. A pesar de que este tipo de autenticación destaca por su seguridad, tiene la desventaja de requerir hardware especial para su uso. 
+
+Por último, el método más utilizado es el basado en conocimiento, el cual se puede ver como la respuesta a la pregunta ¿qué sabes? Desde hace muchos años, las contraseñas alfanuméricas han sido el estándar en este tipo. Sin embargo, debido a la evolución de la capacidad de cómputo y el desarrollo de diferentes tipos de ataques, como son los ataques de diccionarios \cite{10.1145/1102120.1102168}, fuerza bruta \cite{Apostol2012BruteforceA} o rainbow table \cite{wahab2024investigating}, se ha visto debilitada su seguridad al punto de hacerlas inseguras para el usuario común. Estudios han demostrado que, para los usuarios es difícil recordar contraseñas alfanuméricas con un alto nivel de aleatoriedad y de gran longitud. Creando contraseñas débiles y fáciles de predecir computacionalmente. Esto plantea la necesidad de desarrollar alternativas más robustas y adaptadas a los desafíos actuales. En respuesta a esto se han propuesto las contraseñas gráficas como una alternativa.
+
+La principal diferencia entre las contraseñas gráficas y alfanuméricas reside en la naturaleza de la información a memorizar. En el caso de las alfanuméricas se memorizan conjuntos de caracteres y en el caso de las gráficas se utiliza información visual que es más fácil de recordar por los usuarios. Estudios como \cite{paivio2013imagery}, \cite{shepard1967recognition}, \cite{nelson1976pictorial} avalan la anterior idea a través de la comparación de la capacidad de memoria visual y verbal, con la demostración de que las imágenes se analizan tanto verbal como visualmente \cite{shepard1967recognition}, a diferencia de las palabras que se analizan solo verbalmente. Esto sitúa a las contraseñas gráficas como una buena alternativa, más segura y fácil de usar que las alfanuméricas.
+
+Entre los sistemas basados en contraseñas gráficas destaca el \textit{Passpoints} \cite{wiedenbeck2005passpoints} por su seguridad y usabilidad. Este es un sistema en el que el usuario selecciona 5 puntos ordenados de una imagen. Llevar a cabo la implementación de este sistema, así como analizar su seguridad y resistencia a ataques es una problemática de interés, pues puede ayudar a mejorar la seguridad de los datos en diferentes aplicaciones. Así como proporcionar una mayor seguridad sobre todo a personas mayores, cuya memoria o poca adaptación a las tecnologías modernas puede conducir a poner en riesgo su seguridad en línea al utilizar contraseñas predecibles.
+
+El presente trabajo propone una implementación del sistema de autenticación gráfica \textit{Passpoints}, a través de una aplicación práctica, así como una validación de la seguridad del mismo. Como novedad de esta investigación se tiene la implementación personalizada de la contraseña gráfica \textit{Passpoints} cuyo análisis de seguridad reafirma su superioridad en cuanto a seguridad y resistencia ante ataques respecto a las contraseñas alfanuméricas.
+
+
+
+\section*{Problema Científico}
+El problema científico planteado en el presente trabajo es: ¿cómo hacer una implementación práctica del sistema de autenticación gráfica \textit{Passpoints}?.
+\section*{Objeto de Estudio y Campo de Acción}
+El objeto de estudio es: implementación práctica del sistema de autenticación gráfica  \textit{Passpoints}. 
+El campo de acción, el \textit{Passpoints}.
+\section*{Hipótesis}
+Se plantea la hipótesis: se puede crear una implementación práctica, usable y segura
+del sistema de autenticación Passpoints.
+
+\section*{Objetivos}
+\subsection*{Objetivo General}
+El objetivo general del presente trabajo es
+hacer una implementación práctica del sistema de autenticación gráfica Passpoints.
+
+\subsection*{Objetivos Específicos}
+\begin{itemize}
+	\item  Valorar la usabilidad del sistema implementado.
+	\item Valorar la seguridad del sistema implementado.
+	\item  Crear una plataforma para recolectar datos para futuros estudios.
+\end{itemize}
+
+
+\section*{Estructura de la tesis}
+El presente trabajo está dividido en 3 capítulos.
+En el primero se presenta el estado del arte de la autenticación gráfica, enunciando los diferentes tipos de contraseñas gráficas, así como ejemplos e implementaciones de algunos de ellos. Se muestra en qué consiste \textit{Passpoints} así como su origen, ventajas y desventajas, variaciones e implementaciones del mismo. Se explicarán además conceptos utilizados en el desarrollo del presente trabajo, región de tolerancia, punto r-seguro y problema del hash. Se enuncian y explican los diferentes métodos de discretización estudiados durante la investigación como son la Discretización Robusta, Discretización Centrada, Discretización Optimal y Discretización mediante polígonos de Voronoi. Se presenta un análisis de estos métodos así como un análisis de los inconvenientes que trae consigo utilizarlos.
+
+
+En el segundo capítulo se hace una propuesta de implementación para este sistema, definiendo que discretización fue escogida y los problemas que suponen utilizar dicho método. Se explica como se manejan los diferentes tamaños de imágenes y pantallas para mantener la consistencia de la contraseña en diferentes dispositivos. Además se muestran los ataques de fuerza bruta y diccionario escogidos para validar la resistencia de la implementación a los mismos.
+
+El tercer capítulo aborda la fase de implementación y experimentación del sistema de autenticación propuesto. Inicialmente, se describen las decisiones arquitectónicas y de diseño que guiaron la implementación, junto con una descripción de la estructura del código y los componentes principales. Se proporciona una visión general de la implementación de los algoritmos de discretización y manejo de la interfaz de usuario para diferentes dispositivos. Posteriormente, se presenta el diseño experimental concebido para evaluar la robustez del sistema frente a ataques específicos. Se justifica la selección de estos ataques y se describe el protocolo experimental seguido. La presentación de los resultados de estos experimentos se acompaña de un análisis exhaustivo, destacando los puntos fuertes y las áreas de mejora identificadas durante el proceso de validación. Este análisis permite extraer conclusiones iniciales sobre la viabilidad y seguridad del sistema implementado.

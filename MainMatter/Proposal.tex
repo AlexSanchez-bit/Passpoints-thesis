@@ -1,0 +1,182 @@
+\chapter{Propuesta}\label{chapter:proposal}
+Como se vio en capítulos anteriores, la autenticación gráfica, específicamente las contraseñas gráficas basadas en \textit{Passpoints}, ofrece una alternativa prometedora a la autenticación tradicional. En el presente capítulo, se propone una implementación de dicho sistema en una aplicación práctica y simple, un blog de notas privado. La elección de este ejemplo se fundamenta en su relevancia como aplicación que requiere un mecanismo de autenticación seguro para proteger la privacidad de los datos almacenados, además de permitir evaluar la escalabilidad del sistema. Esta implementación permitirá validar en un entorno real las ventajas de la autenticación con Passpoints, demostrando su viabilidad y seguridad. Asimismo, se desarrollará la API REST (Interfaz de Programación de Aplicaciones, Transferencia de Estado Representacional) necesaria para integrar el sistema de autenticación con el blog de notas, así como la interfaz de usuario que permita la creación y gestión de Passpoints.
+
+
+
+\section{Regi\'on de tolerancia seleccionada}
+
+Debido a la variabilidad de tamaños de imagen y densidad de píxeles de pantalla, el radio de la región de tolerancia se redefinió como un valor $0 < r < 1$, el cual representa el porcentaje de píxeles de la imagen que abarca dicha región. De este modo, el tamaño en píxeles de la región de tolerancia es variable en función de la imagen. Esta estrategia abre la puerta a futuros trabajos, ofreciendo la posibilidad al usuario de seleccionar el tamaño de la región de tolerancia para su contraseña y simplificando el proceso de prueba de varios tamaños de la región. Tambi\'en ayuda a ajustar la representaci\'on de la regi\'on de tolerancia en distintos tama\~nos de pantalla. Para obtener el valor en píxeles del radio de la región de tolerancia se multiplica $r$ por el mínimo entre el largo y ancho de la imagen,es decir, sea $a$ el alto de la imagen, $b$ el ancho, $d_{pixel} = min(b,a)$ 
+
+\section{Método de discretización seleccionado}
+Por todo lo explicado anteriormente se seleccion\'o la Discretizaci\'on \'Optima utilizando la variante enunciada en \cite{bicakci2008optimal} con verificaci\'on de \textit{hash} m\'ultiple. Esto funciona introduciendo un error en el c\'alculo de la discretizaci\'on de cada punto y repitiendo el \textit{hash} del punto de forma recursiva $k$ veces, es decir hallar el \textit{hash} de la salida del anterior. Al hacer esto se vuelve la funci\'on de \textit{hash} de cada punto m\'as lenta, dando una capa de seguridad extra ante ataques de diccionario y al repetir \textit{hash} varias veces previene que los puntos sean hallados utilizando \textit{rainbow tables}, dando a\'un m\'as seguridad al sistema.
+Para introducir este error en el c\'alculo de la discretizaci\'on de cada punto se hace lo siguiente:
+
+Sea 
+\[
+d((x,y)) : [0,a] \times [0,b] \to \left(\left\lfloor \frac{\lfloor x - \phi \rfloor}{q} \right\rfloor, \left\lfloor \frac{\lfloor y - \varphi \rfloor}{q} \right\rfloor\right)
+\]
+el valor resultante de discretizar el punto \((x,y)\) para la imagen \(I\). 
+
+Sea \(r\) la región de tolerancia, \(q\) el cuantil o tamaño de las secciones en que se divide la imagen en cada dimensión, y \(\phi\) y \(\varphi\) los offsets correspondientes a cada una. Para que el valor de la discretización tenga un error \(0\), es decir, que la división de la imagen en la discretización sea del mismo tamaño que la región de tolerancia, el valor de \(q\) debe ser \(2r\). 
+
+Esto se debe a que el error es:
+\[
+\pm \left\lfloor \frac{r}{q} \right\rfloor,
+\]
+por lo que valores de \(q \leq r\) hacen que haya un error \(e \geq 1\).
+
+Luego, durante la fase de verificación de un punto, se verifican el valor del punto y cada error de este. Es decir, sea \(h\) una función de hash definida como:
+\[
+h(x, k) = 
+\begin{cases} 
+	h'(x), & \text{si } k = 0, \\
+	h(h'(x), k-1), & \text{si } k > 0,
+\end{cases}
+\]
+
+
+Entonces, sean \(x = (a,b)\), el punto originalmente seleccionado por el usuario, y \(x' = (a',b')\), un punto seleccionado durante la autenticación. Se cumple \(d(x) = d(x')\) si \(\exists i \in [-e, e]\) y \(\exists j \in [-e, e]\) tales que:
+\[
+h(d(x), k) = h(d(x' + (i, j)), k).
+\]
+
+Ver figura \ref{flujo_discretization}
+
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}[node distance=1.5cm]
+		
+		% Nodes
+		\node (start) [startstop] {Inicio};
+		\node (discretize) [process, below of=start] {Discretizar contraseña};
+		\node (take_phi_varphi) [io, below of=discretize] {Tomar $\phi$ y $\varphi$ de los puntos originales};
+		\node (loop_points) [process, below of=take_phi_varphi] {Iterar sobre los puntos};
+		\node (loop_i) [process, below of=loop_points] {Iterar $i \in [-e, e]$};
+		\node (loop_j) [process, below of=loop_i] {Iterar $j \in [-e, e]$};
+		\node (check_hash) [decision, below of=loop_j] {¿$h(d(x+i, y+j), k) == \text{hash\_original}$?};
+		\node (valid) [startstop, right of=check_hash, yshift=2cm, xshift=3cm]  {Contraseña válida};
+		\node (invalid) [startstop, below of=check_hash, yshift=-1cm] {Contraseña inválida};
+		
+		% Arrows
+		\draw [arrow] (start) -- (discretize);
+		\draw [arrow] (discretize) -- (take_phi_varphi);
+		\draw [arrow] (take_phi_varphi) -- (loop_points);
+		\draw [arrow] (loop_points) -- (loop_i);
+		\draw [arrow] (loop_i) -- (loop_j);
+		\draw [arrow] (loop_j) -- (check_hash);
+		\draw [arrow] (check_hash.east) -- ++(1,0) -- ++(0,1.5) -- node[anchor=west] {Si} (valid.south);
+		\draw [arrow] (check_hash.south) -- node[anchor=west] {termina} (invalid.north);
+		
+		
+		% Loops
+		\draw [arrow] (check_hash.west)  -- ++(-1,0)  |- node[above] {No} (loop_j.west);
+		\draw [arrow] (loop_j.west) -- ++(-1,0) |- (loop_i.west);
+		\draw [arrow] (loop_i.west) -- ++(-1,0) |- (loop_points.west);
+		
+	\end{tikzpicture}
+	\caption{Diagrama de flujo de verificación de contraseña usando la Discretizaci\'on \'Optima}
+	\label{flujo_discretization}
+\end{figure}
+
+\section{Funcionamiento de la aplicación}
+
+
+\subsection{Flujo en la API}
+Para acceder al sistema, el usuario debe registrarse introduciendo sus credenciales y estableciendo su contraseña utilizando \textit{Passpoints}. Durante el registro, se solicita al usuario que seleccione 5 puntos sobre una imagen, de una lista predeterminada por el sistema. La regi\'on de tolerancia se ver\'a como un recuadro rojo semitransparente centrado en el punto seleccionado por el usuario en la imagen. En el servidor, se calcula la discretización de la imagen y el hash de los puntos seleccionados, almacenándose junto con los datos necesarios para la posterior autenticación. Para llevar a cabo la discretización de la imagen, se empleó la Discretización Óptima. Los datos necesarios para la autenticación, como  ($\phi$) y ($\varphi$), son guardados en texto claro para posteriores estudios, pero en una aplicaci\'on real estos deben ser cifrados de forma reversible antes de ser guardados. En la fase de autenticaci\'on el usuario vuelve a seleccionar los 5 puntos anteriormente fijados en la fase de registro, teniendo el cuenta la regi\'on de tolerancia del sistema, dichos puntos ir\'an a la API en donde se calcular\'a su hash, si este coincide con el almacenado por el usuario leg\'itimo se le dar\'a acceso a las notas, en caso contrario se le devuelve un error. Los puntos utilizados para la autenticaci\'on y su estatus de fallido o no son almacenados tambi\'en para posteriores estudios. En la figura \ref{flujo_app} se pueden ver diagramas de flujo para cada proceso, autenticaci\'on y registro.
+
+
+
+
+\begin{figure}[H]
+	
+\end{figure}
+
+
+
+\begin{figure}[H]
+	
+	\begin{minipage}[b]{0.5\linewidth}  % Segundo cuadrado, 48% del ancho de línea
+		\centering
+		\begin{tikzpicture}[node distance=1.5cm]
+			
+			\node (auth_start) [startstop] {Inicio de autenticación};
+			
+			\node (auth_points) [io, below of=auth_start] {Seleccionar 5 puntos (autenticación)};
+			
+			\node (auth_process) [process, below of=auth_points] {Calcular hash de puntos};
+			
+			\node (check_hash) [decision, below of=auth_process] {Hash coincide con el almacenado?};
+			
+			\node (access_granted) [startstop, below of=check_hash, yshift=-0.5cm, xshift=-2.5cm] {Acceso a notas};
+			
+			\node (access_denied) [startstop, below of=check_hash, yshift=-0.5cm, xshift=2.5cm] {Error de autenticación};
+			
+			
+			
+			
+			\draw [arrow] (auth_start) -- (auth_points);
+			\draw [arrow] (auth_points) -- (auth_process);
+			\draw [arrow] (auth_process) -- (check_hash);
+			\draw [arrow] (check_hash) -- node[anchor=east] {Si} (access_granted);
+			\draw [arrow] (check_hash) -- node[anchor=west] {No} (access_denied);
+			
+		\end{tikzpicture}
+		\caption{Diagrama de flujo autenticación con Passpoints}
+	\end{minipage} % Espacio vertical entre filas
+	\hfill
+	\begin{minipage}[b]{0.5\linewidth}  % Segundo cuadrado, 48% del ancho de línea
+		\centering
+		\begin{tikzpicture}[node distance=1.5cm]
+			
+			
+			\node (register) [process] {Inicio Registro de usuario};
+			
+			\node (credentials) [io, below of=register] {Ingresar credenciales};
+			
+			\node (passpoints) [process, below of=credentials] {Establecer contraseña con \textit{Passpoints}};
+			
+			\node (select_points) [io, below of=passpoints] {Seleccionar 5 puntos en la imagen};
+			
+			\node (display_tolerance) [process, below of=select_points] {Mostrar región de tolerancia};
+			
+			\node (discretize_hash) [process, below of=display_tolerance] {Calcular discretización de la imagen y hash de puntos};
+			
+			\node (store_data) [process, below of=discretize_hash] {Almacenar datos para autenticación};
+			\node (end_register) [startstop, below of=store_data] {Fin de registro};
+			
+			
+			
+			
+			
+			
+			\draw [arrow] (register) -- (credentials);
+			\draw [arrow] (credentials) -- (passpoints);
+			\draw [arrow] (passpoints) -- (select_points);
+			\draw [arrow] (select_points) -- (display_tolerance);
+			\draw [arrow] (display_tolerance) -- (discretize_hash);
+			\draw [arrow] (discretize_hash) -- (store_data);
+			\draw [arrow] (store_data) -- (end_register);
+			
+			
+		\end{tikzpicture}
+		\caption{Diagrama de flujo registro con Passpoints}
+	
+	\end{minipage} % Espacio vertical entre filas
+		\label{flujo_app}
+\end{figure}
+
+
+\subsection{Adaptaci\'on a distintos tama\~nos de pantalla}
+Para hacer la aplicaci\'on adaptable a diferentes tama\~nos de pantalla se cambi\'o la forma de tomar los puntos y transformarlos a coordenadas de imagen.
+Sean $(I_X, I_Y)$ las coordenadas de imagen del punto $p_0$ seleccionado por el usuario, $(S_X, S_Y)$ sus coordenadas de pantalla, $S_W$ el ancho de la ventana, $S_h$ el alto de la ventana, $I_W$ el ancho de la imagen, e $I_h$ el alto de la imagen. Entonces, se calculan las coordenadas de imagen como:
+
+\begin{align*}
+	I_X &= \left\lfloor \frac{S_X}{S_W} \cdot I_W \right\rfloor \\
+	I_Y &= \left\lfloor \frac{S_Y}{S_h} \cdot I_h \right\rfloor
+\end{align*}
+
+Esto garantiza la consistencia en las coordenadas de los puntos en diferentes tamaños de pantalla e imagen.
+
+\section{Validación del sistema}
+Para realizar una validaci\'on de usabilidad de este sistema se pide a los usuarios que den una valoraci\'on de su experiencia, para luego ser evaluadas autom\'aticamente utilizando alg\'un modelo de procesamiento de lenguage como \cite{team2023gemini}. En cuanto a la seguridad se utilizar\'a el ataque de diccionario descrito en \cite{van2010purely}. Este ataque consiste en la creaci\'on de 3 diccionarios de contrase\~nas, los dos primeros utilizando herramientas de procesamiento de im\'agenes, espec\'ificamente segmentaci\'on y detecci\'on de bordes. Otro diccionario generado utilizando el modelo de atenci\'on visual \cite{itti2000saliency}. Para generar el diccionario de ataque se propone en  \cite{van2010purely} un m\'etodo de clusterizaci\'on de los puntos para reducir la dimensionalidad de los diccionarios y evitar puntos redundantes, funciona haciendo que los puntos que est\'en a una distancia $N$, no necesariamente el radio de la regi\'on de tolerancia, se cuenten como el mismo. Tambi\'en se propone una forma de generar los diccionarios gastando menos recursos computacionales y tiempo, se llega a esto a trav\'es de heur\'isticas para encontrar patrones comunes de los usuarios. 
+
