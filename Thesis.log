@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.11)  27 JAN 2025 16:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.11)  30 JAN 2025 02:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1400,33 +1400,12 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Thesis.bbl' found.
- (./Thesis.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Comaniciu2002MeanSA
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Harris1988ACC
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                zhu2013securityl
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
+ (./Thesis.bbl)
 Package biblatex Info: Reference section=0 on input line 106.
 Package biblatex Info: Reference segment=0 on input line 106.
 Package hyperref Info: Link coloring ON on input line 106.
- (./Thesis.out) (./Thesis.out)
+
+(./Thesis.out) (./Thesis.out)
 \@outlinefile=\write6
 \openout6 = `Thesis.out'.
 
@@ -1542,7 +1521,7 @@ LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [9
 
-])
+{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}])
 \tf@lof=\write8
 \openout8 = `Thesis.lof'.
 
@@ -1554,23 +1533,28 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@lol=\write9
 \openout9 = `Thesis.lol'.
 
-)
-[11
+) [11
 
 ]
 \openout2 = `MainMatter/Introduction.aux'.
 
- (./MainMatter/Introduction.tex [1
+
+(./MainMatter/Introduction.tex [1
 
 
 
 
 
-] [2] [3]) [4]
+] [2] [3]
+Overfull \hbox (306.88081pt too wide) in paragraph at lines 56--57
+\T1/lmr/m/n/12 AUTHEN-TI-CA-TION API. Te-le-má-ti-ca, 22, 133^^U147. Re-trie-ve
+d from https://revistatelematica.cujae.edu.cu/index.php/tele/article/view/970 
+ []
+
+) [4]
 \openout2 = `MainMatter/Background.aux'.
 
-
-(./MainMatter/Background.tex
+ (./MainMatter/Background.tex
 Cap\'{\i }tulo 1.
 [5
 
@@ -1581,62 +1565,60 @@ Cap\'{\i }tulo 1.
 LaTeX Info: Redefining \. on input line 31.
 LaTeX Info: Redefining \% on input line 31.
  [6]
-LaTeX Info: Redefining \. on input line 61.
-LaTeX Info: Redefining \% on input line 61.
+LaTeX Info: Redefining \. on input line 59.
+LaTeX Info: Redefining \% on input line 59.
  [7]
-LaTeX Info: Redefining \. on input line 83.
-LaTeX Info: Redefining \% on input line 83.
- [8]
-LaTeX Info: Redefining \. on input line 101.
-LaTeX Info: Redefining \% on input line 101.
+<passpoints.jpg, id=598, 251.94125pt x 185.69376pt>
+File: passpoints.jpg Graphic file (type jpg)
+<use passpoints.jpg>
+Package pdftex.def Info: passpoints.jpg  used on input line 79.
+(pdftex.def)             Requested size: 242.82706pt x 178.978pt.
+LaTeX Info: Redefining \. on input line 86.
+LaTeX Info: Redefining \% on input line 86.
+ [8 <./passpoints.jpg>]
+LaTeX Info: Redefining \. on input line 109.
+LaTeX Info: Redefining \% on input line 109.
  [9]
-<punto-r-seguro.png, id=667, 819.06pt x 434.62375pt>
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+ [10{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
+<punto-r-seguro.png, id=685, 819.06pt x 434.62375pt>
 File: punto-r-seguro.png Graphic file (type png)
 <use punto-r-seguro.png>
-Package pdftex.def Info: punto-r-seguro.png  used on input line 115.
+Package pdftex.def Info: punto-r-seguro.png  used on input line 131.
 (pdftex.def)             Requested size: 216.81pt x 115.04874pt.
-LaTeX Info: Redefining \. on input line 125.
-LaTeX Info: Redefining \% on input line 125.
- [10{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/
-fonts/enc/dvips/lm/lm-mathsy.enc} <./punto-r-seguro.png>]
-<image4.png, id=700, 466.74374pt x 421.575pt>
-File: image4.png Graphic file (type png)
-<use image4.png>
-Package pdftex.def Info: image4.png  used on input line 134.
-(pdftex.def)             Requested size: 130.08731pt x 117.49983pt.
-<image2.png, id=701, 466.74374pt x 421.575pt>
+LaTeX Info: Redefining \. on input line 144.
+LaTeX Info: Redefining \% on input line 144.
+ [11 <./punto-r-seguro.png>]
+<image4.jpg, id=713, 274.02374pt x 272.51813pt>
+File: image4.jpg Graphic file (type jpg)
+<use image4.jpg>
+Package pdftex.def Info: image4.jpg  used on input line 150.
+(pdftex.def)             Requested size: 108.405pt x 107.81189pt.
+<image2.png, id=714, 466.74374pt x 421.575pt>
 File: image2.png Graphic file (type png)
 <use image2.png>
-Package pdftex.def Info: image2.png  used on input line 135.
+Package pdftex.def Info: image2.png  used on input line 151.
 (pdftex.def)             Requested size: 130.08731pt x 117.49983pt.
-<image3.png, id=702, 466.74374pt x 421.575pt>
+<image3.png, id=715, 466.74374pt x 421.575pt>
 File: image3.png Graphic file (type png)
 <use image3.png>
-Package pdftex.def Info: image3.png  used on input line 136.
+Package pdftex.def Info: image3.png  used on input line 152.
 (pdftex.def)             Requested size: 130.08731pt x 117.49983pt.
-LaTeX Info: Redefining \. on input line 139.
-LaTeX Info: Redefining \% on input line 139.
-
-[11]
-<image5.png, id=717, 971.63pt x 204.765pt>
+LaTeX Info: Redefining \. on input line 159.
+LaTeX Info: Redefining \% on input line 159.
+ [12 <./image4.jpg> <./image2.png> <./image3.png>]
+<image5.png, id=733, 971.63pt x 204.765pt>
 File: image5.png Graphic file (type png)
 <use image5.png>
-Package pdftex.def Info: image5.png  used on input line 162.
+Package pdftex.def Info: image5.png  used on input line 178.
 (pdftex.def)             Requested size: 390.25534pt x 82.24197pt.
-LaTeX Info: Redefining \. on input line 165.
-LaTeX Info: Redefining \% on input line 165.
- [12{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc} <./image4.png> <./
-image2.png> <./image3.png>]
-LaTeX Info: Redefining \. on input line 197.
-LaTeX Info: Redefining \% on input line 197.
- [13 <./image5.png>]
-
-LaTeX Warning: Citation 'zhu2013securityl' on page 14 undefined on input line 1
-99.
-
-LaTeX Info: Redefining \. on input line 206.
-LaTeX Info: Redefining \% on input line 206.
-[14])
+LaTeX Info: Redefining \. on input line 188.
+LaTeX Info: Redefining \% on input line 188.
+ [13{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc} <./image5.png>]
+LaTeX Info: Redefining \. on input line 220.
+LaTeX Info: Redefining \% on input line 220.
+ [14])
 LaTeX Info: Redefining \. on input line 120.
 LaTeX Info: Redefining \% on input line 120.
  [15]
@@ -1653,35 +1635,23 @@ Cap\'{\i }tulo 2.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Package caption Warning: \label without proper reference on input line 165.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `flujo_app' on page 17 undefined on input line 85.
-
 LaTeX Info: Redefining \. on input line 86.
 LaTeX Info: Redefining \% on input line 86.
 [17]
 LaTeX Info: Redefining \. on input line 86.
 LaTeX Info: Redefining \% on input line 86.
  [18]
-Overfull \hbox (30.13696pt too wide) in paragraph at lines 123--124
- [][] 
+Overfull \hbox (17.49243pt too wide) in paragraph at lines 123--124
+[][] 
  []
 
 
-Overfull \hbox (68.39621pt too wide) in paragraph at lines 161--162
- [][] 
+Overfull \hbox (64.82736pt too wide) in paragraph at lines 154--155
+[][] 
  []
 
-
-Overfull \hbox (2.61107pt too wide) in paragraph at lines 98--166
-[][]  []
- []
-
-LaTeX Info: Redefining \. on input line 172.
-LaTeX Info: Redefining \% on input line 172.
+LaTeX Info: Redefining \. on input line 165.
+LaTeX Info: Redefining \% on input line 165.
 [19])
 LaTeX Info: Redefining \. on input line 121.
 LaTeX Info: Redefining \% on input line 121.
@@ -1690,12 +1660,32 @@ LaTeX Info: Redefining \% on input line 121.
 
  (./MainMatter/Implementation.tex
 Cap\'{\i }tulo 3.
+
+LaTeX Warning: Citation 'supabase' on page 21 undefined on input line 9.
+
+
+LaTeX Warning: Citation 'supabase' on page 21 undefined on input line 12.
+
 [21
 
 
 
 
 ]
+
+LaTeX Warning: Citation 'vuejs' on page 22 undefined on input line 14.
+
+
+Overfull \hbox (5.59383pt too wide) in paragraph at lines 25--25
+[]|\T1/lmr/bx/n/12 Tecnología| 
+ []
+
+
+Overfull \hbox (5.42639pt too wide) in paragraph at lines 28--28
+[]|\T1/lmr/m/n/12 Presentación| 
+ []
+
+
 Underfull \hbox (badness 3635) in paragraph at lines 29--29
 \T1/lmr/m/n/12 rio, ma-ne-jar even-tos del
  []
@@ -1716,6 +1706,16 @@ Underfull \hbox (badness 7796) in paragraph at lines 35--36
  []
 
 
+Overfull \hbox (0.92209pt too wide) in paragraph at lines 38--38
+[]|\T1/lmr/m/n/12 Persistencia| 
+ []
+
+
+Overfull \hbox (4.5164pt too wide) in paragraph at lines 38--38
+[]|\T1/lmr/m/n/12 PostgreSQL| 
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 39--39
 []|\T1/lmr/m/n/12 Almacenamiento tran-sac-
  []
@@ -1731,34 +1731,34 @@ Underfull \hbox (badness 2443) in paragraph at lines 40--41
  []
 
 
-Overfull \hbox (57.39767pt too wide) in paragraph at lines 22--43
+Overfull \hbox (17.56398pt too wide) in paragraph at lines 22--43
  [][] 
  []
 
-<Graphics/disney.jpeg, id=812, 737.75626pt x 491.8375pt>
+<Graphics/disney.jpeg, id=823, 737.75626pt x 491.8375pt>
 File: Graphics/disney.jpeg Graphic file (type jpg)
 <use Graphics/disney.jpeg>
 Package pdftex.def Info: Graphics/disney.jpeg  used on input line 58.
 (pdftex.def)             Requested size: 130.08731pt x 86.71826pt.
-<Graphics/japan.jpg, id=813, 1254.6875pt x 877.2775pt>
-File: Graphics/japan.jpg Graphic file (type jpg)
-<use Graphics/japan.jpg>
-Package pdftex.def Info: Graphics/japan.jpg  used on input line 64.
-(pdftex.def)             Requested size: 130.08731pt x 90.94556pt.
-<Graphics/cars.jpeg, id=814, 381.39127pt x 215.59538pt>
+<Graphics/cars.jpeg, id=824, 381.39127pt x 215.59538pt>
 File: Graphics/cars.jpeg Graphic file (type jpg)
 <use Graphics/cars.jpeg>
-Package pdftex.def Info: Graphics/cars.jpeg  used on input line 70.
+Package pdftex.def Info: Graphics/cars.jpeg  used on input line 64.
 (pdftex.def)             Requested size: 130.08731pt x 73.53831pt.
-LaTeX Info: Redefining \. on input line 78.
-LaTeX Info: Redefining \% on input line 78.
+<Graphics/japan.jpg, id=825, 1254.6875pt x 877.2775pt>
+File: Graphics/japan.jpg Graphic file (type jpg)
+<use Graphics/japan.jpg>
+Package pdftex.def Info: Graphics/japan.jpg  used on input line 70.
+(pdftex.def)             Requested size: 130.08731pt x 90.94556pt.
+LaTeX Info: Redefining \. on input line 79.
+LaTeX Info: Redefining \% on input line 79.
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
 
  []
 
@@ -1766,108 +1766,103 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--101
 File: lstlang1.sty 2024/02/21 1.10 listings language file
 )
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-02.
+03.
 
 (/usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
-Package Listings Warning: Text dropped after begin of listing on input line 102
+Package Listings Warning: Text dropped after begin of listing on input line 103
 .
 
-LaTeX Info: Redefining \. on input line 112.
-LaTeX Info: Redefining \% on input line 112.
-[23 <./Graphics/disney.jpeg> <./Graphics/japan.jpg> <./Graphics/cars.jpeg>]
+LaTeX Info: Redefining \. on input line 113.
+LaTeX Info: Redefining \% on input line 113.
+[23 <./Graphics/disney.jpeg> <./Graphics/cars.jpeg> <./Graphics/japan.jpg>]
 
-Package Listings Warning: Text dropped after begin of listing on input line 115
+Package Listings Warning: Text dropped after begin of listing on input line 116
 .
 
-LaTeX Info: Redefining \. on input line 151.
-LaTeX Info: Redefining \% on input line 151.
+LaTeX Info: Redefining \. on input line 152.
+LaTeX Info: Redefining \% on input line 152.
 [24]
-LaTeX Info: Redefining \. on input line 203.
-LaTeX Info: Redefining \% on input line 203.
- [25]
-LaTeX Info: Redefining \. on input line 238.
-LaTeX Info: Redefining \% on input line 238.
+
+LaTeX Warning: Citation 'supabase' on page 25 undefined on input line 161.
+
+LaTeX Info: Redefining \. on input line 204.
+LaTeX Info: Redefining \% on input line 204.
+[25]
+LaTeX Info: Redefining \. on input line 255.
+LaTeX Info: Redefining \% on input line 255.
  [26]
-LaTeX Info: Redefining \. on input line 280.
-LaTeX Info: Redefining \% on input line 280.
+LaTeX Info: Redefining \. on input line 283.
+LaTeX Info: Redefining \% on input line 283.
  [27]
 LaTeX Info: Redefining \. on input line 325.
 LaTeX Info: Redefining \% on input line 325.
  [28]
-
-LaTeX Warning: Citation 'Harris1988ACC' on page 29 undefined on input line 327.
-
-
-<Graphics/bordes_disney.jpg, id=894, 737.75626pt x 491.8375pt>
+<Graphics/bordes_disney.jpg, id=907, 737.75626pt x 491.8375pt>
 File: Graphics/bordes_disney.jpg Graphic file (type jpg)
 <use Graphics/bordes_disney.jpg>
 Package pdftex.def Info: Graphics/bordes_disney.jpg  used on input line 333.
 (pdftex.def)             Requested size: 130.08731pt x 86.71826pt.
-<Graphics/bordes_cars.jpg, id=895, 630.355pt x 356.33125pt>
+<Graphics/bordes_cars.jpg, id=908, 630.355pt x 356.33125pt>
 File: Graphics/bordes_cars.jpg Graphic file (type jpg)
 <use Graphics/bordes_cars.jpg>
 Package pdftex.def Info: Graphics/bordes_cars.jpg  used on input line 339.
 (pdftex.def)             Requested size: 130.08731pt x 73.53772pt.
-<Graphics/bordes_japan.jpg, id=896, 1254.6875pt x 877.2775pt>
+<Graphics/bordes_japan.jpg, id=909, 1254.6875pt x 877.2775pt>
 File: Graphics/bordes_japan.jpg Graphic file (type jpg)
 <use Graphics/bordes_japan.jpg>
 Package pdftex.def Info: Graphics/bordes_japan.jpg  used on input line 345.
 (pdftex.def)             Requested size: 130.08731pt x 90.94556pt.
-
-LaTeX Warning: Citation 'Comaniciu2002MeanSA' on page 29 undefined on input lin
-e 354.
-
-<Graphics/disney-segmented.jpg, id=898, 737.75626pt x 491.8375pt>
+<Graphics/disney-segmented.jpg, id=913, 737.75626pt x 491.8375pt>
 File: Graphics/disney-segmented.jpg Graphic file (type jpg)
 <use Graphics/disney-segmented.jpg>
 Package pdftex.def Info: Graphics/disney-segmented.jpg  used on input line 360.
 
 (pdftex.def)             Requested size: 130.08731pt x 86.71826pt.
-<Graphics/cars-segmented.jpg, id=899, 630.355pt x 356.33125pt>
+<Graphics/cars-segmented.jpg, id=914, 630.355pt x 356.33125pt>
 File: Graphics/cars-segmented.jpg Graphic file (type jpg)
 <use Graphics/cars-segmented.jpg>
 Package pdftex.def Info: Graphics/cars-segmented.jpg  used on input line 366.
 (pdftex.def)             Requested size: 130.08731pt x 73.53772pt.
-<Graphics/japan-segmented.jpg, id=900, 1254.6875pt x 877.2775pt>
+<Graphics/japan-segmented.jpg, id=915, 1254.6875pt x 877.2775pt>
 File: Graphics/japan-segmented.jpg Graphic file (type jpg)
 <use Graphics/japan-segmented.jpg>
 Package pdftex.def Info: Graphics/japan-segmented.jpg  used on input line 372.
 (pdftex.def)             Requested size: 130.08731pt x 90.94556pt.
 LaTeX Info: Redefining \. on input line 378.
 LaTeX Info: Redefining \% on input line 378.
-[29 <./Graphics/bordes_disney.jpg> <./Graphics/bordes_cars.jpg> <./Graphics/bor
-des_japan.jpg>]
-<Graphics/disney-saliency.jpg, id=909, 737.75626pt x 491.8375pt>
+ [29 <./Graphics/bordes_disney.jpg> <./Graphics/bordes_cars.jpg> <./Graphics/bo
+rdes_japan.jpg>]
+<Graphics/disney-saliency.jpg, id=926, 737.75626pt x 491.8375pt>
 File: Graphics/disney-saliency.jpg Graphic file (type jpg)
 <use Graphics/disney-saliency.jpg>
 Package pdftex.def Info: Graphics/disney-saliency.jpg  used on input line 386.
 (pdftex.def)             Requested size: 130.08731pt x 86.71826pt.
-<Graphics/cars-saliency.jpg, id=910, 630.355pt x 356.33125pt>
+<Graphics/cars-saliency.jpg, id=927, 630.355pt x 356.33125pt>
 File: Graphics/cars-saliency.jpg Graphic file (type jpg)
 <use Graphics/cars-saliency.jpg>
 Package pdftex.def Info: Graphics/cars-saliency.jpg  used on input line 392.
 (pdftex.def)             Requested size: 130.08731pt x 73.53772pt.
-<Graphics/japan-saliency.jpg, id=911, 1254.6875pt x 877.2775pt>
+<Graphics/japan-saliency.jpg, id=928, 1254.6875pt x 877.2775pt>
 File: Graphics/japan-saliency.jpg Graphic file (type jpg)
 <use Graphics/japan-saliency.jpg>
 Package pdftex.def Info: Graphics/japan-saliency.jpg  used on input line 398.
 (pdftex.def)             Requested size: 130.08731pt x 90.94556pt.
-<Graphics/disney-selected-regions.jpg, id=912, 737.75626pt x 491.8375pt>
+<Graphics/disney-selected-regions.jpg, id=929, 737.75626pt x 491.8375pt>
 File: Graphics/disney-selected-regions.jpg Graphic file (type jpg)
 <use Graphics/disney-selected-regions.jpg>
 Package pdftex.def Info: Graphics/disney-selected-regions.jpg  used on input li
 ne 409.
 (pdftex.def)             Requested size: 130.08731pt x 86.71826pt.
-<Graphics/cars-selected-regions.jpg, id=913, 630.355pt x 356.33125pt>
+<Graphics/cars-selected-regions.jpg, id=930, 630.355pt x 356.33125pt>
 File: Graphics/cars-selected-regions.jpg Graphic file (type jpg)
 <use Graphics/cars-selected-regions.jpg>
 Package pdftex.def Info: Graphics/cars-selected-regions.jpg  used on input line
  415.
 (pdftex.def)             Requested size: 130.08731pt x 73.53772pt.
-<Graphics/japan-selected-regions.jpg, id=914, 1254.6875pt x 877.2775pt>
+<Graphics/japan-selected-regions.jpg, id=931, 1254.6875pt x 877.2775pt>
 File: Graphics/japan-selected-regions.jpg Graphic file (type jpg)
 <use Graphics/japan-selected-regions.jpg>
 Package pdftex.def Info: Graphics/japan-selected-regions.jpg  used on input lin
@@ -1877,17 +1872,19 @@ LaTeX Info: Redefining \. on input line 427.
 LaTeX Info: Redefining \% on input line 427.
  [30 <./Graphics/disney-segmented.jpg> <./Graphics/cars-segmented.jpg> <./Graph
 ics/japan-segmented.jpg> <./Graphics/disney-saliency.jpg> <./Graphics/cars-sali
-ency.jpg> <./Graphics/japan-saliency.jpg>])
-LaTeX Info: Redefining \. on input line 122.
-LaTeX Info: Redefining \% on input line 122.
- [31 <./Graphics/disney-selected-regions.jpg> <./Graphics/cars-selected-regions
-.jpg> <./Graphics/japan-selected-regions.jpg>]
+ency.jpg> <./Graphics/japan-saliency.jpg>]
+LaTeX Info: Redefining \. on input line 458.
+LaTeX Info: Redefining \% on input line 458.
+
+[31 <./Graphics/disney-selected-regions.jpg> <./Graphics/cars-selected-regions.
+jpg> <./Graphics/japan-selected-regions.jpg>])
 LaTeX Info: Redefining \. on input line 122.
 LaTeX Info: Redefining \% on input line 122.
  [32]
 \openout2 = `BackMatter/Conclusions.aux'.
 
- (./BackMatter/Conclusions.tex) [33
+
+(./BackMatter/Conclusions.tex) [33
 
 
 
@@ -1896,8 +1893,7 @@ LaTeX Info: Redefining \% on input line 122.
 ]
 \openout2 = `BackMatter/Recomendations.aux'.
 
-
-(./BackMatter/Recomendations.tex) [34
+ (./BackMatter/Recomendations.tex) [34
 
 
 
@@ -1906,7 +1902,8 @@ LaTeX Info: Redefining \% on input line 122.
 ]
 \openout2 = `BackMatter/Bibliography.aux'.
 
- (./BackMatter/Bibliography.tex [35
+
+(./BackMatter/Bibliography.tex [35
 
 
 
@@ -1925,136 +1922,130 @@ Overfull \hbox (1.37721pt too wide) in paragraph at lines 1--1
 2 Com-pu-ter Security--ESORICS 2007:
  []
 
-[37] [38] [39]) [40]
+[37] [38] [39] [40]) [41]
 \openout2 = `BackMatter/Anexos.aux'.
 
  (./BackMatter/Anexos.tex
-<Deja-Vu.jpg, id=1090, 765.86125pt x 641.39626pt>
+<Deja-Vu.jpg, id=1118, 765.86125pt x 641.39626pt>
 File: Deja-Vu.jpg Graphic file (type jpg)
 <use Deja-Vu.jpg>
 Package pdftex.def Info: Deja-Vu.jpg  used on input line 4.
 (pdftex.def)             Requested size: 216.81pt x 181.56668pt.
-<3.jpg, id=1095, 100.87688pt x 122.70844pt>
+<3.jpg, id=1123, 100.87688pt x 122.70844pt>
 File: 3.jpg Graphic file (type jpg)
 <use 3.jpg>
 Package pdftex.def Info: 3.jpg  used on input line 12.
 (pdftex.def)             Requested size: 130.08731pt x 158.2421pt.
-<0.png, id=1100, 249.93375pt x 290.08376pt>
+<0.png, id=1128, 249.93375pt x 290.08376pt>
 File: 0.png Graphic file (type png)
 <use 0.png>
 Package pdftex.def Info: 0.png  used on input line 21.
 (pdftex.def)             Requested size: 151.76633pt x 176.15408pt.
-<1.png, id=1101, 249.93375pt x 290.08376pt>
+<1.png, id=1129, 249.93375pt x 290.08376pt>
 File: 1.png Graphic file (type png)
 <use 1.png>
 Package pdftex.def Info: 1.png  used on input line 26.
 (pdftex.def)             Requested size: 151.76633pt x 176.15408pt.
- [41
+ [42
 
 
 
 
 
  <./Deja-Vu.jpg> <./3.jpg>]
-<13.jpg, id=1110, 304.13625pt x 252.945pt>
+<13.jpg, id=1138, 304.13625pt x 252.945pt>
 File: 13.jpg Graphic file (type jpg)
 <use 13.jpg>
 Package pdftex.def Info: 13.jpg  used on input line 36.
 (pdftex.def)             Requested size: 216.81pt x 180.32167pt.
-<9.jpg, id=1111, 139.27031pt x 264.23718pt>
+<9.jpg, id=1139, 139.27031pt x 264.23718pt>
 File: 9.jpg Graphic file (type jpg)
 <use 9.jpg>
 Package pdftex.def Info: 9.jpg  used on input line 41.
 (pdftex.def)             Requested size: 108.405pt x 205.6808pt.
-<mouse.png, id=1116, 218.8175pt x 195.73125pt>
+<mouse.png, id=1144, 218.8175pt x 195.73125pt>
 File: mouse.png Graphic file (type png)
 <use mouse.png>
 Package pdftex.def Info: mouse.png  used on input line 52.
 (pdftex.def)             Requested size: 151.76633pt x 135.75655pt.
-<stylus.png, id=1121, 165.61874pt x 146.5475pt>
+<stylus.png, id=1149, 165.61874pt x 146.5475pt>
 File: stylus.png Graphic file (type png)
 <use stylus.png>
 Package pdftex.def Info: stylus.png  used on input line 59.
 (pdftex.def)             Requested size: 151.76633pt x 134.29535pt.
-
-[42 <./0.png (PNG copy)> <./1.png (PNG copy)> <./13.jpg> <./9.jpg>]
-<polinomial.png, id=1130, 551.05875pt x 491.8375pt>
+ [43 <./0.png (PNG copy)> <./1.png (PNG copy)> <./13.jpg> <./9.jpg>]
+<polinomial.png, id=1157, 551.05875pt x 491.8375pt>
 File: polinomial.png Graphic file (type png)
 <use polinomial.png>
 Package pdftex.def Info: polinomial.png  used on input line 72.
 (pdftex.def)             Requested size: 187.32089pt x 167.1925pt.
-<b-spline.png, id=1135, 550.055pt x 492.84125pt>
+<b-spline.png, id=1162, 550.055pt x 492.84125pt>
 File: b-spline.png Graphic file (type png)
 <use b-spline.png>
 Package pdftex.def Info: b-spline.png  used on input line 79.
 (pdftex.def)             Requested size: 187.32089pt x 167.83452pt.
-<semantoc-psw-2.png, id=1140, 542.025pt x 610.28pt>
+<semantoc-psw-2.png, id=1167, 542.025pt x 610.28pt>
 File: semantoc-psw-2.png Graphic file (type png)
 <use semantoc-psw-2.png>
 Package pdftex.def Info: semantoc-psw-2.png  used on input line 91.
 (pdftex.def)             Requested size: 173.44865pt x 195.28427pt.
-<semantic-psww1.jpg, id=1141, 792.71156pt x 508.14844pt>
+<semantic-psww1.jpg, id=1168, 792.71156pt x 508.14844pt>
 File: semantic-psww1.jpg Graphic file (type jpg)
 <use semantic-psww1.jpg>
 Package pdftex.def Info: semantic-psww1.jpg  used on input line 97.
 (pdftex.def)             Requested size: 173.44865pt x 111.18045pt.
- [43 <./mouse.png (PNG copy)> <./stylus.png (PNG copy)> <./polinomial.png (PNG 
+ [44 <./mouse.png (PNG copy)> <./stylus.png (PNG copy)> <./polinomial.png (PNG 
 copy)> <./b-spline.png (PNG copy)>]
-<passpoints.jpg, id=1149, 251.94125pt x 185.69376pt>
-File: passpoints.jpg Graphic file (type jpg)
-<use passpoints.jpg>
-Package pdftex.def Info: passpoints.jpg  used on input line 109.
-(pdftex.def)             Requested size: 173.44865pt x 127.83981pt.
-<pass-positions.png, id=1154, 277.035pt x 176.66pt>
+<pass-positions.png, id=1177, 277.035pt x 176.66pt>
 File: pass-positions.png Graphic file (type png)
 <use pass-positions.png>
-Package pdftex.def Info: pass-positions.png  used on input line 116.
+Package pdftex.def Info: pass-positions.png  used on input line 111.
 (pdftex.def)             Requested size: 173.44865pt x 110.6036pt.
-<passgo1.png, id=1159, 225.84375pt x 222.8325pt>
+<passgo1.png, id=1182, 225.84375pt x 222.8325pt>
 File: passgo1.png Graphic file (type png)
 <use passgo1.png>
-Package pdftex.def Info: passgo1.png  used on input line 126.
+Package pdftex.def Info: passgo1.png  used on input line 121.
 (pdftex.def)             Requested size: 216.81pt x 213.93036pt.
-<passgo2.png, id=1160, 216.81pt x 217.81375pt>
+<passgo2.png, id=1183, 216.81pt x 217.81375pt>
 File: passgo2.png Graphic file (type png)
 <use passgo2.png>
-Package pdftex.def Info: passgo2.png  used on input line 131.
+Package pdftex.def Info: passgo2.png  used on input line 126.
 (pdftex.def)             Requested size: 216.81pt x 217.82317pt.
-<passgo3.png, id=1161, 215.80624pt x 215.80624pt>
+<passgo3.png, id=1184, 215.80624pt x 215.80624pt>
 File: passgo3.png Graphic file (type png)
 <use passgo3.png>
-Package pdftex.def Info: passgo3.png  used on input line 136.
+Package pdftex.def Info: passgo3.png  used on input line 131.
 (pdftex.def)             Requested size: 216.81pt x 216.81664pt.
- [44 <./semantoc-psw-2.png (PNG copy)> <./semantic-psww1.jpg> <./passpoints.jpg
-> <./pass-positions.png (PNG copy)>]
-<pass maps2.jpg, id=1170, 881.2925pt x 332.24126pt>
+ [45 <./semantoc-psw-2.png (PNG copy)> <./semantic-psww1.jpg> <./pass-positions
+.png (PNG copy)>]
+<pass maps2.jpg, id=1192, 881.2925pt x 332.24126pt>
 File: pass maps2.jpg Graphic file (type jpg)
 <use pass maps2.jpg>
-Package pdftex.def Info: pass maps2.jpg  used on input line 144.
+Package pdftex.def Info: pass maps2.jpg  used on input line 139.
 (pdftex.def)             Requested size: 216.81pt x 81.73187pt.
- [45 <./passgo1.png (PNG copy)> <./passgo2.png (PNG copy)> <./passgo3.png (PNG 
+ [46 <./passgo1.png (PNG copy)> <./passgo2.png (PNG copy)> <./passgo3.png (PNG 
 copy)>]
-<grapin-proceso.png, id=1178, 831.105pt x 643.40375pt>
+<grapin-proceso.png, id=1200, 831.105pt x 643.40375pt>
 File: grapin-proceso.png Graphic file (type png)
 <use grapin-proceso.png>
-Package pdftex.def Info: grapin-proceso.png  used on input line 151.
+Package pdftex.def Info: grapin-proceso.png  used on input line 146.
 (pdftex.def)             Requested size: 433.62pt x 335.69107pt.
-<grapin-secret.jpg, id=1183, 540.0175pt x 396.48125pt>
+<grapin-secret.jpg, id=1205, 540.0175pt x 396.48125pt>
 File: grapin-secret.jpg Graphic file (type jpg)
 <use grapin-secret.jpg>
-Package pdftex.def Info: grapin-secret.jpg  used on input line 161.
+Package pdftex.def Info: grapin-secret.jpg  used on input line 156.
 (pdftex.def)             Requested size: 173.44534pt x 127.34242pt.
-<grapin-position.jpg, id=1188, 761.84625pt x 385.44pt>
+<grapin-position.jpg, id=1210, 761.84625pt x 385.44pt>
 File: grapin-position.jpg Graphic file (type jpg)
 <use grapin-position.jpg>
-Package pdftex.def Info: grapin-position.jpg  used on input line 167.
+Package pdftex.def Info: grapin-position.jpg  used on input line 162.
 (pdftex.def)             Requested size: 216.81pt x 109.68686pt.
-<grapin-auth.jpg, id=1193, 560.0925pt x 399.4925pt>
+<grapin-auth.jpg, id=1215, 560.0925pt x 399.4925pt>
 File: grapin-auth.jpg Graphic file (type jpg)
 <use grapin-auth.jpg>
-Package pdftex.def Info: grapin-auth.jpg  used on input line 172.
+Package pdftex.def Info: grapin-auth.jpg  used on input line 167.
 (pdftex.def)             Requested size: 173.44534pt x 123.71338pt.
- [46 <./pass maps2.jpg> <./grapin-proceso.png>]) [47 <./grapin-secret.jpg> <./g
+ [47 <./pass maps2.jpg> <./grapin-proceso.png>]) [48 <./grapin-secret.jpg> <./g
 rapin-position.jpg> <./grapin-auth.jpg>] (./Thesis.aux
 LaTeX Info: Redefining \sptext on input line 13.
 LaTeX Info: Redefining \. on input line 13.
@@ -2075,16 +2066,21 @@ L3 programming layer <2024-02-20>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: D6B78C1CB0A91B7A5DD597571F0D0A97;10355.
+(rerunfilecheck)             Checksum: 3BC298051E5B3E772D18357134346544;11278.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                Thesis
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'Thesis.run.xml'.
 \openout1 = `Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39908 strings out of 476014
- 754064 string characters out of 5792005
+ 39931 strings out of 476014
+ 754881 string characters out of 5792005
  2007187 words of memory out of 5000000
- 61077 multiletter control sequences out of 15000+600000
+ 61095 multiletter control sequences out of 15000+600000
  648615 words of font info for 85 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
  125i,13n,121p,2205b,2809s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2104,10 +2100,10 @@ sr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fon
 ts/type1/public/lm/lmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
 s/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb
 >
-Output written on Thesis.pdf (58 pages, 5805982 bytes).
+Output written on Thesis.pdf (59 pages, 5712852 bytes).
 PDF statistics:
- 1357 PDF objects out of 1440 (max. 8388607)
- 1149 compressed objects within 12 object streams
- 246 named destinations out of 1000 (max. 500000)
+ 1380 PDF objects out of 1440 (max. 8388607)
+ 1172 compressed objects within 12 object streams
+ 251 named destinations out of 1000 (max. 500000)
  644 words of extra memory for PDF output out of 10000 (max. 10000000)
 

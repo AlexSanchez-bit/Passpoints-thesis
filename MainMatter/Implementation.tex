@@ -6,12 +6,12 @@ Este capítulo describe la implementación práctica del modelo teórico propues
 Para la implementación de la propuesta, se utilizó el lenguaje \textit{JavaScript} tanto en la interfaz de usuario como en la API. Específicamente, para la API se empleó \textit{Supabase}, un servicio Baas (\textit{Backend} como servicio), que proporciona una base de datos \textit{PostgreSQL} y funciones \textit{serverless} ejecutadas en entornos \textit{JavaScript}. En cuanto a la creación de la interfaz de usuario, se utilizaron tecnologías web comunes como \textit{HTML}, \textit{CSS} y \textit{JavaScript}, todas integradas mediante el \textit{framework} \textit{Vue}. El uso de \textit{Vue} permitió agilizar el desarrollo de sitios web interactivos. 
 
 \section{Arquitectura del Sistema}
-El sistema utiliza una arquitectura cliente-servidor desacoplada. El \textit{frontend} (interfaz gr\'afica) cumple con el rol de ser la interfaz de usuario, contral la l\'ogica de presentaci\'on y gestionar la interacci\'on con el usuario. Supabase act\'ua como backend, cumple con el rol de procesamiento de datos, almacenamiento, autenticaci\'on y l\'ogica de negocio.
+El sistema utiliza una arquitectura cliente-servidor desacoplada. El \textit{frontend} (interfaz gr\'afica) cumple con el rol de ser la interfaz de usuario, la l\'ogica de presentaci\'on y gestionar la interacci\'on con el usuario. \textit{Supabase} \cite{supabase} act\'ua como \textit{backend}, cumple con el rol de procesamiento de datos, almacenamiento, autenticaci\'on y l\'ogica de negocio.
 
 \subsection{Patrones y estilos arquitect\'onicos involucrados}
-Enfoque \textit{serverless} (sin servidor), esto elimina la necesidad de gestionar un servidor tradicional y la necesidad de tener infraestructura propia. Este enfoque es prove\'ido a trav\'es del uso de supabase, esto aumenta la escalabilidad a la vez que reduce los tiempos de desarrollo.
+Enfoque \textit{serverless} (sin servidor), esto elimina la necesidad de gestionar un servidor tradicional y la necesidad de tener infraestructura propia. Este enfoque es prove\'ido a trav\'es del uso de \textit{Supabase} \cite{supabase}, esto aumenta la escalabilidad a la vez que reduce los tiempos de desarrollo.
 
-\textit{Single Page Application} (SPA), Aplicaci\'on de una sola p\'agina, es un enfoque en el que el navegador carga una sola p\'agina y actualiza el contenido din\'amicamente, esto mejora la reactividad de la web y hace m\'as din\'amica la interacci\'on con el usuario. Se obtiene este enfoque con la utilizaci\'on de Vue.js en el desarrollo de la interfaz gr\'afica, este \textit{framework} de javascript (marco de trabajo) da las herramientas necesarias para desarrollar de manera pr\'actica y efectiva aplicaciones completas utilizando la arquitectura mencionada.
+\textit{Single Page Application} (SPA), aplicaci\'on de una sola p\'agina, es un enfoque en el que el navegador carga una sola p\'agina y actualiza el contenido din\'amicamente, esto mejora la reactividad de la web y hace m\'as din\'amica la interacci\'on con el usuario. Se obtiene este enfoque con la utilizaci\'on del \textit{framework} (marco de trabajo) de javascript \textit{Vue.js} \cite{vuejs} en el desarrollo de la interfaz gr\'afica, este  da las herramientas necesarias para desarrollar de manera pr\'actica y efectiva aplicaciones completas utilizando la arquitectura mencionada.
 
 
 \begin{table}[ht]
@@ -19,7 +19,7 @@ Enfoque \textit{serverless} (sin servidor), esto elimina la necesidad de gestion
 	\caption{Características clave de la arquitectura Vue.js + Supabase}
 	\label{tab:arquitectura}
 	\rowcolors{1}{}{gray!10} % Fondo alternado para filas
-	\begin{tabular}{|p{2.5cm}|p{3cm}|p{5cm}|p{5cm}|} % Ajustar anchos según sea necesario
+	\begin{tabular}{|p{2.1cm}|p{2cm}|p{5cm}|p{5cm}|} % Ajustar anchos según sea necesario
 		\hline
 		\rowcolor{gray!20} % Color del encabezado
 		\textbf{Capa} & \textbf{Tecnología} & \textbf{Responsabilidad} & \textbf{Ejemplo} \\
@@ -45,10 +45,10 @@ Enfoque \textit{serverless} (sin servidor), esto elimina la necesidad de gestion
 
 \section{M\'odulos de la aplicaci\'on}
 
-\subsection{Selección de la Imagen}
+\subsection{Selección de la imagen}
 \label{subsec:seleccion-imagen}
 
-En ambas fases (registro y autenticación), el sistema presenta al usuario tres imágenes, ver \ref{fig:imagenes-sistema}, en orden aleatorio, de las cuales debe seleccionar aquella asociada a su contraseña. Este mecanismo añade una capa adicional de seguridad al evitar que los usuarios seleccionen siempre la misma imagen por dejadez o sobretodo en personas de mayor edad que tomen siempre la primera imagen de la lista, evitando as\'i que la selecci\'on de imagen sea predecible. 
+En ambas fases (registro y autenticación), el sistema presenta al usuario tres imágenes, ver \ref{fig:imagenes-sistema}, en orden aleatorio, de las cuales debe seleccionar aquella asociada a su contraseña. Este mecanismo añade una capa adicional de seguridad al evitar que los usuarios seleccionen siempre la misma imagen por dejadez o por la comodidad de tomar siempre la primera imagen de la lista, evitando as\'i que la selecci\'on de imagen sea predecible. 
 
 
 \begin{figure}[ht]
@@ -61,20 +61,21 @@ En ambas fases (registro y autenticación), el sistema presenta al usuario tres 
 	\hfill
 	\begin{minipage}[b]{0.3\textwidth}
 		\centering
-		\includegraphics[width=\textwidth]{Graphics/japan.jpg}
-		\caption*{Imagen 2: Japan}
-	\end{minipage}
-	\hfill
-	\begin{minipage}[b]{0.3\textwidth}
-		\centering
 		\includegraphics[width=\textwidth]{Graphics/cars.jpeg}
 		\caption*{Imagen 3: Cars}
 	\end{minipage}
-	\caption{Imágenes disponibles para selección en el sistema}
+	\hfill
+		\begin{minipage}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{Graphics/japan.jpg}
+		\caption*{Imagen 2: Japan}
+	\end{minipage}
+	
+	\caption{Imágenes disponibles para la selección en el sistema}
 	\label{fig:imagenes-sistema}
 \end{figure}
 
-La Tabla \ref{tab:uso-imagenes} muestra la distribución real del uso de imágenes según los datos de 33 usuarios. Se observa una preferencia notable por la imagen Disney (39.39\%), mientras que Japan y Cars presentan una distribución equitativa.
+La Tabla \ref{tab:uso-imagenes} muestra la distribución real del uso de imágenes según los datos de 33 usuarios. Se observa una preferencia por la imagen Disney (39.39\%), mientras que Japan y Cars presentan una distribución equitativa.
 
 
 \begin{table}[ht]
@@ -97,7 +98,7 @@ La Tabla \ref{tab:uso-imagenes} muestra la distribución real del uso de imágen
 
 
 \subsection{Captura de los puntos}
-Para seleccionar los puntos se coloca la imagen seleccionada por el usuario de entre un conjunto prove\'ido por el sistema. De esta imagen se obtienen su tama\~no y posicion en la pantalla, de tal manera que al reacionar al evento de click del usuario se pueda calcular la regi\'on de la imagen que haya sido clickada, esto se puede entender de los ejemplos \ref{point-capture1} y \ref{point-capture2} . \\\\
+Para seleccionar los puntos se coloca la imagen seleccionada por el usuario de entre un conjunto prove\'ido por el sistema. De esta imagen se obtienen su tama\~no y posici\'on en la pantalla, de tal manera que al reaccionar al evento de click del usuario se pueda calcular la regi\'on de la imagen que haya sido seleccionada, esto se puede entender de los ejemplos \ref{point-capture1} y \ref{point-capture2} . \\\\
 
 \begin{lstlisting}[ language=Java, caption=C\'odigo de selecci\'on de coordenadas de pantalla, label=point-capture1][hb]
 	//seleccionar la posicion en pantalla de la imagen y su tama\~no
@@ -124,7 +125,7 @@ indicators.push({
 
 \subsection{Registro y autenticaci\'on}
 \subsubsection{Proceso de Registro}
-Durante la fase de registro, el usuario debe ingresar en dos ocasiones su contraseña gráfica (\textit{PassPoints}). Este mecanismo de doble verificación busca incrementar la memorabilidad de la secuencia de clics. Posteriormente, el sistema realiza una llamada a una \textit{edge function} de Supabase, a la cual se transmiten:
+Durante la fase de registro, el usuario debe ingresar en dos ocasiones su contraseña gráfica (\textit{Passpoints}). Este mecanismo de doble verificación busca incrementar la memorabilidad de la secuencia de clics. Posteriormente, el sistema realiza una llamada a una \textit{edge function} de Supabase, a la cual se transmiten:
 
 \begin{itemize}
 	\item Correo insertado por el usuario
@@ -143,9 +144,9 @@ Esta función se encarga de:
 	\item Utilizar los m\'odulos prove\'idos por Supabase para el registro y autenticaci\'on del usuario usando esta informaci\'on.
 \end{enumerate}
 
-Al proceso de hashing se le agrega un n\'umero generado aleatoriamente criptogr\'aficamente seguro. Esto hace que los hashes de contrase\~nas iguales sean diferentes y previene ataques de tio \textit{Rainbow Tables}.
+Al proceso de hashing se le agrega un n\'umero generado aleatoriamente criptogr\'aficamente seguro. Esto hace que los hashes de contrase\~nas iguales sean diferentes y previene ataques de tipo \textit{Rainbow Tables}.
 
-\subsubsection{Mecanismo de Registro}
+\subsubsection{Mecanismo de registro y autenticaci\'on}
 El módulo de autenticación de Supabase emplea un esquema basado en \textit{JSON Web Tokens (JWT)} para:
 \begin{itemize}
 	\item Gestionar sesiones de usuario
@@ -153,11 +154,11 @@ El módulo de autenticación de Supabase emplea un esquema basado en \textit{JSO
 	\item Mantener integridad en la comunicación cliente-servidor
 \end{itemize}
 
-Para integrar el sistema \textit{PassPoints} con este servicio:
+Para integrar el sistema \textit{Passpoints} con este servicio:
 \begin{itemize}
 	\item Se utiliza el \textit{hash} generado del \textit{Passpoints} como contraseña textual en el registro y autenticaci\'on con Supabase.
-	\item Se preserva el requisito de entrada válida de \textit{PassPoints} para autenticaciones futuras
-	\item Se garantiza compatibilidad con el flujo estándar de OAuth 2.0, lo cu\'al garantiza que se puedan seguir usando los servicios prove\'idos por Supabase.
+	\item Se preserva el requisito de entrada válida de \textit{Passpoints} para autenticaciones futuras.
+	\item Se garantiza compatibilidad con el flujo estándar de OAuth 2.0, lo cual garantiza que se puedan seguir usando los servicios prove\'idos por \textit{Supabase} \cite{supabase}.
 \end{itemize}
 
 
@@ -212,14 +213,13 @@ La decisión de almacenar en texto claro:
 	\item No se guardar\'ia la informaci\'on de la imagen utilizada.
 \end{itemize}
 
-\subsection{Proceso de Autenticación}
-
-\subsubsection{Flujo de Autenticación}
+\subsection{Flujo de Autenticación}
 Durante la fase de autenticación, el usuario debe:
 
 \begin{enumerate}
 	\item Seleccionar la imagen utilizada durante el registro de entre tres opciones presentadas en orden aleatorio.
-	\item Ingresar su contraseña gráfica (\textit{PassPoints}) sobre la imagen seleccionada
+	\item Ingresar su contraseña gráfica (\textit{Passpoints
+}) sobre la imagen seleccionada
 \end{enumerate}
 
 Este diseño incrementa la conciencia del usuario sobre su elección y reduce la predictibilidad del sistema ante posibles ataques.
@@ -233,8 +233,8 @@ El sistema implementa las siguientes protecciones:
 	\begin{enumerate}
 		\item Verificación de existencia del usuario en la base de datos
 		\item Recuperación de parámetros almacenados ($\varphi$, valor aleatorio $salt$, tolerancia $tolerance_radius$, y \textit{hash} original), valores de \ref{tab:bd-esquema}
-		\item Recomputación del \textit{hash} usando el método de discretización descrito en el Capítulo anterior
-		\item Verificaci\'on de la autenticidad de la contrase\~na usando el m\'odulo de autenticaci\'on de Supabase.
+		\item Recomputación del \textit{hash} usando el método de discretización descrito en el Capítulo anterior.
+		\item Verificaci\'on de la autenticidad de la contrase\~na usando el m\'odulo de autenticaci\'on de \textit{Supabase}.
 	\end{enumerate}
 \end{itemize}
 
@@ -259,7 +259,7 @@ El servicio de autenticación de Supabase emplea \textit{JSON Web Tokens (JWT)} 
 
 \begin{itemize}
 	\item Generar credenciales temporales con expiración.
-	\item Gestionar la validez de los tokens en cada petici\'on y restringir acceso a los servicion en funci\'on de las pol\'iticas de seguridad definidas.
+	\item Gestionar la validez de los tokens en cada petici\'on y restringir acceso a los servicios en funci\'on de las pol\'iticas de seguridad definidas.
 	\item Almacenar el estado de sesión en \textit{cookies} HttpOnly/Secure de lado del usuario, a trav\'es de uso de su cliente de Javascript en la interfaz.
 \end{itemize}
 
@@ -270,12 +270,12 @@ La validación resulta en:
 	\item Entrega al cliente de credenciales y datos de sesi\'on para acceder a su informaci\'on en el sistema.
 \end{itemize}
 
-\section{Validaci\'on del sistema}
+\section{Validaci\'on del sistema propuesto}
 
 \subsection{Análisis del Espacio de Contraseñas con Discretización Óptima}
 \label{subsec:espacio-contrasenas}
 
-El espacio de contraseñas resultante para el sistema \textit{PassPoints} utilizando discretización óptima se calcula mediante la ecuación propuesta en \cite{birget2006graphical}:
+El espacio de contraseñas resultante para el sistema \textit{Passpoints} utilizando discretización óptima se calcula mediante la ecuación propuesta en \cite{birget2006graphical}:
 
 \begin{equation}
 	P = \left( \frac{a}{6r} \cdot \frac{b}{6r} \right)^c
@@ -317,14 +317,14 @@ Para una imagen típica de $1024 \times 768$ píxeles con parámetros $r = 16$ y
 	&\approx 4.43 \times 10^9 \text{ combinaciones}
 \end{align*}
 
-Este resultado demuestra que incluso con discretización espacial, el sistema mantiene un espacio de contraseñas comparable al de contraseñas textuales complejas ($\sim$10 bits de entropía por punto). Lo que hace inviable un atauqe de fuerza bruta.
+Este resultado demuestra que incluso con discretización espacial, el sistema mantiene un espacio de contraseñas comparable al de contraseñas textuales complejas ($\sim$10 bits de entropía por punto). Lo que hace inviable un ataque de fuerza bruta.
 
 
-\subsection{Antaques a Passpoints}
+\subsection{Ataques a Passpoints}
 Para llevar a cabo una validaci\'on de seguridad del sistema, se presenta un ataque de diccionario extra\'ido de \cite{van2010purely}. El ataque consiste en generar 3 diccionarios basados en diferentes criterios, como fue presentado en el cap\'itulo anterior.
 
-\subsubsection{Diccionario de ataque basado en detecci\'on de bordes}
-Para la detecci\'on de bordes su utiliz\'o el algoritmo de Harris \cite{Harris1988ACC}, para todas las im\'agenes, en \cite{van2010purely} justifican el uso de el m\'etodo de detecci\'on de esquinas con la premisa de que los usuarios tienden a seleccionar los mismos puntos donde haya focos de atenci\'on, para detectar los mismos es necesario encontrar los puntos de mayor contraste respecto al resto de la imagen, los bordes son un ejemplo de esto. El resultado de aplicar esto a las im\'agenes del sistema se puede ver en \ref{fig:images-borders}
+\subsubsection{Obtenci\'on de puntos para diccionario de ataque basado en detecci\'on de bordes}
+Para la detecci\'on de bordes su utiliz\'o el algoritmo de Harris \cite{Harris1988ACC}, para todas las im\'agenes. En \cite{van2010purely} justifican el uso del m\'etodo de detecci\'on de esquinas con la premisa de que los usuarios tienden a seleccionar los mismos puntos donde haya focos de atenci\'on, para detectar los mismos es necesario encontrar los puntos de mayor contraste respecto al resto de la imagen, los bordes son un ejemplo de esto. El resultado de aplicar esto a las im\'agenes del sistema se puede ver en la figura \ref{fig:images-borders}.
 
 \begin{figure}[ht]
 	\centering
@@ -350,8 +350,8 @@ Para la detecci\'on de bordes su utiliz\'o el algoritmo de Harris \cite{Harris19
 \end{figure}
 
 
-\subsubsection{Diccionario de ataque basado en segmentaci\'on}
-Se segmentaron las im\'agenes y se hall\'o su centro, esto se hizo utilizando el algoritmo \textit{Mean Shift} \cite{Comaniciu2002MeanSA}, de cada segmento tomado se utiliz\'o su centro para crear el diccionario que tuviera en cuento los segmentos en que se divide cada imagen. Visible en figura \ref{fig:images-segments}
+\subsubsection{Obtenci\'on de puntos para diccionario de ataque basado en segmentaci\'on}
+Para construir el diccionario de ataque basado en segmentación, se segmentaron las im\'agenes y se hall\'o su centro, esto se hizo utilizando el algoritmo \textit{Mean Shift} \cite{Comaniciu2002MeanSA}, de cada segmento tomado se utiliz\'o su centro para crear el diccionario que tuviera en cuenta los segmentos en que se divide cada imagen. Visible en figura \ref{fig:images-segments}
 
 \begin{figure}[H]
 	\centering
@@ -376,8 +376,8 @@ Se segmentaron las im\'agenes y se hall\'o su centro, esto se hizo utilizando el
 	\label{fig:images-segments}
 \end{figure}
 
-\subsubsection{Diccionario de ataque basado en mapas de atenci\'on visual}
-Para calcular los conjuntos de puntos m\'as probables a ser seleccionados por los usuarios se utiliz\'o un modelo de saliencia visual que modela la forma en que los usuarios miran las im\'agenes, el modelo es el propuesto en \cite{itti2000saliency} que es un modelo bottom-up y se basa en caracter\'isticas como el color, direcci\'on que indica cada pixel y su posici\'on en la imagen. Luego de hallar estos mapas se filtr\'o para determinar los puntos que mayor saliencia tuvieran y estos fueron utilizados posteriormente en la generaci\'on de un idccionario de ataque. Se puede visualizar los puntos seleccionados en las figuras \ref{fig:saliency-map} y \ref{fig:selected-points}
+\subsubsection{Obtenci\'on de puntos para diccionario de ataque basado en mapas de atenci\'on visual}
+Con el fin de construir el diccionario basado en mapas de atención visual, se calcularon los conjuntos de  puntos m\'as probables a ser seleccionados por los usuarios utilizando un modelo de saliencia visual, el cual modela la forma en que los usuarios miran las im\'agenes. El modelo es el propuesto en \cite{itti2000saliency}, es un modelo \textit{bottom-up}, y se basa en caracter\'isticas como el color, direcci\'on que indica cada pixel y su posici\'on en la imagen. Luego de hallar estos mapas se filtraron sus puntos para determinar los de mayor saliencia visual. Estos fueron utilizados posteriormente en la generaci\'on del diccionario de ataque. Se puede visualizar los puntos seleccionados en las figuras \ref{fig:saliency-map} y \ref{fig:selected-points}
 
 \begin{figure}[H]
 	\centering
@@ -428,7 +428,7 @@ Para calcular los conjuntos de puntos m\'as probables a ser seleccionados por lo
 
 \subsection{Clusterizaci\'on de los puntos }
 Para eliminar los puntos que est\'en suficientemente cercanos para caer en la misma regi\'on de tolerancia y reducir las dimensiones de los diccionarios de ataque finales generados, se utiliza el algoritmo de clusterizaci\'on de ventana propuesto en \cite{van2010purely}. Este toma los puntos pertenecientes a una ventana de tama\~no fijo como el mismo, hallando el pixel del centro geom\'etrico de la ventana cada vez. Esto permite eliminar puntos innecesarios y reducir la dimension del espacio de puntos a analizar para generar un diccionario de ataques final. Para estos fines se tom\'o como tama\~no de ventana $3*r$, donde r es el radio de tolerancia de la imagen en p\'ixeles, dando un margen mayor al generado por la regi\'on original que ser\'ia de $2*r$. Esto permiti\'o reducir la cantidad de puntos a analizar, sin perder mucha informaci\'on. En \ref{points:void} se puede ver la cantidad de puntos extra\'idos de cada imagen utilizando las t\'ecnicas de procesamiento anteriormente enunciadas y explicadas, en \ref{points:cluster} se puede observar la reducci\'on sustancial de la cantidad de puntos despu\'es de aplicar el clustering
-\begin{table}[!ht]
+\begin{table}[H]
 	\centering
 	\caption{Puntos Obtenidos sin clusterizar}
 	\label{points:void}
@@ -443,7 +443,7 @@ Para eliminar los puntos que est\'en suficientemente cercanos para caer en la mi
 	\end{tabular}
 \end{table}
 
-\begin{table}[!ht]
+\begin{table}[H]
 	\centering
 	\caption{Puntos Obtenidos despu\'es de clusterizar}
 		\label{points:cluster}
@@ -455,3 +455,14 @@ Para eliminar los puntos que est\'en suficientemente cercanos para caer en la mi
 		\textbf{japan} & 30 & 82 & 64 \\ \hline
 	\end{tabular}
 \end{table}
+
+\section{Obtenci\'on de los diccionarios de ataque}
+Para obtener los diccionarios de ataque que se utiliz\'o el algoritmo basado en grafos propuesto en \cite{van2010purely}. Dicho algoritmo utiliza heur\'isticas para generar contrase\~as que sigan patrones DIAG y LINE \cite{s22051987} que son comunes. Para esto se precomputa una matriz de adyacencia M donde para los pares de puntos $i,j \in A$, donde $A$ es un alfabeto de puntos, se cumple.
+\[
+ M[i,j] = 
+\begin{cases} 
+	1 & \text{si } (i, j) \in \text{Patrón DIAG o LINE} \\
+	0 & \text{si no}
+\end{cases}
+, \quad \text{para } i,j \in A
+\] 

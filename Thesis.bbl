@@ -179,6 +179,47 @@
       \verb 10.59562/metrik.v21i2.1706
       \endverb
     \endentry
+    \entry{saquib2011voiceprint}{article}{}
+      \name{author}{4}{}{%
+        {{hash=f8520bf2d07e48cfc3e0d0860b3e451c}{%
+           family={Saquib},
+           familyi={S\bibinitperiod},
+           given={Zia},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=dfd48472584ad7b29b863d2bcac96781}{%
+           family={Salam},
+           familyi={S\bibinitperiod},
+           given={Nirmala},
+           giveni={N\bibinitperiod}}}%
+        {{hash=03f12a140eeeb743be7224c142449739}{%
+           family={Nair},
+           familyi={N\bibinitperiod},
+           given={Rekha},
+           giveni={R\bibinitperiod}}}%
+        {{hash=953efb163799bbf84850b826c7d99fd6}{%
+           family={Pandey},
+           familyi={P\bibinitperiod},
+           given={Nipun},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{a2d3f43b7f4f02c8e5d621aa80d5ae88}
+      \strng{fullhash}{ff0914ee89d8065a2bdd14e60fe0560e}
+      \strng{bibnamehash}{a2d3f43b7f4f02c8e5d621aa80d5ae88}
+      \strng{authorbibnamehash}{a2d3f43b7f4f02c8e5d621aa80d5ae88}
+      \strng{authornamehash}{a2d3f43b7f4f02c8e5d621aa80d5ae88}
+      \strng{authorfullhash}{ff0914ee89d8065a2bdd14e60fe0560e}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Hybrid Information Technology}
+      \field{number}{2}
+      \field{title}{Voiceprint recognition systems for remote authentication-a survey}
+      \field{volume}{4}
+      \field{year}{2011}
+      \field{pages}{79\bibrangedash 97}
+      \range{pages}{19}
+    \endentry
     \entry{10.1145/1102120.1102168}{inproceedings}{}
       \name{author}{2}{}{%
         {{hash=95dc795a2be14c50fb6a924acc135ff8}{%
@@ -278,8 +319,8 @@
       \strng{authorbibnamehash}{99b2126afceb9ab7a80781b712d76d67}
       \strng{authornamehash}{99b2126afceb9ab7a80781b712d76d67}
       \strng{authorfullhash}{99b2126afceb9ab7a80781b712d76d67}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Romanian Journal of Information Technology and Automatic Control}
@@ -760,8 +801,8 @@
       \strng{authorbibnamehash}{840877f95a0a4737f8619813b177190a}
       \strng{authornamehash}{840877f95a0a4737f8619813b177190a}
       \strng{authorfullhash}{840877f95a0a4737f8619813b177190a}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{number}{5559961}
@@ -1107,6 +1148,7 @@
       \strng{authorbibnamehash}{1daa64c136c4c01ef0a820838d4e407d}
       \strng{authornamehash}{1daa64c136c4c01ef0a820838d4e407d}
       \strng{authorfullhash}{409964d2bd11b067bde23a4e3a48b43a}
+      \field{extraname}{1}
       \field{sortinit}{6}
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
@@ -1356,8 +1398,8 @@
       \strng{authornamehash}{42c689d0483dce2e9a2c249b92c20ba1}
       \strng{authorfullhash}{9ac2828dfae0cbfdc649579bdec7bc13}
       \field{extraname}{1}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This work demonstrates the ineffectiveness of the Ripley’s K function tests, the distance to the nearest neighbor, and the empty space function in the Graphical Authentication scenario with Passpoint for the detection of non-random graphical passwords. The results obtained show that none of these tests effectively detect non-random graphical passwords; the reason for their failure is attributed to the small sample of the spatial pattern in question, where only the five points of the graphical password are analyzed. Consequently, a test based on mean distances is proposed, whose experiments show that it detects with good efficiency non-random graphical passwords in Passpoint. The test was designed to be included in the Graphical Authentication systems with Passpoint to warn the user about a possibly weak password during the registration phase, and in this way, the security of the system is increased.}
@@ -1417,8 +1459,8 @@
       \strng{authornamehash}{761d6817134d63bdb7eeb5e88e610ce5}
       \strng{authorfullhash}{432de375fbb655f8d8ca2f0a99eb8338}
       \field{extraname}{1}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Security and Communication Networks}
@@ -1752,8 +1794,8 @@
       \strng{authorbibnamehash}{10db751b40718bf8f26ce2f908089140}
       \strng{authornamehash}{10db751b40718bf8f26ce2f908089140}
       \strng{authorfullhash}{10db751b40718bf8f26ce2f908089140}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{12}
@@ -1788,8 +1830,8 @@
       \strng{authorbibnamehash}{a5f6842cf98eaae2abd5a7b7a012aa11}
       \strng{authornamehash}{a5f6842cf98eaae2abd5a7b7a012aa11}
       \strng{authorfullhash}{a5f6842cf98eaae2abd5a7b7a012aa11}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Revista Cubana de Ciencias Informáticas}
@@ -1844,6 +1886,46 @@
       \field{booktitle}{IV Seminario Científico Nacional de Criptografía}
       \field{title}{Debilidades de los métodos de discretización para contraseñas gráficas}
       \field{year}{2018}
+    \endentry
+    \entry{zhu2013securityl}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=c0f5af4f825dab3d1fdc81d5865a69fd}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Bin\bibnamedelima B},
+           giveni={B\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=76a3c6dd263e68c8b1d3b429beacddf5}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Dongchen},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9766025c48f031aa32aedabb187f708a}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Maowei},
+           giveni={M\bibinitperiod}}}%
+        {{hash=17020fb04a2d16fa1a6de1e6dfaf2f07}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{1daa64c136c4c01ef0a820838d4e407d}
+      \strng{fullhash}{409964d2bd11b067bde23a4e3a48b43a}
+      \strng{bibnamehash}{1daa64c136c4c01ef0a820838d4e407d}
+      \strng{authorbibnamehash}{1daa64c136c4c01ef0a820838d4e407d}
+      \strng{authornamehash}{1daa64c136c4c01ef0a820838d4e407d}
+      \strng{authorfullhash}{409964d2bd11b067bde23a4e3a48b43a}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 22nd international conference on World Wide Web}
+      \field{title}{Security implications of password discretization for click-based graphical passwords}
+      \field{year}{2013}
+      \field{pages}{1581\bibrangedash 1591}
+      \range{pages}{11}
     \endentry
     \entry{team2023gemini}{article}{}
       \true{moreauthor}
@@ -1987,10 +2069,77 @@
       \field{pages}{1489\bibrangedash 1506}
       \range{pages}{18}
     \endentry
+    \entry{Harris1988ACC}{inproceedings}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{hash=26c2e30a214100e1224d04b183a1e7da}{%
+           family={Harris},
+           familyi={H\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=040c37e81c1c52d09c40b01f4474a405}{%
+           family={Stephens},
+           familyi={S\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Citeseer}%
+      }
+      \strng{namehash}{92d584b7bc845b932f91ff0d541998f5}
+      \strng{fullhash}{92d584b7bc845b932f91ff0d541998f5}
+      \strng{bibnamehash}{92d584b7bc845b932f91ff0d541998f5}
+      \strng{authorbibnamehash}{92d584b7bc845b932f91ff0d541998f5}
+      \strng{authornamehash}{92d584b7bc845b932f91ff0d541998f5}
+      \strng{authorfullhash}{92d584b7bc845b932f91ff0d541998f5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Alvey vision conference}
+      \field{number}{50}
+      \field{title}{A combined corner and edge detector}
+      \field{volume}{15}
+      \field{year}{1988}
+      \field{pages}{10\bibrangedash 5244}
+      \range{pages}{5235}
+    \endentry
+    \entry{Comaniciu2002MeanSA}{article}{}
+      \name{author}{2}{}{%
+        {{hash=00467887280b83151c56567803878174}{%
+           family={Comaniciu},
+           familyi={C\bibinitperiod},
+           given={Dorin},
+           giveni={D\bibinitperiod}}}%
+        {{hash=5fe56106e4cb40ead7b0f1a6acf3216f}{%
+           family={Meer},
+           familyi={M\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{6e608b584456a16d4a5a4f095fef763d}
+      \strng{fullhash}{6e608b584456a16d4a5a4f095fef763d}
+      \strng{bibnamehash}{6e608b584456a16d4a5a4f095fef763d}
+      \strng{authorbibnamehash}{6e608b584456a16d4a5a4f095fef763d}
+      \strng{authornamehash}{6e608b584456a16d4a5a4f095fef763d}
+      \strng{authorfullhash}{6e608b584456a16d4a5a4f095fef763d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on pattern analysis and machine intelligence}
+      \field{number}{5}
+      \field{title}{Mean shift: A robust approach toward feature space analysis}
+      \field{volume}{24}
+      \field{year}{2002}
+      \field{pages}{603\bibrangedash 619}
+      \range{pages}{17}
+    \endentry
   \enddatalist
-  \missing{Comaniciu2002MeanSA}
-  \missing{Harris1988ACC}
-  \missing{zhu2013securityl}
 \endrefsection
 \endinput
 
