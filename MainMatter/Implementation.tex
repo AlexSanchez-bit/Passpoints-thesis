@@ -11,7 +11,7 @@ El sistema utiliza una arquitectura cliente-servidor desacoplada. El \textit{fro
 \subsection{Patrones y estilos arquitect\'onicos involucrados}
 Enfoque \textit{serverless} (sin servidor), esto elimina la necesidad de gestionar un servidor tradicional y la necesidad de tener infraestructura propia. Este enfoque es prove\'ido a trav\'es del uso de \textit{Supabase} \cite{supabase}, esto aumenta la escalabilidad a la vez que reduce los tiempos de desarrollo.
 
-\textit{Single Page Application} (SPA), aplicaci\'on de una sola p\'agina, es un enfoque en el que el navegador carga una sola p\'agina y actualiza el contenido din\'amicamente, esto mejora la reactividad de la web y hace m\'as din\'amica la interacci\'on con el usuario. Se obtiene este enfoque con la utilizaci\'on del \textit{framework} (marco de trabajo) de javascript \textit{Vue.js} \cite{vuejs} en el desarrollo de la interfaz gr\'afica, este  da las herramientas necesarias para desarrollar de manera pr\'actica y efectiva aplicaciones completas utilizando la arquitectura mencionada.
+\textit{Single Page Application} (SPA), aplicaci\'on de una sola p\'agina, es un enfoque en el que el navegador carga una sola p\'agina y actualiza el contenido din\'amicamente, esto mejora la reactividad de la web y hace m\'as din\'amica la interacci\'on con el usuario. Se obtiene este enfoque con la utilizaci\'on del \textit{framework} (marco de trabajo) de javascript \textit{Vue.js} \cite{vuejs} en el desarrollo de la interfaz gr\'afica, este  da las herramientas necesarias para desarrollar de manera pr\'actica y efectiva aplicaciones completas utilizando la arquitectura mencionada, se puede ver la interfaz gr\'afica en los Anexos \ref{notes}, \ref{user-profile},\ref{full-screen-password}, \ref{register-screen}, \ref{error-scans}.
 
 
 \begin{table}[ht]
@@ -125,7 +125,7 @@ indicators.push({
 
 \subsection{Registro y autenticaci\'on}
 \subsubsection{Proceso de Registro}
-Durante la fase de registro, el usuario debe ingresar en dos ocasiones su contraseña gráfica (\textit{Passpoints}). Este mecanismo de doble verificación busca incrementar la memorabilidad de la secuencia de clics. Posteriormente, el sistema realiza una llamada a una \textit{edge function} de Supabase, a la cual se transmiten:
+Durante la fase de registro, el usuario debe ingresar en dos ocasiones su contraseña gráfica (\textit{Passpoints}), ver Anexos \ref{register-screen}, \ref{error-scans}, \ref{screen-shapes-variety}. Este mecanismo de doble verificación busca incrementar la memorabilidad de la secuencia de clics. Posteriormente, el sistema realiza una llamada a una \textit{edge function} de Supabase, a la cual se transmiten:
 
 \begin{itemize}
 	\item Correo insertado por el usuario
@@ -427,7 +427,7 @@ Con el fin de construir el diccionario basado en mapas de atención visual, se c
 
 
 \subsection{Clusterizaci\'on de los puntos }
-Para eliminar los puntos que est\'en suficientemente cercanos para caer en la misma regi\'on de tolerancia y reducir las dimensiones de los diccionarios de ataque finales generados, se utiliza el algoritmo de clusterizaci\'on de ventana propuesto en \cite{van2010purely}. Este toma los puntos pertenecientes a una ventana de tama\~no fijo como el mismo, hallando el pixel del centro geom\'etrico de la ventana cada vez. Esto permite eliminar puntos innecesarios y reducir la dimension del espacio de puntos a analizar para generar un diccionario de ataques final. Para estos fines se tom\'o como tama\~no de ventana $3*r$, donde r es el radio de tolerancia de la imagen en p\'ixeles, dando un margen mayor al generado por la regi\'on original que ser\'ia de $2*r$. Esto permiti\'o reducir la cantidad de puntos a analizar, sin perder mucha informaci\'on. En \ref{points:void} se puede ver la cantidad de puntos extra\'idos de cada imagen utilizando las t\'ecnicas de procesamiento anteriormente enunciadas y explicadas, en \ref{points:cluster} se puede observar la reducci\'on sustancial de la cantidad de puntos despu\'es de aplicar el clustering
+Para eliminar los puntos que est\'en suficientemente cercanos para caer en la misma regi\'on de tolerancia y reducir las dimensiones de los diccionarios de ataque finales generados, se utiliza el algoritmo de clusterizaci\'on de ventana propuesto en \cite{van2010purely}. Este toma los puntos pertenecientes a una ventana de tama\~no fijo como el mismo, hallando el pixel del centro geom\'etrico de la ventana cada vez. Esto permite eliminar puntos innecesarios y reducir la dimension del espacio de puntos a analizar para generar un diccionario de ataques final. Para estos fines se tom\'o como tama\~no de ventana $3*r$, donde r es el radio de tolerancia de la imagen en p\'ixeles, dando un margen mayor al generado por la regi\'on original que ser\'ia de $2*r$. Esto permiti\'o reducir la cantidad de puntos a analizar, sin perder mucha informaci\'on. En \ref{points:void} se puede ver la cantidad de puntos extra\'idos de cada imagen utilizando las t\'ecnicas de procesamiento anteriormente enunciadas y explicadas, en \ref{points:cluster} se puede observar la reducci\'on sustancial de la cantidad de puntos despu\'es de aplicar el clustering.
 \begin{table}[H]
 	\centering
 	\caption{Puntos Obtenidos sin clusterizar}
@@ -466,3 +466,121 @@ Para obtener los diccionarios de ataque que se utiliz\'o el algoritmo basado en 
 \end{cases}
 , \quad \text{para } i,j \in A
 \] 
+
+En el caso de la generaci\'on de los grafos utilizados en este ataque se utiliz\'o el par\'ametro de $\tau=9$ que da patrones de relajaci\'on normales, seg\'un \cite{van2010purely} y la distancia maxima entre puntos ($Td = \infty$), lo que genera patrones mas ce\~nidos a la heur\'istica, en la Tabla \ref{graphs},  se observan los grafos generados para estas im\'agenes con los par\'ametros anteriormente enunciados y el patr\'on DIAG.
+
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		& Disney & Cars & Japan \\ \hline
+		Segmentos & \includegraphics[width=3.5cm]{Graphics/disney-cluster-graph.png} 
+		& \includegraphics[width=3.5cm]{Graphics/cars-cluster-graph.png} 
+		& \includegraphics[width=3.5cm]{Graphics/japan-cluster-graph.png} \\ \hline
+		Esquinas  & \includegraphics[width=3.5cm]{Graphics/disney-corner-graph.png} 
+		& \includegraphics[width=3.5cm]{Graphics/cars-corner-graph.png} 
+		& \includegraphics[width=3.5cm]{Graphics/japan-corner-graph.png} \\ \hline
+		Saliencia & \includegraphics[width=3.5cm]{Graphics/disney-saliency-graph.png} 
+		& \includegraphics[width=3.5cm]{Graphics/cars-saliency-graph.png} 
+		& \includegraphics[width=3.5cm]{Graphics/japan-saliency-graph.png} \\ \hline
+	\end{tabular}
+	\caption{Grafos obtenidos para cada conjunto de puntos y el patr\'on DIAG}
+	\label{graphs}
+\end{table}
+
+
+Para una mejor separaci\'on dichas heuristicas, se separaron los patrones en sub heur\'isticas, ver en \cite{van2010purely}, que disminuye la complejidad de implementar las comprobaciones de cada par de puntos. Luego para generar los diccionarios de ataque solo se necesita hallar los caminos de tama\~no 5 del grafo (ciclos inclu\'idos), en este caso se utiliz\'o DFS \textit{Depht First Search}, (B\'usqueda en profundidad), iterativo, guardando continuamente los resultados en archivos usando el formato \textit{JSON lines}. Esto permiti\'o reducir el requerimiento memoria ram por parte del sistema y tener una generaci\'on  din\'amica ya que el estado del DFS se guarda en el archivo. El tiempo de generaci\'on de dichos diccionarios oscil\'o de 2 a 3 horas cada uno, llegando a obtener archivos de 21GB de contrase\~nas, en la tabla \ref{dictionary:lengths} se pueden ver la cantidad de contrase\~nas generadas en cada diccionario.  
+
+\begin{table}[H]
+	\centering
+	\caption{Tama\~no de los diccionarios obtenidos}
+	\label{dictionary:lengths}
+	\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
+		\hline
+		\textbf{imagenes/contrase\~nas} & \textbf{segmentos} & \textbf{esquinas} & \textbf{saliencia }  \\ \hline
+		\textbf{disney} & 14880348 & 389469380 & 104960000  \\ \hline
+		\textbf{cars} & 1114112 & 558134287 & 17825024  \\ \hline
+		\textbf{japan} & 5387888 & 3894822 & 81320304 \\ \hline
+	\end{tabular}
+\end{table}
+
+
+\section{Ejecuci\'on del ataque}
+
+
+Una vez generados los diccionarios, se procedió a la autenticación de cada usuario utilizando las contraseñas contenidas en los diccionarios de ataque. Para agilizar el proceso, esta tarea se realizó de manera asíncrona, como se ilustra en los ejemplos de código \ref{attack1} y \ref{attack}. No obstante, el ataque resultó infructuoso, ya que ninguna contraseña pudo ser vulnerada.
+\bigskip\bigskip
+\begin{lstlisting}[style=mystyle, language=Python, caption=C\'odigo que se ejecuta en cada hilo del ataque, label=attack1][H]
+data = (
+supabase
+.table('passwords')
+.select('image, tolerance, user_id(email)')
+.not_.is_('user_id', 'null')
+.execute()
+).data
+
+results = {}
+
+if not data:
+ print("No se encontraron registros")
+ exit()
+threads=[]
+for password in data:
+  thread = Thread(target=predict_password,args=(password,))
+  thread.start()
+  threads.append(thread)
+for thread in threads:
+  thread.join()
+\end{lstlisting}
+
+\clearpage
+
+\begin{lstlisting}[style=mystyle, language=Python, caption=C\'odigo que se ejecuta en cada hilo del ataque, label=attack][hb]
+def predict_password(password):
+ base_path = os.path.join("[ruta a las im\'agenes]", password['image'])  # Directorio base organizado
+ email = password['user_id']['email'] if isinstance(password['user_id'], dict) else None
+
+ #Aqui se guardar\'an los intentos de autenticaci\'on realizados
+ with lock:
+  results[email] = {
+	'cluster_tries': 0,
+	'corner_tries': 0,
+	'saliency_tries': 0
+  }
+
+ file_types = {
+	'saliency': 'saliency_dictionary.json',
+	'cluster': 'cluster_dictionary.json',
+	'corner': 'corner_dictionary.json'	
+ }
+
+ for key, filename in file_types.items():
+  file_path = os.path.join(base_path, filename)
+  with jsonlines.open(file_path) as points_data:
+   for points in points_data:
+     results[email][f'{key}_tries'] += 1
+
+  passpoints = {
+	'points': list(map(lambda x: {'x':x[0],'y':x[1]},points)),
+	'tolerance': password['tolerance'],
+	'image': {
+		'name': password['image']
+	}
+  }
+
+  # 8. Llamada a Supabase 
+  response = supabase.functions.invoke(
+  "passpoints-login",
+     invoke_options={
+    	"body": {
+		'email': email,
+		'password': passpoints
+ 	  }
+   }
+  )
+  resp = json.loads(response)
+  if resp['success']:
+   return {'success':True,'results':results[email]}
+\end{lstlisting}

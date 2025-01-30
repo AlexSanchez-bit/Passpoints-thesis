@@ -14,20 +14,26 @@
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Imágenes del Sistema con sus mapas de segmentaci\'on respectivos y los centros de los mismos marcados}}{30}{figure.caption.24}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Imágenes del Sistema con sus mapas de atenci\'on respectivos }}{30}{figure.caption.25}%
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Imágenes del Sistema con sus respectivas regiones seleccionadas para la creaci\'on del diccionario de ataque}}{31}{figure.caption.26}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Selección de portafolio. Fuente: \blx@tocontentsinit {0}\cite {dhamija2000deja}}}{42}{figure.caption.34}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Sistema PassFaces. Fuente: \blx@tocontentsinit {0}\cite {inproceedings}}}{42}{figure.caption.35}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Funcionamiento de un patrón de desbloqueo, Fuente: \blx@tocontentsinit {0}\cite {aviv2010smudge}}}{43}{figure.caption.36}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Grasa en pantalla usada en los ataques de smudge, Fuente: \blx@tocontentsinit {0}\cite {aviv2010smudge}}}{43}{figure.caption.37}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Dibujado 6 veces usando el mouse, Fuente: \blx@tocontentsinit {0}\cite {lin2009free}}}{44}{figure.caption.38}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Dibujado 6 veces usando stylus, Fuente: \blx@tocontentsinit {0}\cite {lin2009free}}}{44}{figure.caption.38}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Valores predichos e intervalos de predicción generados por el modelo de regresión polinomial, Fuente: \blx@tocontentsinit {0}\cite {lin2009free}}}{44}{figure.caption.39}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Valores predichos e intervalos de predicción generados por el modelo de regresión B-spline, Fuente: \blx@tocontentsinit {0}\cite {lin2009free}}}{44}{figure.caption.39}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Funcionamiento de Semantic Lock, Fuente: \blx@tocontentsinit {0}\cite {olade2023story}}}{45}{figure.caption.40}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Cálculo de hash de un punto Passpositions, Fuente: \blx@tocontentsinit {0}\cite {8320723}}}{45}{figure.caption.41}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Ejemplos de contraseñas usando Pass Go, Fuente: \blx@tocontentsinit {0}\cite {tao2008pass}}}{46}{figure.caption.42}%
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Información del mapa en diferentes lugares y niveles de zoom, Fuente: \blx@tocontentsinit {0}\cite {10.1145/2414456.2414513}}}{47}{figure.caption.43}%
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Proceso de autenticación \textit {Gra-Pin}, Fuente: \blx@tocontentsinit {0}\cite {kausar2022gra} }}{47}{figure.caption.44}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Selección del número e imagen secretos, Fuente: \blx@tocontentsinit {0}\cite {kausar2022gra} }}{48}{figure.caption.45}%
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Selección de la operación y posición en el Pin de la clave, Fuente: \blx@tocontentsinit {0}\cite {kausar2022gra} }}{48}{figure.caption.45}%
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Pantalla de autenticación, Fuente: \blx@tocontentsinit {0}\cite {kausar2022gra}}}{48}{figure.caption.45}%
-\contentsline {figure}{\numberline {3.22}{\ignorespaces Pantallas de autenticación de \textit {Gra Pin}, Fuente: \blx@tocontentsinit {0}\cite {kausar2022gra}}}{48}{figure.caption.45}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Selección de portafolio. Fuente: \blx@tocontentsinit {0}\cite {dhamija2000deja}}}{46}{figure.caption.34}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Sistema PassFaces. Fuente: \blx@tocontentsinit {0}\cite {inproceedings}}}{46}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Funcionamiento de un patrón de desbloqueo, Fuente: \blx@tocontentsinit {0}\cite {aviv2010smudge}}}{47}{figure.caption.36}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Grasa en pantalla usada en los ataques de smudge, Fuente: \blx@tocontentsinit {0}\cite {aviv2010smudge}}}{47}{figure.caption.37}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Dibujado 6 veces usando el mouse, Fuente: \blx@tocontentsinit {0}\cite {lin2009free}}}{48}{figure.caption.38}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Dibujado 6 veces usando stylus, Fuente: \blx@tocontentsinit {0}\cite {lin2009free}}}{48}{figure.caption.38}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Valores predichos e intervalos de predicción generados por el modelo de regresión polinomial, Fuente: \blx@tocontentsinit {0}\cite {lin2009free}}}{48}{figure.caption.39}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Valores predichos e intervalos de predicción generados por el modelo de regresión B-spline, Fuente: \blx@tocontentsinit {0}\cite {lin2009free}}}{48}{figure.caption.39}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Funcionamiento de Semantic Lock, Fuente: \blx@tocontentsinit {0}\cite {olade2023story}}}{49}{figure.caption.40}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Cálculo de hash de un punto Passpositions, Fuente: \blx@tocontentsinit {0}\cite {8320723}}}{49}{figure.caption.41}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Ejemplos de contraseñas usando Pass Go, Fuente: \blx@tocontentsinit {0}\cite {tao2008pass}}}{50}{figure.caption.42}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Información del mapa en diferentes lugares y niveles de zoom, Fuente: \blx@tocontentsinit {0}\cite {10.1145/2414456.2414513}}}{51}{figure.caption.43}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Proceso de autenticación \textit {Gra-Pin}, Fuente: \blx@tocontentsinit {0}\cite {kausar2022gra} }}{51}{figure.caption.44}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Selección del número e imagen secretos, Fuente: \blx@tocontentsinit {0}\cite {kausar2022gra} }}{52}{figure.caption.45}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Selección de la operación y posición en el Pin de la clave, Fuente: \blx@tocontentsinit {0}\cite {kausar2022gra} }}{52}{figure.caption.45}%
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Pantalla de autenticación, Fuente: \blx@tocontentsinit {0}\cite {kausar2022gra}}}{52}{figure.caption.45}%
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Pantallas de autenticación de \textit {Gra Pin}, Fuente: \blx@tocontentsinit {0}\cite {kausar2022gra}}}{52}{figure.caption.45}%
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Pantalla de registro en vista escritorio }}{52}{figure.caption.46}%
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Selecci\'on de imagen y contrase\~na a pantalla completa }}{52}{figure.caption.46}%
+\contentsline {figure}{\numberline {3.25}{\ignorespaces Perfil del usuario para recaudar informaci\'on }}{53}{figure.caption.47}%
+\contentsline {figure}{\numberline {3.26}{\ignorespaces Vista de notas para dejar valoraciones }}{53}{figure.caption.47}%
+\contentsline {figure}{\numberline {3.27}{\ignorespaces Misma contrase\~na en diferentes taman\~nos de pantalla }}{53}{figure.caption.48}%
+\contentsline {figure}{\numberline {3.28}{\ignorespaces Misma contrase\~na incorrecta en diferentes taman\~nos de pantalla }}{54}{figure.caption.49}%
