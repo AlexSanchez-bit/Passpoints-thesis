@@ -5,7 +5,7 @@ Como se vio en capítulos anteriores, la autenticación gráfica, específicamen
 
 \section{Regi\'on de tolerancia seleccionada}
 
-Debido a la variabilidad de tamaños de imagen y densidad de píxeles de pantalla, el radio de la región de tolerancia se redefinió como un valor $0 < r < 1$, el cual representa el porcentaje de píxeles de la imagen que abarca dicha región. De este modo, el tamaño en píxeles de la región de tolerancia es variable en función de la imagen, pero constante ante la mirada del usuario. Esta estrategia abre la puerta a futuros trabajos, ofreciendo la posibilidad al usuario de seleccionar el tamaño de la región de tolerancia para su contraseña y simplificando el proceso de prueba de varios tamaños de la región. Tambi\'en ayuda a ajustar la representaci\'on de la regi\'on de tolerancia en distintos tama\~nos de pantalla. Para obtener el valor en píxeles del radio de la región de tolerancia se multiplica $r$ por el mínimo entre el largo y ancho de la imagen, es decir, sea $a$ el alto de la imagen, $b$ el ancho, $d_{pixel} = min(b,a)$ .
+Debido a la variabilidad de tamaños de imagen y densidad de píxeles de pantalla, el radio de la región de tolerancia se redefinió como un valor $0 < r < 1$, el cual representa el porcentaje de píxeles de la imagen que abarca dicha región. De este modo, el tamaño en píxeles de la región de tolerancia es variable en función de la imagen, pero constante ante la mirada del usuario. Esta estrategia abre la puerta a futuros trabajos, ofreciendo la posibilidad al usuario de seleccionar el tamaño de la región de tolerancia para su contraseña y simplificando el proceso de prueba de varios tamaños de la región. Tambi\'en ayuda a ajustar la representaci\'on de la regi\'on de tolerancia en distintos tama\~nos de pantalla. Para obtener el valor en píxeles del radio de la región de tolerancia se multiplica $r$ por el mínimo entre el largo y ancho de la imagen, es decir, sea $a$ el alto de la imagen, $b$ el ancho, $d_{pixel} = min(b,a)$.
 
 \section{Método de discretización seleccionado}
 Por todo lo explicado anteriormente se seleccion\'o la Discretizaci\'on \'Optima utilizando la variante enunciada en \cite{bicakci2008optimal} con verificaci\'on de \textit{hash} m\'ultiple. Esto funciona introduciendo un error en el c\'alculo de la discretizaci\'on de cada punto y repitiendo el \textit{hash} del punto de forma recursiva $k$ veces, es decir hallar el \textit{hash} de la salida del anterior. Al hacer esto se vuelve la funci\'on \textit{hash} de cada punto m\'as lenta, dando una capa de seguridad extra ante ataques de diccionario. Repetir el c\'alculo de la funci\'on \textit{hash} varias veces, tambi\'en previene que los puntos sean hallados utilizando \textit{rainbow tables}, dando a\'un m\'as seguridad al sistema.
@@ -40,7 +40,7 @@ Entonces, sean \(x = (a,b)\), el punto originalmente seleccionado por el usuario
 h(d(x), k) = h(d(x' + (i, j)), k).
 \]
 
-Ver figura \ref{flujo_discretization}
+En la figura \ref{flujo_discretization} se presenta un diagrama de flujo que refleja el funcionamiento de este proceso.
 
 \begin{figure}[h]
 	\centering
@@ -82,7 +82,7 @@ Ver figura \ref{flujo_discretization}
 
 
 \subsection{Flujo en la API}
-Para acceder al sistema, el usuario debe registrarse introduciendo sus credenciales y estableciendo su contraseña utilizando \textit{Passpoints}. Durante el registro, se solicita al usuario que seleccione 5 puntos sobre una imagen, de una lista predeterminada por el sistema. La regi\'on de tolerancia se ver\'a como un recuadro rojo semitransparente centrado en el punto seleccionado por el usuario en la imagen. En el servidor, se calcula la discretización de la imagen y el hash de los puntos seleccionados, almacenándose junto con los datos necesarios para la posterior autenticación. Para llevar a cabo la discretización de la imagen, se empleó la Discretización Óptima. Los datos necesarios para la autenticación, como  ($\phi$) y ($\varphi$), son guardados en texto claro para posteriores estudios, pero en una aplicaci\'on real estos deben ser cifrados de forma reversible antes de ser guardados. En la fase de autenticaci\'on el usuario vuelve a seleccionar los 5 puntos anteriormente fijados en la fase de registro, teniendo en cuenta la regi\'on de tolerancia del sistema. Dichos puntos ir\'an a la API en donde se calcular\'a su hash, si este coincide con el almacenado por el usuario leg\'itimo se le dar\'a acceso a las notas, en caso contrario se le devuelve un error. Los puntos utilizados para la autenticaci\'on y su estatus de fallido, o no, son almacenados tambi\'en para posteriores estudios. En las figuras \ref{flujo_registro} y \ref{flujo_auth} se pueden ver diagramas de flujo para cada proceso, registro y  autenticaci\'on .
+Para acceder al sistema, el usuario debe registrarse introduciendo sus credenciales y estableciendo su contraseña utilizando \textit{Passpoints}. Durante el registro, se solicita al usuario que seleccione 5 puntos sobre una imagen, de una lista predeterminada por el sistema. La regi\'on de tolerancia se ver\'a como un recuadro rojo semitransparente centrado en el punto seleccionado por el usuario en la imagen. En el servidor, se calcula la discretización de la imagen y el \textit{hash} de los puntos seleccionados, almacenándose junto con los datos necesarios para la posterior autenticación. Para llevar a cabo la discretización de la imagen, se empleó la Discretización Óptima. Los datos necesarios para la autenticación, como  ($\phi$) y ($\varphi$), son guardados en texto claro para posteriores estudios, pero en una aplicaci\'on real estos deben ser cifrados de forma reversible antes de ser guardados. En la fase de autenticaci\'on el usuario vuelve a seleccionar los 5 puntos anteriormente fijados en la fase de registro, teniendo en cuenta la regi\'on de tolerancia del sistema. Dichos puntos ir\'an a la API en donde se calcular\'a su \textit{hash}, si este coincide con el almacenado por el usuario leg\'itimo se le dar\'a acceso a las notas, en caso contrario se le devuelve un error. Los puntos utilizados para la autenticaci\'on y su estatus de fallido, o no, son almacenados tambi\'en para posteriores estudios. En las figuras \ref{flujo_registro} y \ref{flujo_auth} se pueden ver diagramas de flujo para cada proceso, registro y  autenticaci\'on .
 
 \begin{figure}[H]
 	\begin{minipage}[b]{0.42\linewidth}  % Segundo cuadrado, 48% del ancho de línea
@@ -101,7 +101,7 @@ Para acceder al sistema, el usuario debe registrarse introduciendo sus credencia
 			\node (display_tolerance) [process, below of=select_points] {Mostrar región de tolerancia};
 			
 		\node (discretize_hash) [process, below of=display_tolerance] 
-		{\shortstack{Calcular discretización\\ de la imagen y\\ hash de puntos}};
+		{\shortstack{Calcular discretización\\ de la imagen y\\ \textit{hash} de puntos}};
 			
 			\node (store_data) [process, below of=discretize_hash] {Almacenar datos para autenticación};
 			\node (end_register) [startstop, below of=store_data] {Fin de registro};
@@ -122,7 +122,7 @@ Para acceder al sistema, el usuario debe registrarse introduciendo sus credencia
 			
 		\end{tikzpicture}
 		\caption{Diagrama de flujo registro con \textit{Passpoints}}
-			\label{flujo_auth}
+			\label{flujo_registro}
 	
 	\end{minipage} % Espacio vertical entre filas
 	\hfill
@@ -134,7 +134,7 @@ Para acceder al sistema, el usuario debe registrarse introduciendo sus credencia
 			
 			\node (auth_points) [io, below of=auth_start] {Seleccionar 5 puntos (autenticación)};
 			
-			\node (auth_process) [process, below of=auth_points] {Calcular hash de puntos};
+			\node (auth_process) [process, below of=auth_points] {Calcular \textit{hash} de puntos};
 			
 			\node (check_hash) [decision, below of=auth_process] {Hash coincide con el almacenado?};
 			
@@ -153,14 +153,14 @@ Para acceder al sistema, el usuario debe registrarse introduciendo sus credencia
 			
 		\end{tikzpicture}
 		\caption{Diagrama de flujo autenticación con \textit{Passpoints}}
-		\label{flujo_registro}
+		\label{flujo_auth}
 	\end{minipage}
 		
 \end{figure}
 
 
 \subsection{Adaptaci\'on a distintos tama\~nos de pantalla}
-Para hacer la aplicaci\'on adaptable a diferentes tama\~nos de pantalla se cambi\'o la forma de tomar los puntos y transformarlos a coordenadas de imagen.
+Para hacer la aplicaci\'on adaptable a diferentes tama\~nos de pantalla se cambi\'o la forma de tomar los puntos, transform\'andolos a coordenadas de imagen.
 Sean $(I_X, I_Y)$ las coordenadas de imagen del punto $p_0$ seleccionado por el usuario, $(S_X, S_Y)$ sus coordenadas de pantalla, $S_W$ el ancho de la ventana, $S_h$ el alto de la ventana, $I_W$ el ancho de la imagen, e $I_h$ el alto de la imagen. Entonces, se calculan las coordenadas de imagen como:
 
 \begin{align*}

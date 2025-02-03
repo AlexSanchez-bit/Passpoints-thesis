@@ -282,8 +282,8 @@
       \strng{authorbibnamehash}{6aea9ece8ed8e5de097ae46dc9b375d5}
       \strng{authornamehash}{6aea9ece8ed8e5de097ae46dc9b375d5}
       \strng{authorfullhash}{6aea9ece8ed8e5de097ae46dc9b375d5}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Brute-force Attack}
@@ -565,8 +565,8 @@
       \strng{authorbibnamehash}{2af955a9839311cf9c4f2294f8035bfb}
       \strng{authornamehash}{2af955a9839311cf9c4f2294f8035bfb}
       \strng{authorfullhash}{2af955a9839311cf9c4f2294f8035bfb}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{01}
@@ -1111,8 +1111,8 @@
       \strng{authorbibnamehash}{1d7e2d03699198a4e7e59fef3ac4db45}
       \strng{authornamehash}{1d7e2d03699198a4e7e59fef3ac4db45}
       \strng{authorfullhash}{5341ac8092b51eb3723c466bb8f5720b}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:0912.0951}
@@ -1350,8 +1350,8 @@
       \strng{authorbibnamehash}{5731ab15bc0ff10c968a7f0accc06105}
       \strng{authornamehash}{5731ab15bc0ff10c968a7f0accc06105}
       \strng{authorfullhash}{5731ab15bc0ff10c968a7f0accc06105}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Algoritmo para la detección de claves débiles en la técnica de autenticación gráfica passpoints}
@@ -1759,8 +1759,8 @@
       \strng{authorbibnamehash}{1c2da47aad4b116f4fa8eb7f5f88f14a}
       \strng{authornamehash}{1c2da47aad4b116f4fa8eb7f5f88f14a}
       \strng{authorfullhash}{1c2da47aad4b116f4fa8eb7f5f88f14a}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Journal of Human Computer Studies}
@@ -2068,6 +2068,60 @@
       \field{year}{2000}
       \field{pages}{1489\bibrangedash 1506}
       \range{pages}{18}
+    \endentry
+    \entry{supabase}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=af07a053f31f1c94fcf389327c68f6dd}{%
+           family={Supabase},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{fullhash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{bibnamehash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{authorbibnamehash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{authornamehash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{authorfullhash}{af07a053f31f1c94fcf389327c68f6dd}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Último acceso: 29 de enero de 2025}
+      \field{title}{Supabase: The Open Source Firebase Alternative}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://supabase.com/
+      \endverb
+      \verb{url}
+      \verb https://supabase.com/
+      \endverb
+    \endentry
+    \entry{vuejs}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=db765403235109b160c962d1d649d82f}{%
+           family={Team},
+           familyi={T\bibinitperiod},
+           given={Vue.js},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{db765403235109b160c962d1d649d82f}
+      \strng{fullhash}{db765403235109b160c962d1d649d82f}
+      \strng{bibnamehash}{db765403235109b160c962d1d649d82f}
+      \strng{authorbibnamehash}{db765403235109b160c962d1d649d82f}
+      \strng{authornamehash}{db765403235109b160c962d1d649d82f}
+      \strng{authorfullhash}{db765403235109b160c962d1d649d82f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Último acceso: 29 de enero de 2025}
+      \field{title}{Vue.js: The Progressive JavaScript Framework}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://vuejs.org/
+      \endverb
+      \verb{url}
+      \verb https://vuejs.org/
+      \endverb
     \endentry
     \entry{Harris1988ACC}{inproceedings}{}
       \true{moreauthor}

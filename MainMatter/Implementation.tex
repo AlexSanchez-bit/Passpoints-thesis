@@ -1,4 +1,4 @@
-\chapter{Detalles de Implementación y Experimentos}\label{chapter:implementation}
+\chapter{Detalles de Implementación}\label{chapter:implementation}
 Este capítulo describe la implementación práctica del modelo teórico propuesto en el capítulo anterior. Se detallan las tecnologías utilizadas, las decisiones de diseño, y los desafíos enfrentados durante el desarrollo.
 
 
@@ -11,12 +11,12 @@ El sistema utiliza una arquitectura cliente-servidor desacoplada. El \textit{fro
 \subsection{Patrones y estilos arquitect\'onicos involucrados}
 Enfoque \textit{serverless} (sin servidor), esto elimina la necesidad de gestionar un servidor tradicional y la necesidad de tener infraestructura propia. Este enfoque es prove\'ido a trav\'es del uso de \textit{Supabase} \cite{supabase}, esto aumenta la escalabilidad a la vez que reduce los tiempos de desarrollo.
 
-\textit{Single Page Application} (SPA), aplicaci\'on de una sola p\'agina, es un enfoque en el que el navegador carga una sola p\'agina y actualiza el contenido din\'amicamente, esto mejora la reactividad de la web y hace m\'as din\'amica la interacci\'on con el usuario. Se obtiene este enfoque con la utilizaci\'on del \textit{framework} (marco de trabajo) de javascript \textit{Vue.js} \cite{vuejs} en el desarrollo de la interfaz gr\'afica, este  da las herramientas necesarias para desarrollar de manera pr\'actica y efectiva aplicaciones completas utilizando la arquitectura mencionada, se puede ver la interfaz gr\'afica en los Anexos \ref{notes}, \ref{user-profile},\ref{full-screen-password}, \ref{register-screen}, \ref{error-scans}.
+\textit{Single Page Application} (SPA), aplicaci\'on de una sola p\'agina, es un enfoque en el que el navegador carga una sola p\'agina y actualiza el contenido din\'amicamente, esto mejora la reactividad de la web y hace m\'as din\'amica la interacci\'on con el usuario. Se obtiene este enfoque con la utilizaci\'on del \textit{framework} (marco de trabajo) de JavaScript \textit{Vue.js} \cite{vuejs} en el desarrollo de la interfaz gr\'afica, este  da las herramientas necesarias para desarrollar de manera pr\'actica y efectiva aplicaciones completas utilizando la arquitectura mencionada, se puede ver la interfaz gr\'afica en el Anexo No 11. (figuras de \ref{register-screen} a \ref{error-scans})22.
 
 
 \begin{table}[ht]
 	\centering
-	\caption{Características clave de la arquitectura Vue.js + Supabase}
+	\caption{Características clave de la arquitectura Vue.js + \textit{Supabase} }
 	\label{tab:arquitectura}
 	\rowcolors{1}{}{gray!10} % Fondo alternado para filas
 	\begin{tabular}{|p{2.1cm}|p{2cm}|p{5cm}|p{5cm}|} % Ajustar anchos según sea necesario
@@ -30,7 +30,7 @@ Enfoque \textit{serverless} (sin servidor), esto elimina la necesidad de gestion
 		Componentes Reactivos, formularios de registro, enrutamiento con Vue Router \\
 		\hline
 		
-		Servicios & Supabase & 
+		Servicios & \textit{Supabase}  & 
 		Proveer servicios backend vía API, gestión de autenticación, ejecutar operaciones CRUD & 
 		Autenticación con OAuth, consultas a PostgreSQL, webhooks para notificaciones \\
 		\hline
@@ -98,7 +98,7 @@ La Tabla \ref{tab:uso-imagenes} muestra la distribución real del uso de imágen
 
 
 \subsection{Captura de los puntos}
-Para seleccionar los puntos se coloca la imagen seleccionada por el usuario de entre un conjunto prove\'ido por el sistema. De esta imagen se obtienen su tama\~no y posici\'on en la pantalla, de tal manera que al reaccionar al evento de click del usuario se pueda calcular la regi\'on de la imagen que haya sido seleccionada, esto se puede entender de los ejemplos \ref{point-capture1} y \ref{point-capture2} . \\\\
+Para seleccionar los puntos se coloca la imagen seleccionada por el usuario de entre un conjunto prove\'ido por el sistema. De esta imagen se obtienen su tama\~no y posici\'on en la pantalla, de tal manera que al reaccionar al evento de \textit{click} del usuario se pueda calcular la regi\'on de la imagen que haya sido seleccionada, esto se puede entender de los ejemplos \ref{point-capture1} y \ref{point-capture2}. \\
 
 \begin{lstlisting}[ language=Java, caption=C\'odigo de selecci\'on de coordenadas de pantalla, label=point-capture1][hb]
 	//seleccionar la posicion en pantalla de la imagen y su tama\~no
@@ -109,7 +109,6 @@ indicators.push({
 	x: ((event.clientX - left) / width) * 100,
 	y: ((event.clientY - top) / height) * 100,
 });
-
 \end{lstlisting}
 
 
@@ -125,7 +124,7 @@ indicators.push({
 
 \subsection{Registro y autenticaci\'on}
 \subsubsection{Proceso de Registro}
-Durante la fase de registro, el usuario debe ingresar en dos ocasiones su contraseña gráfica (\textit{Passpoints}), ver Anexos \ref{register-screen}, \ref{error-scans}, \ref{screen-shapes-variety}. Este mecanismo de doble verificación busca incrementar la memorabilidad de la secuencia de clics. Posteriormente, el sistema realiza una llamada a una \textit{edge function} de Supabase, a la cual se transmiten:
+Durante la fase de registro, el usuario debe ingresar en dos ocasiones su contraseña gráfica (\textit{Passpoints}), ver Anexo No [x]. (figuras \ref{register-screen},  \ref{screen-shapes-variety},\ref{error-scans}). Este mecanismo de doble verificación busca incrementar la memorabilidad de la secuencia de \textit{clicks}. Posteriormente, el sistema realiza una llamada a una \textit{edge function} de \textit{Supabase} , a la cual se transmiten:
 
 \begin{itemize}
 	\item Correo insertado por el usuario
@@ -141,13 +140,13 @@ Esta función se encarga de:
 	\item Discretizar la imagen, obteniendo los parámetros $\phi$  y $\varphi$ de cada punto.
 	\item Generar el \textit{hash} de ambas instancias de la contraseña (original y de confirmación) utilizando el m\'etodo explicado en el cap\'itulo anterior.
 	\item Validar la congruencia entre ambos \textit{hashes}.
-	\item Utilizar los m\'odulos prove\'idos por Supabase para el registro y autenticaci\'on del usuario usando esta informaci\'on.
+	\item Utilizar los m\'odulos prove\'idos por \textit{Supabase}  para el registro y autenticaci\'on del usuario usando esta informaci\'on.
 \end{enumerate}
 
-Al proceso de hashing se le agrega un n\'umero generado aleatoriamente criptogr\'aficamente seguro. Esto hace que los hashes de contrase\~nas iguales sean diferentes y previene ataques de tipo \textit{Rainbow Tables}.
+Al proceso de \textit{hashing} se le agrega un n\'umero generado aleatoriamente criptogr\'aficamente seguro. Esto hace que los \textit{hashes} de contrase\~nas iguales sean diferentes y previene ataques de tipo \textit{Rainbow Tables}.
 
 \subsubsection{Mecanismo de registro y autenticaci\'on}
-El módulo de autenticación de Supabase emplea un esquema basado en \textit{JSON Web Tokens (JWT)} para:
+El módulo de autenticación de \textit{Supabase}  emplea un esquema basado en \textit{JSON Web Tokens (JWT)} para:
 \begin{itemize}
 	\item Gestionar sesiones de usuario
 	\item Verificar identidades en cada solicitud
@@ -156,7 +155,7 @@ El módulo de autenticación de Supabase emplea un esquema basado en \textit{JSO
 
 Para integrar el sistema \textit{Passpoints} con este servicio:
 \begin{itemize}
-	\item Se utiliza el \textit{hash} generado del \textit{Passpoints} como contraseña textual en el registro y autenticaci\'on con Supabase.
+	\item Se utiliza el \textit{hash} generado del \textit{Passpoints} como contraseña textual en el registro y autenticaci\'on con \textit{Supabase} .
 	\item Se preserva el requisito de entrada válida de \textit{Passpoints} para autenticaciones futuras.
 	\item Se garantiza compatibilidad con el flujo estándar de OAuth 2.0, lo cual garantiza que se puedan seguir usando los servicios prove\'idos por \textit{Supabase} \cite{supabase}.
 \end{itemize}
@@ -206,7 +205,7 @@ La decisión de almacenar en texto claro:
 	\item Informaci\'on de la imagen, identificador, ancho, alto.
 \end{itemize}
 
-\textbf{Se restringe exclusivamente a fines académicos}. En un entorno productivo se aplicarían las siguientes medidas:
+Se restringe exclusivamente a fines académicos. En un entorno productivo se aplicarían las siguientes medidas:
 \begin{itemize}
 	\item Cifrado AES-256 de todos los parámetros sensibles.
 	\item No se guardar\'ian las coordenadas originales de la contrase\~na.
@@ -228,11 +227,11 @@ Este diseño incrementa la conciencia del usuario sobre su elección y reduce la
 El sistema implementa las siguientes protecciones:
 
 \begin{itemize}
-	\item \textbf{Ocultamiento de regiones de tolerancia}: Los indicadores visuales (recuadros rojos del tama\~no de la regi\'on de tolerancia) se deshabilitan por defecto para prevenir ataques \textit{shoulder surfing}, aunque el usuario puede habilitarlos.
+	\item Ocultamiento de regiones de tolerancia: Los indicadores visuales (recuadros rojos del tama\~no de la regi\'on de tolerancia) se deshabilitan por defecto para prevenir ataques \textit{shoulder surfing}, aunque el usuario puede habilitarlos.
 	\item \textit{Edge function} especializada: Valida las credenciales mediante el flujo:
 	\begin{enumerate}
-		\item Verificación de existencia del usuario en la base de datos
-		\item Recuperación de parámetros almacenados ($\varphi$, valor aleatorio $salt$, tolerancia $tolerance_radius$, y \textit{hash} original), valores de \ref{tab:bd-esquema}
+		\item Verificación de existencia del usuario en la base de datos.
+		\item Recuperación de parámetros almacenados ($\varphi$, valor aleatorio $salt$, tolerancia $tolerance$, y \textit{hash} original), valores de la tabla \ref{tab:bd-esquema}
 		\item Recomputación del \textit{hash} usando el método de discretización descrito en el Capítulo anterior.
 		\item Verificaci\'on de la autenticidad de la contrase\~na usando el m\'odulo de autenticaci\'on de \textit{Supabase}.
 	\end{enumerate}
@@ -255,12 +254,12 @@ El sistema implementa las siguientes protecciones:
 \end{table}
 
 \subsubsection{Gestión de Sesiones}
-El servicio de autenticación de Supabase emplea \textit{JSON Web Tokens (JWT)} para:
+El servicio de autenticación de \textit{Supabase}  emplea \textit{JSON Web Tokens (JWT)} para:
 
 \begin{itemize}
 	\item Generar credenciales temporales con expiración.
-	\item Gestionar la validez de los tokens en cada petici\'on y restringir acceso a los servicios en funci\'on de las pol\'iticas de seguridad definidas.
-	\item Almacenar el estado de sesión en \textit{cookies} HttpOnly/Secure de lado del usuario, a trav\'es de uso de su cliente de Javascript en la interfaz.
+	\item Gestionar la validez de los \textit{tokens} en cada petici\'on y restringir acceso a los servicios en funci\'on de las pol\'iticas de seguridad definidas.
+	\item Almacenar el estado de sesión en \textit{cookies} HttpOnly/Secure de lado del usuario, a trav\'es de uso de su cliente de JavaScript en la interfaz.
 \end{itemize}
 
 La validación resulta en:
@@ -427,7 +426,7 @@ Con el fin de construir el diccionario basado en mapas de atención visual, se c
 
 
 \subsection{Clusterizaci\'on de los puntos }
-Para eliminar los puntos que est\'en suficientemente cercanos para caer en la misma regi\'on de tolerancia y reducir las dimensiones de los diccionarios de ataque finales generados, se utiliza el algoritmo de clusterizaci\'on de ventana propuesto en \cite{van2010purely}. Este toma los puntos pertenecientes a una ventana de tama\~no fijo como el mismo, hallando el pixel del centro geom\'etrico de la ventana cada vez. Esto permite eliminar puntos innecesarios y reducir la dimension del espacio de puntos a analizar para generar un diccionario de ataques final. Para estos fines se tom\'o como tama\~no de ventana $3*r$, donde r es el radio de tolerancia de la imagen en p\'ixeles, dando un margen mayor al generado por la regi\'on original que ser\'ia de $2*r$. Esto permiti\'o reducir la cantidad de puntos a analizar, sin perder mucha informaci\'on. En \ref{points:void} se puede ver la cantidad de puntos extra\'idos de cada imagen utilizando las t\'ecnicas de procesamiento anteriormente enunciadas y explicadas, en \ref{points:cluster} se puede observar la reducci\'on sustancial de la cantidad de puntos despu\'es de aplicar el clustering.
+Para eliminar los puntos que est\'en suficientemente cercanos para caer en la misma regi\'on de tolerancia y reducir las dimensiones de los diccionarios de ataque finales generados, se utiliza el algoritmo de clusterizaci\'on de ventana propuesto en \cite{van2010purely}. Este toma los puntos pertenecientes a una ventana de tama\~no fijo y los sustituye por el pixel del centro geom\'etrico de la ventana. Esto permite eliminar puntos innecesarios y reducir la dimensi\'on del espacio de puntos a analizar para generar un diccionario de ataque final. Para estos fines se tom\'o como tama\~no de ventana $3*r$, donde r es el radio de tolerancia de la imagen en p\'ixeles, dando un margen mayor al generado por la regi\'on original que ser\'ia de $2*r$. Esto permiti\'o reducir la cantidad de puntos a analizar, sin perder mucha informaci\'on. En la tabla \ref{points:void} se puede ver la cantidad de puntos extra\'idos de cada imagen utilizando las t\'ecnicas de procesamiento anteriormente enunciadas. En la tabla \ref{points:cluster} se puede observar la reducci\'on sustancial de la cantidad de puntos despu\'es de aplicar el clusterizado de ventana.
 \begin{table}[H]
 	\centering
 	\caption{Puntos Obtenidos sin clusterizar}
@@ -491,7 +490,7 @@ En el caso de la generaci\'on de los grafos utilizados en este ataque se utiliz\
 \end{table}
 
 
-Para una mejor separaci\'on dichas heuristicas, se separaron los patrones en sub heur\'isticas, ver en \cite{van2010purely}, que disminuye la complejidad de implementar las comprobaciones de cada par de puntos. Luego para generar los diccionarios de ataque solo se necesita hallar los caminos de tama\~no 5 del grafo (ciclos inclu\'idos), en este caso se utiliz\'o DFS \textit{Depht First Search}, (B\'usqueda en profundidad), iterativo, guardando continuamente los resultados en archivos usando el formato \textit{JSON lines}. Esto permiti\'o reducir el requerimiento memoria ram por parte del sistema y tener una generaci\'on  din\'amica ya que el estado del DFS se guarda en el archivo. El tiempo de generaci\'on de dichos diccionarios oscil\'o de 2 a 3 horas cada uno, llegando a obtener archivos de 21GB de contrase\~nas, en la tabla \ref{dictionary:lengths} se pueden ver la cantidad de contrase\~nas generadas en cada diccionario.  
+Para una mejor separaci\'on dichas heur\'isticas, se separaron los patrones en sub heur\'isticas, ver en \cite{van2010purely}, que disminuye la complejidad de implementar las comprobaciones de cada par de puntos. Luego para generar los diccionarios de ataque solo se necesita hallar los caminos de tama\~no 5 del grafo (ciclos inclu\'idos), en este caso se utiliz\'o DFS \textit{Depht First Search}, (B\'usqueda en profundidad), iterativo, guardando continuamente los resultados en archivos usando el formato \textit{JSON lines}. Esto permiti\'o reducir el requerimiento memoria ram por parte del sistema y tener una generaci\'on  din\'amica ya que el estado del DFS se guarda en el archivo. El tiempo de generaci\'on de dichos diccionarios oscil\'o de 2 a 3 horas cada uno, llegando a obtener archivos de 21GB de contrase\~nas, en la tabla \ref{dictionary:lengths} se pueden ver la cantidad de contrase\~nas generadas en cada diccionario.  
 
 \begin{table}[H]
 	\centering
@@ -512,7 +511,7 @@ Para una mejor separaci\'on dichas heuristicas, se separaron los patrones en sub
 
 Una vez generados los diccionarios, se procedió a la autenticación de cada usuario utilizando las contraseñas contenidas en los diccionarios de ataque. Para agilizar el proceso, esta tarea se realizó de manera asíncrona, como se ilustra en los ejemplos de código \ref{attack1} y \ref{attack}. No obstante, el ataque resultó infructuoso, ya que ninguna contraseña pudo ser vulnerada.
 \bigskip\bigskip
-\begin{lstlisting}[style=mystyle, language=Python, caption=C\'odigo que se ejecuta en cada hilo del ataque, label=attack1][H]
+\begin{lstlisting}[style=mystyle, language=Python, caption=C\'odigo del ataque, label=attack1][H]
 data = (
 supabase
 .table('passwords')
@@ -570,7 +569,7 @@ def predict_password(password):
 	}
   }
 
-  # 8. Llamada a Supabase 
+  # 8. Llamada a \textit{Supabase}  
   response = supabase.functions.invoke(
   "passpoints-login",
      invoke_options={

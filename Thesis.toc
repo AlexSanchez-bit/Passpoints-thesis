@@ -5,7 +5,7 @@
 \contentsline {subsection}{\numberline {1.1.1}Contraseñas basadas en reconocimiento}{5}{subsection.1.1.1}%
 \contentsline {subsection}{\numberline {1.1.2}Contraseñas basadas en dibujo}{6}{subsection.1.1.2}%
 \contentsline {subsection}{\numberline {1.1.3}Contraseñas basadas en \textit {Clicks}}{7}{subsection.1.1.3}%
-\contentsline {subsection}{\numberline {1.1.4}Esquemas Híbridos}{7}{subsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.1.4}Esquemas Híbridos}{8}{subsection.1.1.4}%
 \contentsline {section}{\numberline {1.2}\textit {Passpoints}}{8}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}¿Por qué usar \textit {Passpoints}?}{9}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Región de Tolerancia}{10}{subsection.1.2.2}%
@@ -25,10 +25,10 @@
 \contentsline {subsection}{\numberline {2.3.1}Flujo en la API}{18}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Adaptaci\'on a distintos tama\~nos de pantalla}{19}{subsection.2.3.2}%
 \contentsline {section}{\numberline {2.4}Validación del sistema propuesto}{20}{section.2.4}%
-\contentsline {chapter}{\numberline {3}Detalles de Implementación y Experimentos}{21}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Detalles de Implementación}{21}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Contexto Tecnol\'ogico}{21}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Arquitectura del Sistema}{21}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Patrones y estilos arquitect\'onicos involucrados}{22}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.1}Patrones y estilos arquitect\'onicos involucrados}{21}{subsection.3.2.1}%
 \contentsline {section}{\numberline {3.3}M\'odulos de la aplicaci\'on}{22}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Selección de la imagen}{22}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Captura de los puntos}{23}{subsection.3.3.2}%
@@ -48,7 +48,16 @@
 \contentsline {subsection}{\numberline {3.4.3}Clusterizaci\'on de los puntos }{31}{subsection.3.4.3}%
 \contentsline {section}{\numberline {3.5}Obtenci\'on de los diccionarios de ataque}{32}{section.3.5}%
 \contentsline {section}{\numberline {3.6}Ejecuci\'on del ataque}{34}{section.3.6}%
-\contentsline {chapter}{Conclusiones}{36}{section*.27}%
-\contentsline {chapter}{Recomendaciones}{37}{section*.29}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{40}{chapter*.31}%
-\contentsline {chapter}{Anexos}{46}{section*.32}%
+\contentsline {chapter}{\numberline {4}Validaci\'on del sistema propuesto}{36}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Análisis del Espacio de Contraseñas con Discretización Óptima}{36}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Ataque a Passpoints}{37}{section.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.0.1}Diccionario de ataque basado en detecci\'on de bordes}{37}{subsubsection.4.2.0.1}%
+\contentsline {subsubsection}{\numberline {4.2.0.2}Diccionario de ataque basado en segmentaci\'on}{37}{subsubsection.4.2.0.2}%
+\contentsline {subsubsection}{\numberline {4.2.0.3}Diccionario de ataque basado en mapas de atenci\'on visual}{38}{subsubsection.4.2.0.3}%
+\contentsline {subsection}{\numberline {4.2.1}Clusterizaci\'on de los puntos }{39}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}Diccionario de ataque basado en los patrones DIAG y LINE}{40}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Ejecuci\'on del ataque}{42}{section.4.4}%
+\contentsline {chapter}{Conclusiones}{44}{section*.31}%
+\contentsline {chapter}{Recomendaciones}{45}{section*.33}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{48}{chapter*.35}%
+\contentsline {chapter}{Anexos}{54}{section*.36}%

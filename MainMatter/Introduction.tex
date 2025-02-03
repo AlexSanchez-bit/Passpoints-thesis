@@ -14,7 +14,7 @@ La principal diferencia entre las contraseñas gráficas y alfanuméricas reside
 
 Entre los sistemas basados en contraseñas gráficas destaca el \textit{Passpoints}  \cite{wiedenbeck2005passpoints} por su seguridad y usabilidad. Este es un sistema en el que el usuario selecciona 5 puntos ordenados de una imagen. Llevar a cabo la implementación de este sistema, así como analizar su seguridad y resistencia ante ataques es una problemática de interés, pues puede ayudar a mejorar la seguridad de los datos en diferentes aplicaciones. Así como proporcionar una mayor seguridad sobre todo a personas mayores, cuya memoria o poca adaptación a las tecnologías modernas puede conducir a poner en riesgo su seguridad en línea al utilizar contraseñas predecibles.
 
-El presente trabajo propone una implementación del sistema de autenticación gráfica \textit{Passpoints}, a través de una aplicación práctica, así como una validación de la seguridad del mismo. Como novedad de esta investigación se tiene la implementación personalizada de la contraseña gráfica \textit{Passpoints} cuyo análisis de seguridad reafirma su superioridad en cuanto a seguridad y resistencia ante ataques respecto a las contraseñas alfanuméricas.
+El presente trabajo propone una implementación del sistema de autenticación gráfica \textit{Passpoints}, a través de una aplicación práctica, así como una validación de la seguridad del mismo. Como novedad de esta investigación se tiene la implementación personalizada de la contraseña gráfica \textit{Passpoints}, cuyo análisis de seguridad reafirma su superioridad en cuanto a seguridad y resistencia ante ataques respecto a las contraseñas alfanuméricas.
 
 
 
@@ -25,12 +25,12 @@ El objeto de estudio es: implementación práctica del sistema de autenticación
 El campo de acción, el \textit{Passpoints}.
 \section*{Hipótesis}
 Se plantea la hipótesis: se puede crear una implementación práctica, usable y segura
-del sistema de autenticación Passpoints.
+del sistema de autenticación \textit{Passpoints}.
 
 \section*{Objetivos}
 \subsection*{Objetivo General}
 El objetivo general del presente trabajo es
-hacer una implementación práctica del sistema de autenticación gráfica Passpoints.
+hacer una implementación práctica del sistema de autenticación gráfica \textit{Passpoints}.
 
 \subsection*{Objetivos Específicos}
 \begin{itemize}
@@ -41,25 +41,28 @@ hacer una implementación práctica del sistema de autenticación gráfica Passp
 
 
 \section*{Estructura de la tesis}
-El presente trabajo está dividido en 3 capítulos.
+El presente trabajo está dividido en 4 capítulos.
+
 En el primero se presenta el estado del arte de la autenticación gráfica, enunciando los diferentes tipos de contraseñas gráficas, así como ejemplos e implementaciones de algunos de ellos. Se muestra en qué consiste \textit{Passpoints} así como su origen, ventajas y desventajas, variaciones e implementaciones del mismo. Se explicarán además conceptos utilizados en el desarrollo del presente trabajo, región de tolerancia, punto r-seguro y problema del hash. Se enuncian y explican los diferentes métodos de discretización estudiados durante la investigación como son la Discretización Robusta, Discretización Centrada, Discretización Óptima y Discretización mediante polígonos de Voronoi. Se presenta un análisis de estos métodos así como un análisis de los inconvenientes que trae consigo utilizarlos.
 
 
-En el segundo capítulo se hace una propuesta de implementación para este sistema, definiendo la discretización seleccionada y los problemas que suponen utilizar dicho método. Se explica cómo se manejan los diferentes tamaños de imágenes y pantallas para mantener la consistencia de la contraseña en diferentes dispositivos. Además se muestran los ataques de fuerza bruta y diccionario escogidos para validar la resistencia de la implementación a los mismos.
+En el segundo capítulo se hace una propuesta de implementación para este sistema, definiendo la discretización seleccionada y los problemas que suponen utilizar dicho método. Se explica cómo se manejan los diferentes tamaños de imágenes y pantallas para mantener la consistencia de la contraseña en diferentes dispositivos. Además, se muestran los ataques de fuerza bruta y diccionario escogidos para validar la resistencia de la implementación a los mismos.
 
-El tercer capítulo aborda la fase de implementación y experimentación del sistema de autenticación propuesto. Inicialmente, se describen las decisiones arquitectónicas y de diseño que guiaron la implementación, junto con una descripción de la estructura del código y los componentes principales. Se proporciona una visión general de la implementación de los algoritmos de discretización y manejo de la interfaz de usuario para diferentes dispositivos. Posteriormente, se presenta el diseño experimental concebido para evaluar la robustez del sistema frente a ataques específicos. Se justifica la selección de estos ataques y se describe el protocolo experimental seguido. La presentación de los resultados de estos experimentos se acompaña de un análisis exhaustivo, destacando los puntos fuertes y las áreas de mejora identificadas durante el proceso de validación. Este análisis permite extraer conclusiones iniciales sobre la viabilidad y seguridad del sistema implementado.
+El tercer capítulo aborda la fase de implementación y experimentación del sistema de autenticación propuesto. Inicialmente, se describen las decisiones de arquitectura y dise\~no que guiaron la implementación, junto con una descripción de la estructura del código y los componentes principales. Se proporciona una visión general de la implementación de los algoritmos de discretización y manejo de la interfaz de usuario para diferentes dispositivos. 
+
+En el cuarto cap\'itulo se presenta el diseño experimental concebido para evaluar la robustez del sistema frente a ataques específicos. Se justifica la selección de estos ataques y se describe el protocolo experimental seguido. La presentación de los resultados de estos experimentos se acompaña de un análisis exhaustivo, destacando los puntos fuertes y las áreas de mejora identificadas durante el proceso de validación. Este análisis permite extraer conclusiones iniciales sobre la viabilidad y seguridad del sistema implementado.
 
 A continuaci\'on, se presenta la producci\'on cient\'ifica asociada al desarrollo de la tesis.
 
 \underline{Art\'iculos Cient\'ificos}
 \begin{itemize}
-	\item Sánchez Saez, A. ., Madarro Capó, E. J., Herrera Macías, J. A., \& Suárez Plasencia4, L. (2024). DEVELOPMENT OF A PASSPOINTS-BASED GRAPHICAL AUTHENTICATION API. Telemática, 22, 133–147. Retrieved from https://revistatelematica.cujae.edu.cu/index.php/tele/article/view/970
+	\item Sánchez Saez, A. ., Madarro Capó, E. J., Herrera Macías, J. A., \& Suárez Plasencia4, L. (2024). Desarrollo de una Api de autenticaci\'on gr\'afica basada en Passpoints. Telemática, 22, 133–147.\\
 \end{itemize}
 
 
 \underline{Participaci\'on en eventos}
 \begin{itemize}
-	\item Sánchez Saez, A., Suárez Plasencia, L., \& Herrera Macías, J. A. (2024). Una implementación propia del sistema Passpoints. En Memorias de la XIX Convención y Feria Internacional Informática 2024, La Habana, Cuba.
+	\item Sánchez Saez, A., Suárez Plasencia, L., \& Herrera Macías, J. A. (2024). Una implementación propia del sistema \textit{Passpoints}. En Memorias de la XIX Convención y Feria Internacional Informática 2024, La Habana, Cuba.
 	
-	\item Sánchez Saez, A., Suárez Plasencia, L. (2023, noviembre). Passpoints implementaci\'on propia. XVIII Congreso Internacional de Matemática y Computación COMPUMAT 2023, La Habana, Cuba.
+	\item Sánchez Saez, A., Suárez Plasencia, L. (2023, noviembre). \textit{Passpoints} implementaci\'on propia. XVIII Congreso Internacional de Matemática y Computación COMPUMAT 2023, La Habana, Cuba.
 \end{itemize}

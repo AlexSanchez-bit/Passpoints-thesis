@@ -103,6 +103,20 @@
 \renewcommand{\lstlistingname}{Ejemplo de código}
 \renewcommand{\lstlistlistingname}{Ejemplos de código}
 
+\newcounter{anexofignum}
+% Comando personalizado para captions de anexos
+\newcommand{\anexofigurecaption}[1]{%
+	% Incrementa el contador de anexos
+	\refstepcounter{anexofignum}%
+	% Anular temporalmente el formato de label definido globalmente
+	\captionsetup{labelformat=empty}%
+	\caption{Anexo No~\arabic{anexofignum} (figura~\thefigure): #1}%
+	% Restaurar el formato por defecto para siguientes captions
+	\captionsetup{labelformat=default}%
+}
+
+\DeclareFieldFormat{labelnumber}{\mkbibbrackets{#1}}
+
 \begin{document}
 
 \frontmatter
@@ -120,7 +134,7 @@
 \include{MainMatter/Background}
 \include{MainMatter/Proposal}
 \include{MainMatter/Implementation}
-
+\include{MainMatter/Validation}
 \backmatter
 
 \include{BackMatter/Conclusions}
