@@ -7,7 +7,7 @@
 \usepackage{caption,booktabs}
 \captionsetup{ justification = centering }
 %\usepackage{mathpazo}
-
+\usepackage[spanish]{babel}
 \usepackage{float}
 \setlength{\marginparwidth}{2cm}
 \usepackage{todonotes}
@@ -115,7 +115,13 @@
 	\captionsetup{labelformat=default}%
 }
 
-\DeclareFieldFormat{labelnumber}{\mkbibbrackets{#1}}
+
+\DeclareCiteCommand{\cite}[\mkbibbrackets]
+{\usebibmacro{prenote}}
+{\usebibmacro{citeindex}%
+	\bibhyperref{\printfield{labelnumber}}} % Agrega hipervínculo a la cita
+{\multicitedelim}
+{\usebibmacro{postnote}}
 
 \begin{document}
 

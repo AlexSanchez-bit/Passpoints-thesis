@@ -24,8 +24,8 @@
 \RequirePackage[
   backend=biber,
   sorting=none,
-	style=numeric,
-	citestyle=numeric,
+	style=numeric,    % <-- Modificado
+	citestyle=numeric,% <-- Modificado
   hyperref=true,
 	backref=true
 	]{biblatex}
@@ -48,11 +48,12 @@
   {\usebibmacro{postnote}}
 
 % Si usas \autocite, agregar también:
-\DeclareCiteCommand{\autocite}[\mkbibbrackets]
-  {\usebibmacro{prenote}}
+\DeclareCiteCommand{\cite}[\mkbibbrackets]
+  {\usebibmacro{cite:init}%
+   \usebibmacro{prenote}}
   {\usebibmacro{citeindex}%
-   \usebibmacro{cite}}
-  {\multicitedelim}
+   \usebibmacro{cite:comp}}
+  {\usebibmacro{cite:dump}}
   {\usebibmacro{postnote}}
 
 

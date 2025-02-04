@@ -1,16 +1,16 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'Thesis.blg'
-[46] biber:340> INFO - === Sun Feb  2, 2025, 22:12:29
+[46] biber:340> INFO - === Mon Feb  3, 2025, 22:43:37
 [56] Biber.pm:419> INFO - Reading 'Thesis.bcf'
-[106] Biber.pm:979> INFO - Found 57 citekeys in bib section 0
-[116] Biber.pm:4419> INFO - Processing section 0
-[122] Biber.pm:4610> INFO - Looking for bibtex file 'Bibliography.bib' for section 0
-[124] bibtex.pm:1713> INFO - LaTeX decoding ...
-[158] bibtex.pm:1519> INFO - Found BibTeX data source 'Bibliography.bib'
-[417] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
-[417] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[417] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'es-ES'
-[435] bbl.pm:660> INFO - Writing 'Thesis.bbl' with encoding 'UTF-8'
-[448] bbl.pm:763> INFO - Output to Thesis.bbl
-[448] Biber.pm:131> WARN - legacy month field 'feb' in entry 'herrera2023comparacion' is not an integer - this will probably not sort properly.
-[448] Biber.pm:133> INFO - WARNINGS: 1
+[111] Biber.pm:979> INFO - Found 57 citekeys in bib section 0
+[121] Biber.pm:4419> INFO - Processing section 0
+[127] Biber.pm:4610> INFO - Looking for bibtex file 'Bibliography.bib' for section 0
+[129] bibtex.pm:1713> INFO - LaTeX decoding ...
+[163] bibtex.pm:1519> INFO - Found BibTeX data source 'Bibliography.bib'
+[432] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[432] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[432] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'es-ES'
+[452] bbl.pm:660> INFO - Writing 'Thesis.bbl' with encoding 'UTF-8'
+[464] bbl.pm:763> INFO - Output to Thesis.bbl
+[464] Biber.pm:131> WARN - legacy month field 'feb' in entry 'herrera2023comparacion' is not an integer - this will probably not sort properly.
+[464] Biber.pm:133> INFO - WARNINGS: 1

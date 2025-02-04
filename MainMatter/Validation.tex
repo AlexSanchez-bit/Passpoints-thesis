@@ -51,7 +51,7 @@ Este resultado demuestra que incluso con discretización espacial, el sistema ma
 
 \section{Ataque a Passpoints}
 Para llevar a cabo una validaci\'on de seguridad del sistema, se presenta un ataque de diccionario extra\'ido de \cite{van2010purely}. El ataque consiste en generar 3 diccionarios basados en diferentes criterios. Una vez generados, se lleva a cabo la ejecuci\'on del ataque al sistema.
-
+\subsection{Construcci\'on de los diccionarios de ataque}
 \subsubsection{Diccionario de ataque basado en detecci\'on de bordes}
 Para la detección de bordes, se empleó el algoritmo de Harris \cite{Harris1988ACC}, el cual fue aplicado de manera sistemática a todas las imágenes del sistema. La elección de este método se sustenta en lo expuesto por \cite{van2010purely}, quienes justifican el uso de técnicas de detección de esquinas basándose en la premisa de que los usuarios tienden a seleccionar puntos que coinciden con focos de atención visual. Para identificar dichos puntos, es necesario localizar regiones de mayor contraste en relación con el resto de la imagen, siendo los bordes un ejemplo paradigmático de estas características. Los resultados obtenidos tras la aplicación de este enfoque se presentan en la figura \ref{fig:images-borders }.
 
@@ -155,7 +155,7 @@ Con el fin de construir el diccionario basado en mapas de atención visual, se c
 \end{figure}
 
 
-\subsection{Clusterizaci\'on de los puntos }
+\subsubsection{Clusterizaci\'on de los puntos }
 Para eliminar los puntos que est\'en suficientemente cercanos para caer en la misma regi\'on de tolerancia y reducir las dimensiones de los diccionarios de ataque finales generados, se utiliza el algoritmo de clusterizaci\'on de ventana propuesto en \cite{van2010purely}. Este toma los puntos pertenecientes a una ventana de tama\~no fijo y los sustituye por el pixel del centro geom\'etrico de la ventana. Esto permite eliminar puntos innecesarios y reducir la dimensi\'on del espacio de puntos a analizar para generar un diccionario de ataque final. Para estos fines se tom\'o como tama\~no de ventana $3*r$, donde r es el radio de tolerancia de la imagen en p\'ixeles, dando un margen mayor al generado por la regi\'on original que ser\'ia de $2*r$. Esto permiti\'o reducir la cantidad de puntos a analizar, sin perder mucha informaci\'on. En la tabla \ref{points:void} se puede ver la cantidad de puntos extra\'idos de cada imagen utilizando las t\'ecnicas de procesamiento anteriormente enunciadas. En la tabla \ref{points:cluster} se puede observar la reducci\'on sustancial de la cantidad de puntos despu\'es de aplicar el clusterizado de ventana.
 \begin{table}[H]
 	\centering
@@ -185,7 +185,7 @@ Para eliminar los puntos que est\'en suficientemente cercanos para caer en la mi
 	\end{tabular}
 \end{table}
 
-\section{Diccionario de ataque basado en los patrones DIAG y LINE}
+\subsubsection{Diccionario de ataque basado en los patrones DIAG y LINE}
 Para obtener los diccionarios de ataque que se utiliz\'o el algoritmo basado en grafos propuesto en \cite{van2010purely}. Dicho algoritmo utiliza heur\'isticas para generar contrase\~nas no aleatorias que sigan los patrones DIAG y LINE \cite{s22051987},  comunmente seleccionadas por los usuarios. Para esto se precomputa una matriz de adyacencia M donde para los pares de puntos $i,j \in A$, donde $A$ es un alfabeto de puntos, se cumple.
 \[
  M[i,j] = 
@@ -236,7 +236,7 @@ Para una mejor separaci\'on dichas heur\'isticas, se separaron los patrones en s
 \end{table}
 
 
-\section{Ejecuci\'on del ataque}
+\subsection{Ejecuci\'on del ataque}
 
 
 Una vez generados los diccionarios, se procedió a la autenticación de cada usuario utilizando las contraseñas contenidas en los diccionarios de ataque. Para agilizar el proceso, esta tarea se realizó de manera asíncrona, como se ilustra en los ejemplos de código \ref{attack1} y \ref{attack}. No obstante, el ataque resultó infructuoso, ya que ninguna contraseña pudo ser vulnerada. Lo que significa que la muestra de las contrase\~nas seleccionadas por los usuarios no deben seguir patrones DIAG y LINE. Sin embargo, esto no quiere decir que est\'en absentas de alg\'un otro patr\'on no aleatorio. Por ende, en trabajos futuros se le a\~nadir\'a a la iplementaci\'on propuesta, los \textit{tests} existentes en la bibliograf\'ia para la detecci\'on de contrase\~nas que carezcan de aleatoriedad.

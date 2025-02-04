@@ -565,8 +565,8 @@
       \strng{authorbibnamehash}{2af955a9839311cf9c4f2294f8035bfb}
       \strng{authornamehash}{2af955a9839311cf9c4f2294f8035bfb}
       \strng{authorfullhash}{2af955a9839311cf9c4f2294f8035bfb}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{01}
@@ -801,8 +801,8 @@
       \strng{authorbibnamehash}{840877f95a0a4737f8619813b177190a}
       \strng{authornamehash}{840877f95a0a4737f8619813b177190a}
       \strng{authorfullhash}{840877f95a0a4737f8619813b177190a}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{number}{5559961}
@@ -1111,8 +1111,8 @@
       \strng{authorbibnamehash}{1d7e2d03699198a4e7e59fef3ac4db45}
       \strng{authornamehash}{1d7e2d03699198a4e7e59fef3ac4db45}
       \strng{authorfullhash}{5341ac8092b51eb3723c466bb8f5720b}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:0912.0951}
@@ -1350,8 +1350,8 @@
       \strng{authorbibnamehash}{5731ab15bc0ff10c968a7f0accc06105}
       \strng{authornamehash}{5731ab15bc0ff10c968a7f0accc06105}
       \strng{authorfullhash}{5731ab15bc0ff10c968a7f0accc06105}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Algoritmo para la detección de claves débiles en la técnica de autenticación gráfica passpoints}
@@ -1759,8 +1759,8 @@
       \strng{authorbibnamehash}{1c2da47aad4b116f4fa8eb7f5f88f14a}
       \strng{authornamehash}{1c2da47aad4b116f4fa8eb7f5f88f14a}
       \strng{authorfullhash}{1c2da47aad4b116f4fa8eb7f5f88f14a}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Journal of Human Computer Studies}
@@ -1917,8 +1917,8 @@
       \strng{authornamehash}{1daa64c136c4c01ef0a820838d4e407d}
       \strng{authorfullhash}{409964d2bd11b067bde23a4e3a48b43a}
       \field{extraname}{2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the 22nd international conference on World Wide Web}
