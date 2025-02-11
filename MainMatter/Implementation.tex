@@ -1,7 +1,6 @@
 \chapter{Detalles de Implementación}\label{chapter:implementation}
 Este capítulo describe la implementación práctica del modelo teórico propuesto en el capítulo anterior. Se detallan las tecnologías utilizadas, las decisiones de diseño, y los desafíos enfrentados durante el desarrollo.
 
-
 \section{Contexto Tecnol\'ogico}
 Para la implementación de la propuesta, se utilizó el lenguaje \textit{JavaScript} tanto en la interfaz de usuario como en la API. Específicamente, para la API se empleó \textit{Supabase}, un servicio Baas (\textit{Backend} como servicio), que proporciona una base de datos \textit{PostgreSQL} y funciones \textit{serverless} ejecutadas en entornos \textit{JavaScript}. En cuanto a la creación de la interfaz de usuario, se utilizaron tecnologías web comunes como \textit{HTML}, \textit{CSS} y \textit{JavaScript}, todas integradas mediante el \textit{framework} \textit{Vue}. El uso de \textit{Vue} permitió agilizar el desarrollo de sitios web interactivos. 
 
@@ -11,7 +10,7 @@ El sistema utiliza una arquitectura cliente-servidor desacoplada. El \textit{fro
 \subsection{Patrones y estilos arquitect\'onicos involucrados}
 Enfoque \textit{serverless} (sin servidor), esto elimina la necesidad de gestionar un servidor tradicional y la necesidad de tener infraestructura propia. Este enfoque es prove\'ido a trav\'es del uso de \textit{Supabase} \cite{supabase}, esto aumenta la escalabilidad a la vez que reduce los tiempos de desarrollo.
 
-\textit{Single Page Application} (SPA), aplicaci\'on de una sola p\'agina, es un enfoque en el que el navegador carga una sola p\'agina y actualiza el contenido din\'amicamente, esto mejora la reactividad de la web y hace m\'as din\'amica la interacci\'on con el usuario. Se obtiene este enfoque con la utilizaci\'on del \textit{framework} (marco de trabajo) de JavaScript \textit{Vue.js} \cite{vuejs} en el desarrollo de la interfaz gr\'afica, este  da las herramientas necesarias para desarrollar de manera pr\'actica y efectiva aplicaciones completas utilizando la arquitectura mencionada, se puede ver la interfaz gr\'afica en el Anexo No 11. (figuras de \ref{register-screen} a \ref{error-scans})22.
+\textit{Single Page Application} (SPA), aplicaci\'on de una sola p\'agina, es un enfoque en el que el navegador carga una sola p\'agina y actualiza el contenido din\'amicamente, esto mejora la reactividad de la web y hace m\'as din\'amica la interacci\'on con el usuario. Se obtiene este enfoque con la utilizaci\'on del \textit{framework} (marco de trabajo) de JavaScript \textit{Vue.js} \cite{vuejs} en el desarrollo de la interfaz gr\'afica, este  da las herramientas necesarias para desarrollar de manera pr\'actica y efectiva aplicaciones completas utilizando la arquitectura mencionada, se puede ver la interfaz gr\'afica en el Anexo No 11. (figuras de \ref{register-screen} a \ref{error-scans}).
 
 
 \begin{table}[ht]
@@ -48,7 +47,7 @@ Enfoque \textit{serverless} (sin servidor), esto elimina la necesidad de gestion
 \subsection{Selección de la imagen}
 \label{subsec:seleccion-imagen}
 
-En ambas fases (registro y autenticación), el sistema presenta al usuario tres imágenes, ver \ref{fig:imagenes-sistema}, en orden aleatorio, de las cuales debe seleccionar aquella asociada a su contraseña. Este mecanismo añade una capa adicional de seguridad al evitar que los usuarios seleccionen siempre la misma imagen por dejadez o por la comodidad de tomar siempre la primera imagen de la lista, evitando as\'i que la selecci\'on de imagen sea predecible. 
+En ambas fases (registro y autenticación), el sistema presenta al usuario tres imágenes, ver figura \ref{fig:imagenes-sistema}, en orden aleatorio, de las cuales debe seleccionar aquella asociada a su contraseña. Este mecanismo añade una capa adicional de seguridad al evitar que los usuarios seleccionen siempre la misma imagen por dejadez o por la comodidad de tomar siempre la primera imagen de la lista, evitando as\'i que la selecci\'on de imagen sea predecible. 
 
 
 \begin{figure}[ht]
@@ -95,31 +94,27 @@ La Tabla \ref{tab:uso-imagenes} muestra la distribución real del uso de imágen
 
 \end{table}
 
-
-
 \subsection{Captura de los puntos}
-Para seleccionar los puntos se coloca la imagen seleccionada por el usuario de entre un conjunto prove\'ido por el sistema. De esta imagen se obtienen su tama\~no y posici\'on en la pantalla, de tal manera que al reaccionar al evento de \textit{click} del usuario se pueda calcular la regi\'on de la imagen que haya sido seleccionada, esto se puede entender de los ejemplos \ref{point-capture1} y \ref{point-capture2}. \\
+Para seleccionar los puntos se coloca la imagen seleccionada por el usuario de entre un conjunto prove\'ido por el sistema. De esta imagen se obtienen su tama\~no y posici\'on en la pantalla, de tal manera que al reaccionar al evento de \textit{click} del usuario se pueda calcular la regi\'on de la imagen que haya sido seleccionada, esto se puede entender de los ejemplos \ref{point-capture1} y \ref{point-capture2}. 
 
-\begin{lstlisting}[ language=Java, caption=C\'odigo de selecci\'on de coordenadas de pantalla, label=point-capture1][hb]
-	//seleccionar la posicion en pantalla de la imagen y su tama\~no
+
+\begin{lstlisting}[style=mystyle, language=Java, breaklines=true, caption={C\'odigo de selecci\'on de coordenadas de pantalla}, label={point-capture1}, floatplacement=H]
   const { left, top, width, height } =
 imagecontainer.value.getBoundingClientRect();
-//convertir el punto de coordenadas de pantalla a coordenadas de la pantalla en la imagen (cambiar punto de origen)
 indicators.push({
 	x: ((event.clientX - left) / width) * 100,
 	y: ((event.clientY - top) / height) * 100,
 });
 \end{lstlisting}
 
-
-\begin{lstlisting}[style=mystyle, language=Java, caption=C\'odigo de transformaci\'on en coordenadas de imagen, label=point-capture2][hb]
+\begin{lstlisting}[breaklines=true, language=Java, caption={C\'odigo de transformaci\'on en coordenadas de imagen}, label={point-capture2}, floatplacement=H]
 	passwordInfo.points = e.map((point: Point) => {
 		const { x, y } = point;
 		return {
 			x: Math.floor((x / 100) * passwordInfo.image.width),
 			y: Math.floor((y / 100) * passwordInfo.image.height),
 		};
-	});
+		});
 \end{lstlisting}
 
 \subsection{Registro y autenticaci\'on}

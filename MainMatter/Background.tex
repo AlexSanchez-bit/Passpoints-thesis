@@ -10,10 +10,6 @@ El sistema \textit{Deja Vu}, desarrollado por \cite{dhamija2000deja}, ilustra un
 
 \textit{Pass Faces} \cite{Tuscano2015GraphicalPA,inproceedings} es otro ejemplo de sistemas basados en el reconocimiento, esta vez basado en la capacidad de reconocimiento facial. En este sistema el usuario debe seleccionar un conjunto de caras, al igual que en el anterior, en el momento de autenticación el usuario debe seleccionar 4 caras de una cuadrícula de 3x3 caras como muestra el Anexo No 2. (figura \ref{passfaces}). En \cite{Tuscano2015GraphicalPA} se ha demostrado que este sistema es predecible, pues la selección de las caras está sujeta a características étnicas, raciales o tendencias a seleccionar caras más atractivas.
 
-
-
-
-
 \subsection{Contraseñas basadas en dibujo}
 En contraste, las contraseñas basadas en dibujo son aquellas donde se le pide al usuario dibujar a mano su contraseña, con el objetivo de reconocer los trazos o secuencias que cree el mismo. Están inspirados en las firmas que se utilizan para garantizar la veracidad de las personas en documentos oficiales o elementos similares. 
 
@@ -41,7 +37,7 @@ Ejemplos son las contraseñas basadas en historias o narrativas \cite{olade2023s
 
 \textit{Cued Click Points} \cite{chiasson2007graphical} propone una mejora al modelo anterior en cuanto a usabilidad, seleccionando un punto por cada imagen de un conjunto de imágenes en lugar de varios puntos de una misma imagen. Sin embargo, esto aumentaría la carga computacional de una implementación de dicho sistema.
 
-De \textit{Passpoinst} se han derivado variantes como \textit{PassPositions} y \textit{PassPositions} 2 \cite{8320723}, que agregan información posicional para aumentar la seguridad y fortaleza ante ataques de diccionario. Logran esto haciendo que el cálculo del \textit{hash} de un punto se haga tomando como referencia la posición del anterior como se puede ver en el Anexo No 7. \ref{passpositions-example}.
+De \textit{Passpoints} se han derivado variantes como \textit{PassPositions} y \textit{PassPositions} 2 \cite{8320723}, que agregan información posicional para aumentar la seguridad y fortaleza ante ataques de diccionario. Logran esto haciendo que el cálculo del \textit{hash} de un punto se haga tomando como referencia la posición del anterior como se puede ver en el Anexo No 7. (figura \ref{passpositions-example}).
 
 
 
@@ -50,16 +46,16 @@ De \textit{Passpoinst} se han derivado variantes como \textit{PassPositions} y \
 
 
 
-Otro esquema basado en \textit{clicks} es \textit{PassGo} \cite{tao2008pass}, inspirado en el juego ``Go``. En este los usuarios deben selecccionar intersecciones en una cuadrícula. Cada intersección tiene un área sensible alrededor para compensar pequeñas inexactitudes en la entrada del usuario. Se muestran indicadores de puntos y líneas para las intersecciones seleccionadas y las líneas dibujadas entre ellas, ver Anexo No 9. (figura \ref{go-passwords}). Luego la contraseña se codifica como una secuencia de pares de coordenadas bidimensionales.
+Otro esquema basado en \textit{clicks} es \textit{PassGo} \cite{tao2008pass}, inspirado en el juego ``Go''. En este los usuarios deben selecccionar intersecciones en una cuadrícula. Cada intersección tiene un área sensible alrededor para compensar pequeñas inexactitudes en la entrada del usuario. Se muestran indicadores de puntos y líneas para las intersecciones seleccionadas y las líneas dibujadas entre ellas, ver Anexo No 9. (figura \ref{go-passwords}). Luego la contraseña se codifica como una secuencia de pares de coordenadas bidimensionales.
 
 
 
 \subsection{Esquemas Híbridos}
-Los esquemas híbridos, como \textit{Gra-Pin} \cite{kausar2022gra} o \textit{PassMatrix} \cite{8250568}, combinan diferentes enfoques de contraseñas gráficas (incluso con alfanuméricas), como la combinación de un PIN con la selección de imágenes o la selección de secuencias de imágenes como un PIN. 
+Los esquemas híbridos, como \textit{Gra-Pin} \cite{kausar2022gra} o \textit{PassMatrix} \cite{8250568}, combinan diferentes enfoques de contraseñas gráficas (incluso con alfanuméricas), como la combinación de un Pin con la selección de imágenes o la selección de secuencias de imágenes como un Pin. 
 
 En el caso de \textit{Gra-Pin} \cite{kausar2022gra} se pide al usuario seleccionar un número secreto de 2 dígitos, luego se le pide seleccionar una imagen secreta de entre otras 9 opciones, se pide seleccionar una operación aritmética y una posición secreta para  un Pin. 
 
-Esta combinación de elementos compone su contraseña. En la fase de autenticación, se pide al usuario contar cuántas veces aparece su imagen secreta en una cuadrícula de 5x5 imágenes. Realiza la operación aritmética seleccionada en la fase anterior entre el número de veces que aparecía su imagen secreta y el número secreto de dos cifras seleccionado durante el registro, por último se pone el resultado de esta operación en la posición seleccionada en el registro en el Pin, poniendo el resto de dígitos aleatorios como se puede ver Anexo No 10. (figuras \ref{gra-pin} y \ref{gra-pin-screens}). 
+Esta combinación de elementos compone su contraseña. En la fase de autenticación, se pide al usuario contar cuántas veces aparece su imagen secreta en una cuadrícula de 5x5 imágenes. Realiza la operación aritmética seleccionada en la fase anterior entre el número de veces que aparecía su imagen secreta y el número secreto de dos cifras seleccionado durante el registro, por último se pone el resultado de esta operación en la posición seleccionada en el registro en el Pin, poniendo el resto de dígitos aleatorios como se puede ver Anexo No 10. (figuras \ref{gra-pin} a \ref{gra-pin-screens}). 
 
 Este método está diseñado para mantener la resistencia que las contraseñas gráficas ofrecen y presentan adem\'as mayor resistencia ante ataques de tipo \textit{Shoulder Surfing} 
  \cite{lashkari2009shoulder}.
@@ -71,14 +67,14 @@ Este método está diseñado para mantener la resistencia que las contraseñas g
 
 \section{\textit{Passpoints}}
 
-Como se mencionó anteriormente, el sistema \textit{Passpoinst} \cite{wiedenbeck2005passpoints} se basa en la memorización de una secuencia de cinco puntos seleccionados en una imagen durante la fase de registro, como se muestra en la figura \ref{passpoints-example}.
+Como se mencionó anteriormente, el sistema \textit{Passpoints} \cite{wiedenbeck2005passpoints} se basa en la memorización de una secuencia de cinco puntos seleccionados en una imagen durante la fase de registro, como se muestra en la figura \ref{passpoints-example}.
 
 \begin{figure}[H]
 	\centering
 		\begin{minipage}[b]{0.7\linewidth}  % Tercer cuadrado, 48% del ancho de línea
 		\centering
 		\adjustbox{valign=b}{\includegraphics[width=0.8\linewidth]{passpoints.jpg}} % valign=t para alinear la imagen en la parte superior
-		\caption{Ejemplo de Passpoints. Fuente: \cite{wiedenbeck2005passpoints}}
+		\caption{Ejemplo de \textit{Passpoints}. Fuente: \cite{wiedenbeck2005passpoints}}
 		\label{passpoints-example}
 	\end{minipage}%
 	
@@ -100,9 +96,7 @@ Otros aspectos negativos a destacar en este sistema son:
 	\item Si el conjunto de puntos seleccionados por el usuario no sigue un patrón aleatorio es considerada débil y es susceptible a ataques de diccionarios \cite{rodriguez2019algoritmo}.
 \end{itemize}
 
-En varios artículos publicados recientemente \cite{sym13050777, lissetMaster, s22051987, herrera2023comparacion, herrera2023nuevo, herrera2023nuevoregulares, herrera2024new} se proponen test para evitar el registro de contraseñas gráficas no aleatorias. Estos resultados unidos a la propuesta en \cite{legon2019nuevo} de un modelo probabilístico capaz de medir el nivel de autenticidad de un usuario, conllevan a un aumento significativo en la seguridad de este sistema y por consiguiente lo convierten en una de las alternativas más prometedoras ante las contraseñas alfanuméricas.
-
-
+En varios artículos publicados recientemente \cite{sym13050777, lissetMaster, s22051987, herrera2023comparacion, herrera2023nuevo, herrera2023nuevoregulares, herrera2024new} se proponen \textit{test} para evitar el registro de contraseñas gráficas no aleatorias. Estos resultados unidos a la propuesta en \cite{legon2019nuevo} de un modelo probabilístico capaz de medir el nivel de autenticidad de un usuario, conllevan a un aumento significativo en la seguridad de este sistema y por consiguiente lo convierten en una de las alternativas más prometedoras ante las contraseñas alfanuméricas.
 
 \subsection{¿Por qué usar \textit{Passpoints}?}
 
@@ -144,23 +138,23 @@ Por temas de seguridad, las contraseñas no pueden almacenarse en texto claro. E
 Es sencillo percatarse de la baja probabilidad de que un usuario seleccione siempre exactamente el mismo pixel en las fases de registro y autenticación, situación que se agrava aún más en escenarios como el de los teléfonos móviles, cajeros y otras situaciones donde el usuario no posee un puntero digital. Es por  esto que se hace necesario dar un margen de error a cada punto de la contraseña Passpoints, a la región definida por el punto y su margen de error se le conoce como región de tolerancia. Una forma eficiente y segura de introducir esta región de tolerancia en un sistema de autenticación gráfica \textit{Passpoints} es utilizando una discretización.
 \subsubsection{Discretización Robusta}
 
-Para evitar el problema del vértice \cite{birget2006graphical}, se utiliza un conjunto de tres particiones diferentes de la imagen. Esto garantiza que cada punto es $r-seguro$ en al menos una de dichas particiones. Esto se logra asegurando una separación de al menos r píxeles entre el punto y el borde de alguna de las tres particiones \cite{zhu2013security, chiasson2008centered}. Se toman cuadrículas de dimensiones \(6r \times 6r\) y cada partición debe estar separada una distancia \(2r\) del resto. Durante la fase de autenticación, debido a la construcción de las particiones, cualquier punto a una distancia \(d \leq r\) del punto original pertenecerá al mismo cuadrante, lo que garantiza la autenticación del usuario ya que la salida de la función \textit{hash} será la misma. Por otro lado, cualquier punto a una distancia mayor a \(5\sqrt{2}r\) pertenecerá a otro cuadrante, lo que garantiza la no autenticación del usuario ilegítimo.
+Para evitar el problema del vértice \cite{birget2006graphical}, la discretizaci\'on Robusta utiliza un conjunto de tres particiones diferentes de la imagen. Esto garantiza que cada punto es $r-seguro$ en al menos una de dichas particiones. Esto se logra asegurando una separación de al menos $r$ píxeles entre el punto y el borde de alguna de las tres particiones \cite{zhu2013security, chiasson2008centered}. Se toman cuadrículas de dimensiones \(6r \times 6r\) y cada partición debe estar separada una distancia \(2r\) del resto. Durante la fase de autenticación, debido a la construcción de las particiones, cualquier punto a una distancia \(d \leq r\) del punto original pertenecerá al mismo cuadrante, lo que garantiza la autenticación del usuario ya que la salida de la función \textit{hash} será la misma. Por otro lado, cualquier punto a una distancia mayor a \(5\sqrt{2}r\) pertenecerá a otro cuadrante, lo que garantiza la no autenticación del usuario ilegítimo.
 
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.25\textwidth]{image4.jpg}
-			\includegraphics[width=0.3\textwidth]{image2.png}
-			\includegraphics[width=0.3\textwidth]{image3.png}
-			\caption{Regiones de la discretizaci\'on robusta. Fuentes: \cite{zhu2013security} y \cite{chiasson2008centered}.}
+			\includegraphics[width=0.27\textwidth]{image2.png}
+			\includegraphics[width=0.28\textwidth]{image3.png}
+			\caption{Regiones de la discretizaci\'on Robusta. Fuentes: \cite{zhu2013security} y \cite{chiasson2008centered}.}
 		\end{figure}
 	
 \subsubsection{Discretización Centrada}
 	
-La Discretización Centrada \cite{chiasson2008centered} ofrece mejoras en usabilidad y seguridad en comparación con la discretización robusta. Esta técnica garantiza que la región de tolerancia esté centrada en el punto seleccionado para la contraseña, resolviendo así el problema del vértice. Al determinar una región de dimensiones \(2r \times 2r\) centrada en el punto. Este método funciona encontrando, en cada dimensión de la imagen (\textit{x}, \textit{y}), un segmento de longitud \(2r\) en el cual el centro sea el punto originalmente seleccionado en el registro. Sea \textit{x} un punto en la semirrecta numérica que comprende los valores entre 0 y \textit{m}, donde \textit{m} es el ancho o largo de la imagen, dependiendo de la dimensión que se quiera calcular. A partir de ese segmento, se divide el resto del intervalo $[0, m]$ en subintervalos de igual longitud.
+La Discretización Centrada \cite{chiasson2008centered} ofrece mejoras en usabilidad y seguridad en comparación con la discretización Robusta. Esta técnica garantiza que la región de tolerancia esté centrada en el punto seleccionado para la contraseña, resolviendo así el problema del vértice. Al determinar una región de dimensiones \(2r \times 2r\) centrada en el punto. Este método funciona encontrando, en cada dimensión de la imagen (\textit{x}, \textit{y}), un segmento de longitud \(2r\) en el cual el centro sea el punto originalmente seleccionado en el registro. Sea \textit{x} un punto en la semirrecta numérica que comprende los valores entre 0 y \textit{m}, donde \textit{m} es el ancho o largo de la imagen, dependiendo de la dimensión que se quiera calcular. A partir de ese segmento, se divide el resto del intervalo $[0, m]$ en subintervalos de igual longitud.
 
 En la mayoría de los casos, habrá sobrantes de tamaño \(d\), donde \(d\) pertenece al intervalo $[0, 2r]$, por lo que si se almacena el valor de \(d\) es posible reconstruir la partición realizada comenzando en \(d\), donde uno de estos subintervalos estará centrado en \textit{x}. Una vez establecido el radio \textit{r} y el punto de la contraseña \textit{x}, se puede calcular la región de tolerancia. Se calcula el sobrante \textit{d} que se utilizará luego en la fase de autenticación:
 \begin{equation}
-	d \equiv (x - r) \pmod{2r} \label{eq:sobrante}
+	d\equiv(x - r)\mod{2r} \label{eq:sobrante}
 \end{equation}
 
 Determinar el intervalo exacto \textit{i} donde se encuentra \textit{x}:
@@ -210,14 +204,14 @@ Durante la fase de autenticación, el usuario selecciona el píxel ($X'$, $Y'$),
 \begin{equation}
 	\|(X, Y) - (X', Y')\| < r \rightarrow S_{X'} = S_X \land S_{Y'} = S_Y \label{eq:autenticacion}
 \end{equation}
-Este método es más eficiente que los descritos anteriormente, ya que su implementación a nivel computacional tiene una menor complejidad. Al tomar como base la aritmética modular se reduce la complejidad de los cálculos necesarios. No soluciona el problema del anterior método debido a que mantiene la necesidad de guardar texto claro junto con  las  contraseñas,  en  este  caso  son  los  valores   ($\phi$)  y  ($\varphi$).  Aunque  esto tiene  una  solución  rápida  que comparte con la discretización centrada.2
+Este método es más eficiente que los descritos anteriormente, ya que su implementación a nivel computacional tiene una menor complejidad. Al tomar como base la aritmética modular se reduce la complejidad de los cálculos necesarios. No soluciona el problema del anterior método debido a que mantiene la necesidad de guardar texto claro junto con  las  contraseñas,  en  este  caso  son  los  valores   ($\phi$)  y  ($\varphi$).  Aunque  esto tiene  una  solución  rápida  que comparte con la discretización Centrada.
 
 \subsubsection{Discretización mediante polígonos de Voronoi}
 Otras propuestas de discretización encontradas en la bibliografía es la hecha por Kirovski et al. \cite{kirovski2007click}, donde proponen utilizar diagramas de Voronoi. Partiendo de los puntos más probables de ser seleccionados en la imagen (conocidos como \textit{Hotspots} en la literatura), propone aplicar una discretización de Voronoi ponderada usando una heurística para maximizar la entropía \(H(P_w)\), tratando de obtener polígonos equiprobables. Su ventaja principal es que todos los polígonos de la partición obtenida poseen aproximadamente la misma probabilidad a priori de que el usuario escoja un punto de ese polígono. Esta propiedad parece ofrecer mejor resistencia a los ataques de diccionario basados en \textit{Hotspots}. Sin embargo, en \cite{zhu2013securityl} se afirma que la propuesta de \cite{kirovski2007click} sigue dejando información en claro, útil para ataques de diccionario.
 
 \subsubsection{Problemas de los métodos de discretización}
 	
-El uso de los métodos de discretización conlleva a ciertas limitaciones durante la autenticación. Una de estas es la falta de diferenciación entre los puntos que se encuentran dentro de la región de tolerancia. Todos los puntos reciben el mismo tratamiento, lo cual contradice el comportamiento esperado por parte del usuario legítimo, que debería seleccionar con mayor frecuencia los puntos más cercanos al punto original. Además, al representar la región de tolerancia como un polígono en lugar de un círculo, existe la posibilidad de obtener falsos positivos, es decir, puntos que se encuentran a una distancia mayor que el radio de tolerancia establecido pero que aún se consideran válidos como parte de la contraseña \cite{blonder1996graphical, borrego2018debilidades}. Otro problema se presenta cuando existen puntos situados a la misma distancia del punto seleccionado como parte de la contraseña, siendo ambos válidos para el usuario legítimo. Sin embargo, uno de ellos puede quedar dentro de la región de tolerancia determinada por la discretización y el otro no, lo que genera falsos negativos. Además, al segmentar la imagen en cuadrículas, no se toman todos los puntos que deberían determinar la región de radio \textit{r} alrededor del punto seleccionado como contraseña. Esto puede afectar la experiencia de usuario al utilizar el sistema \cite{bicakci2008optimal, borrego2018debilidades}.
+El uso de los métodos de discretización conlleva a ciertas limitaciones durante la autenticación. Una de estas es la falta de diferenciación entre los puntos que se encuentran dentro de la región de tolerancia. Todos los puntos reciben el mismo tratamiento, lo cual contradice el comportamiento esperado por parte del usuario legítimo, que debería seleccionar con mayor frecuencia los puntos más cercanos al punto original. Además, al representar la región de tolerancia como un polígono en lugar de un círculo, existe la posibilidad de obtener falsos positivos, es decir, puntos que se encuentran a una distancia mayor que el radio de tolerancia establecido pero que aún se consideran válidos como parte de la contraseña \cite{blonder1996graphical, borrego2018debilidades}. Otro problema se presenta cuando existen puntos situados a la misma distancia del punto seleccionado como parte de la contraseña, siendo ambos válidos para el usuario legítimo. Sin embargo, uno de ellos puede quedar dentro de la región de tolerancia determinada por la discretización y el otro no, lo que genera falsos negativos. Además, al segmentar la imagen en cuadrículas, no se toman todos los puntos que deberían determinar la región de radio \textit{r} alrededor del punto seleccionado como contraseña. Esto puede afectar la experiencia del usuario al utilizar el sistema \cite{bicakci2008optimal, borrego2018debilidades}.
 
 En general, las limitaciones de los métodos de discretización radican en el hecho de que definen la región de tolerancia como un polígono, mientras que la distancia se plantea en términos de un círculo. Además, el criterio utilizado para determinar si un punto es válido o no se basa únicamente en la distancia. Otra debilidad de estos métodos es la necesidad de almacenar información adicional para garantizar la autenticación \cite{borrego2018debilidades}, esto podría ser explotado para aumentar la efectividad de ataques de tipo diccionario. Por lo tanto, es importante abordar en trabajos futuros estas limitaciones y buscar mejoras en los métodos de discretización para lograr una mayor precisión en la autenticación y brindar una mejor experiencia de uso al usuario.
 
